@@ -1,0 +1,8 @@
+*.orig
+Thumbs.db
+*/Thumbs.db
+*/_SYNCAPP
+
+*.s#*
+*.l#*
+*.b#*

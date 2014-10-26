@@ -1,0 +1,19 @@
+Ryan Jensen - 2014
+
+T0 use these custom eagle libraries, just drag and drop them into your eagle libraries directory.
+
+To find this directory,
+	open Eagle.exe
+	click "Option" at the top of the window
+	click "Directories..."
+	Then look at the box that says "Libraries"
+	If the box has "$EAGLEDIR\lbr" in it, then it will be in your eagle install directory.
+	Check C:\Program Files (x86)\EAGLE-x.x.x\lbr\
+	
+Then just copy the files into this folder.
+
+
+ALTERNATIVELY,
+You can make a shortcut to my 000_custom_lbr folder, and put the schortcut (.lnk) in the libraries folder of Eagle.
+Doing this will make it impossible to "Open Symbol" when in schematic view.
+Eagle will tell you it cannot find the library for the part you are using, but everything else will work just fine.
