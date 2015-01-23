@@ -1,0 +1,2435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.5.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="0" x2="0" y2="100" width="0.3048" layer="20"/>
+<wire x1="0" y1="100" x2="100" y2="100" width="0.3048" layer="20"/>
+<wire x1="0" y1="0" x2="100" y2="0" width="0.3048" layer="20"/>
+<wire x1="100" y1="0" x2="100" y2="100" width="0.3048" layer="20"/>
+<rectangle x1="0" y1="0" x2="51" y2="100" layer="16"/>
+<rectangle x1="0" y1="0" x2="51" y2="100" layer="30"/>
+<rectangle x1="0.35" y1="97.561" x2="51" y2="99.29" layer="29"/>
+<rectangle x1="0.35" y1="95.021" x2="51" y2="96.75" layer="29"/>
+<rectangle x1="0.35" y1="92.481" x2="51" y2="94.21" layer="29"/>
+<rectangle x1="0.35" y1="89.941" x2="51" y2="91.67" layer="29"/>
+<rectangle x1="0.35" y1="87.401" x2="51" y2="89.13" layer="29"/>
+<rectangle x1="0.35" y1="84.861" x2="51" y2="86.59" layer="29"/>
+<rectangle x1="0.35" y1="82.321" x2="51" y2="84.05" layer="29"/>
+<rectangle x1="0.35" y1="79.781" x2="51" y2="81.51" layer="29"/>
+<rectangle x1="0.35" y1="77.241" x2="51" y2="78.97" layer="29"/>
+<rectangle x1="0.35" y1="74.701" x2="51" y2="76.43" layer="29"/>
+<rectangle x1="0.35" y1="72.161" x2="51" y2="73.89" layer="29"/>
+<rectangle x1="0.35" y1="69.621" x2="51" y2="71.35" layer="29"/>
+<rectangle x1="0.35" y1="67.081" x2="51" y2="68.81" layer="29"/>
+<rectangle x1="0.35" y1="64.541" x2="51" y2="66.27" layer="29"/>
+<rectangle x1="0.35" y1="62.001" x2="51" y2="63.73" layer="29"/>
+<rectangle x1="0.35" y1="59.461" x2="51" y2="61.19" layer="29"/>
+<rectangle x1="0.35" y1="56.921" x2="51" y2="58.65" layer="29"/>
+<rectangle x1="0.35" y1="54.381" x2="51" y2="56.11" layer="29"/>
+<rectangle x1="0.35" y1="51.841" x2="51" y2="53.57" layer="29"/>
+<rectangle x1="0.35" y1="49.301" x2="51" y2="51.03" layer="29"/>
+<rectangle x1="0.35" y1="46.761" x2="51" y2="48.49" layer="29"/>
+<rectangle x1="0.35" y1="44.221" x2="51" y2="45.95" layer="29"/>
+<rectangle x1="0.35" y1="41.681" x2="51" y2="43.41" layer="29"/>
+<rectangle x1="0.35" y1="39.141" x2="51" y2="40.87" layer="29"/>
+<rectangle x1="0.35" y1="36.601" x2="51" y2="38.33" layer="29"/>
+<rectangle x1="0.35" y1="34.061" x2="51" y2="35.79" layer="29"/>
+<rectangle x1="0.35" y1="31.521" x2="51" y2="33.25" layer="29"/>
+<rectangle x1="0.35" y1="28.981" x2="51" y2="30.71" layer="29"/>
+<rectangle x1="0.35" y1="26.441" x2="51" y2="28.17" layer="29"/>
+<rectangle x1="0.35" y1="23.901" x2="51" y2="25.63" layer="29"/>
+<rectangle x1="0.35" y1="21.361" x2="51" y2="23.09" layer="29"/>
+<rectangle x1="0.35" y1="18.821" x2="51" y2="20.55" layer="29"/>
+<rectangle x1="0.35" y1="16.281" x2="51" y2="18.01" layer="29"/>
+<rectangle x1="0.35" y1="13.741" x2="51" y2="15.47" layer="29"/>
+<rectangle x1="0.35" y1="11.201" x2="51" y2="12.93" layer="29"/>
+<rectangle x1="0.35" y1="8.661" x2="51" y2="10.39" layer="29"/>
+<rectangle x1="0.35" y1="6.121" x2="51" y2="7.85" layer="29"/>
+<rectangle x1="0.35" y1="3.581" x2="51" y2="5.31" layer="29"/>
+<rectangle x1="0.35" y1="1.041" x2="51" y2="2.77" layer="29"/>
+<rectangle x1="71.95" y1="1.85" x2="74.1" y2="98.5" layer="29"/>
+<rectangle x1="74.49" y1="1.85" x2="76.64" y2="98.5" layer="29"/>
+<rectangle x1="77.03" y1="1.85" x2="79.18" y2="98.5" layer="29"/>
+<rectangle x1="74.49" y1="1.85" x2="76.64" y2="98.5" layer="30"/>
+<rectangle x1="71.95" y1="1.85" x2="74.1" y2="98.5" layer="30"/>
+<rectangle x1="77.03" y1="1.85" x2="79.18" y2="98.5" layer="30"/>
+</plain>
+<libraries>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="default">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+The default Design Rules have been set to cover
+a wide range of applications. Your particular design
+may have different requirements, so please make the
+necessary adjustments and save your customized
+design rules under a new name.</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="8mil"/>
+<param name="mdWirePad" value="8mil"/>
+<param name="mdWireVia" value="8mil"/>
+<param name="mdPadPad" value="8mil"/>
+<param name="mdPadVia" value="8mil"/>
+<param name="mdViaVia" value="8mil"/>
+<param name="mdSmdPad" value="8mil"/>
+<param name="mdSmdVia" value="8mil"/>
+<param name="mdSmdSmd" value="8mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="8mil"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="24mil"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkGrid" value="0"/>
+<param name="checkAngle" value="0"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="|"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="-"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+</elements>
+<signals>
+<signal name="S$226">
+<wire x1="50.165" y1="29.845" x2="1.27" y2="29.845" width="1.73" layer="1"/>
+<wire x1="50.165" y1="32.385" x2="1.27" y2="32.385" width="1.73" layer="1"/>
+<wire x1="50.165" y1="34.925" x2="1.27" y2="34.925" width="1.73" layer="1"/>
+<wire x1="50.165" y1="37.465" x2="1.27" y2="37.465" width="1.73" layer="1"/>
+<wire x1="50.165" y1="40.005" x2="1.27" y2="40.005" width="1.73" layer="1"/>
+</signal>
+<signal name="S$227">
+<wire x1="50.165" y1="27.305" x2="1.27" y2="27.305" width="1.73" layer="1"/>
+</signal>
+<signal name="S$228">
+<wire x1="50.165" y1="24.765" x2="1.27" y2="24.765" width="1.73" layer="1"/>
+</signal>
+<signal name="S$229">
+<wire x1="50.165" y1="22.225" x2="1.27" y2="22.225" width="1.73" layer="1"/>
+</signal>
+<signal name="S$230">
+<wire x1="50.165" y1="19.685" x2="1.27" y2="19.685" width="1.73" layer="1"/>
+</signal>
+<signal name="S$231">
+<wire x1="50.165" y1="17.145" x2="1.27" y2="17.145" width="1.73" layer="1"/>
+</signal>
+<signal name="S$232">
+<wire x1="50.165" y1="14.605" x2="1.27" y2="14.605" width="1.73" layer="1"/>
+</signal>
+<signal name="S$233">
+<wire x1="50.165" y1="12.065" x2="1.27" y2="12.065" width="1.73" layer="1"/>
+</signal>
+<signal name="S$234">
+<wire x1="50.165" y1="9.525" x2="1.27" y2="9.525" width="1.73" layer="1"/>
+</signal>
+<signal name="S$235">
+<wire x1="50.165" y1="6.985" x2="1.27" y2="6.985" width="1.73" layer="1"/>
+</signal>
+<signal name="S$236">
+<wire x1="50.165" y1="1.905" x2="1.27" y2="1.905" width="1.73" layer="1"/>
+</signal>
+<signal name="S$1">
+<wire x1="50.165" y1="4.445" x2="1.27" y2="4.445" width="1.73" layer="1"/>
+</signal>
+<signal name="S$8">
+<via x="75.565" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="75.565" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+<wire x1="78.105" y1="98.425" x2="78.105" y2="1.905" width="1.9304" layer="16"/>
+<wire x1="75.565" y1="1.905" x2="75.565" y2="98.425" width="1.9304" layer="16"/>
+<wire x1="75.565" y1="98.425" x2="75.565" y2="1.905" width="1.9304" layer="1"/>
+<wire x1="78.105" y1="1.905" x2="78.105" y2="98.425" width="1.9304" layer="1"/>
+<wire x1="73.025" y1="1.905" x2="73.025" y2="98.425" width="1.9304" layer="1"/>
+<wire x1="73.025" y1="1.905" x2="73.025" y2="98.425" width="1.9304" layer="16"/>
+</signal>
+<signal name="S$12">
+<via x="67.945" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$13">
+<via x="70.485" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$14">
+<via x="73.025" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$15">
+<via x="75.565" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$19">
+<via x="67.945" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$20">
+<via x="70.485" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$21">
+<via x="73.025" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$22">
+<via x="75.565" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$26">
+<via x="67.945" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$27">
+<via x="70.485" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$28">
+<via x="73.025" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$29">
+<via x="75.565" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$33">
+<via x="67.945" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$34">
+<via x="70.485" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$35">
+<via x="73.025" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$36">
+<via x="75.565" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$40">
+<via x="67.945" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$41">
+<via x="70.485" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$42">
+<via x="73.025" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$43">
+<via x="75.565" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$47">
+<via x="67.945" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$48">
+<via x="70.485" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$49">
+<via x="73.025" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$50">
+<via x="75.565" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$54">
+<via x="67.945" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$55">
+<via x="70.485" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$56">
+<via x="73.025" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$57">
+<via x="75.565" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$58">
+<via x="80.645" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$59">
+<via x="83.185" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$60">
+<via x="85.725" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$61">
+<via x="88.265" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$62">
+<via x="90.805" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$63">
+<via x="93.345" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$64">
+<via x="95.885" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$65">
+<via x="80.645" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$66">
+<via x="83.185" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$67">
+<via x="85.725" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$68">
+<via x="88.265" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$69">
+<via x="90.805" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$70">
+<via x="93.345" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$71">
+<via x="95.885" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$72">
+<via x="80.645" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$73">
+<via x="83.185" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$74">
+<via x="85.725" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$75">
+<via x="88.265" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$76">
+<via x="90.805" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$77">
+<via x="93.345" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$78">
+<via x="95.885" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$79">
+<via x="80.645" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$80">
+<via x="83.185" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$81">
+<via x="85.725" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$82">
+<via x="88.265" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$83">
+<via x="90.805" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$84">
+<via x="93.345" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$85">
+<via x="95.885" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$86">
+<via x="80.645" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$87">
+<via x="83.185" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$88">
+<via x="85.725" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$89">
+<via x="88.265" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$90">
+<via x="90.805" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$91">
+<via x="93.345" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$92">
+<via x="95.885" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$93">
+<via x="80.645" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$94">
+<via x="83.185" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$95">
+<via x="85.725" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$96">
+<via x="88.265" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$97">
+<via x="90.805" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$98">
+<via x="93.345" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$99">
+<via x="95.885" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$100">
+<via x="80.645" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$101">
+<via x="83.185" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$102">
+<via x="85.725" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$103">
+<via x="88.265" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$104">
+<via x="90.805" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$105">
+<via x="93.345" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$106">
+<via x="95.885" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$107">
+<via x="80.645" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$108">
+<via x="83.185" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$109">
+<via x="85.725" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$110">
+<via x="88.265" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$111">
+<via x="90.805" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$112">
+<via x="93.345" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$113">
+<via x="95.885" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$117">
+<via x="67.945" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$118">
+<via x="70.485" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$119">
+<via x="73.025" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$120">
+<via x="75.565" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$124">
+<via x="67.945" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$125">
+<via x="70.485" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$126">
+<via x="73.025" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$127">
+<via x="75.565" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$131">
+<via x="67.945" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$132">
+<via x="70.485" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$133">
+<via x="73.025" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$134">
+<via x="75.565" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$138">
+<via x="67.945" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$139">
+<via x="70.485" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$140">
+<via x="73.025" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$141">
+<via x="75.565" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$145">
+<via x="67.945" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$146">
+<via x="70.485" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$147">
+<via x="73.025" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$148">
+<via x="75.565" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$152">
+<via x="67.945" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$153">
+<via x="70.485" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$154">
+<via x="73.025" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$155">
+<via x="75.565" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$159">
+<via x="67.945" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$160">
+<via x="70.485" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$161">
+<via x="73.025" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$162">
+<via x="75.565" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$166">
+<via x="67.945" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$167">
+<via x="70.485" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$168">
+<via x="73.025" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$169">
+<via x="75.565" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$170">
+<via x="80.645" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$171">
+<via x="83.185" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$172">
+<via x="85.725" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$173">
+<via x="88.265" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$174">
+<via x="90.805" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$175">
+<via x="93.345" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$176">
+<via x="95.885" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$177">
+<via x="80.645" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$178">
+<via x="83.185" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$179">
+<via x="85.725" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$180">
+<via x="88.265" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$181">
+<via x="90.805" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$182">
+<via x="93.345" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$183">
+<via x="95.885" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$184">
+<via x="80.645" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$185">
+<via x="83.185" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$186">
+<via x="85.725" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$187">
+<via x="88.265" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$188">
+<via x="90.805" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$189">
+<via x="93.345" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$190">
+<via x="95.885" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$191">
+<via x="80.645" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$192">
+<via x="83.185" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$193">
+<via x="85.725" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$194">
+<via x="88.265" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$195">
+<via x="90.805" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$196">
+<via x="93.345" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$197">
+<via x="95.885" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$198">
+<via x="80.645" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$199">
+<via x="83.185" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$200">
+<via x="85.725" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$201">
+<via x="88.265" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$202">
+<via x="90.805" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$203">
+<via x="93.345" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$204">
+<via x="95.885" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$205">
+<via x="80.645" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$206">
+<via x="83.185" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$207">
+<via x="85.725" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$208">
+<via x="88.265" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$209">
+<via x="90.805" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$210">
+<via x="93.345" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$211">
+<via x="95.885" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$212">
+<via x="80.645" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$213">
+<via x="83.185" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$214">
+<via x="85.725" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$215">
+<via x="88.265" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$216">
+<via x="90.805" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$217">
+<via x="93.345" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$218">
+<via x="95.885" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$219">
+<via x="80.645" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$220">
+<via x="83.185" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$221">
+<via x="85.725" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$222">
+<via x="88.265" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$223">
+<via x="90.805" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$224">
+<via x="93.345" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$225">
+<via x="95.885" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$237">
+<wire x1="50.165" y1="42.545" x2="1.27" y2="42.545" width="1.73" layer="1"/>
+<wire x1="50.165" y1="45.085" x2="1.27" y2="45.085" width="1.73" layer="1"/>
+<wire x1="50.165" y1="47.625" x2="1.27" y2="47.625" width="1.73" layer="1"/>
+<wire x1="50.165" y1="50.165" x2="1.27" y2="50.165" width="1.73" layer="1"/>
+</signal>
+<signal name="S$2">
+<wire x1="50.165" y1="52.705" x2="1.27" y2="52.705" width="1.73" layer="1"/>
+<wire x1="50.165" y1="55.245" x2="1.27" y2="55.245" width="1.73" layer="1"/>
+<wire x1="50.165" y1="57.785" x2="1.27" y2="57.785" width="1.73" layer="1"/>
+<wire x1="50.165" y1="60.325" x2="1.27" y2="60.325" width="1.73" layer="1"/>
+<wire x1="50.165" y1="62.865" x2="1.27" y2="62.865" width="1.73" layer="1"/>
+<wire x1="50.165" y1="65.405" x2="1.27" y2="65.405" width="1.73" layer="1"/>
+<wire x1="50.165" y1="67.945" x2="1.27" y2="67.945" width="1.73" layer="1"/>
+<wire x1="50.165" y1="70.485" x2="1.27" y2="70.485" width="1.73" layer="1"/>
+<wire x1="50.165" y1="73.025" x2="1.27" y2="73.025" width="1.73" layer="1"/>
+<wire x1="50.165" y1="75.565" x2="1.27" y2="75.565" width="1.73" layer="1"/>
+<wire x1="50.165" y1="78.105" x2="1.27" y2="78.105" width="1.73" layer="1"/>
+<wire x1="50.165" y1="80.645" x2="1.27" y2="80.645" width="1.73" layer="1"/>
+<wire x1="50.165" y1="83.185" x2="1.27" y2="83.185" width="1.73" layer="1"/>
+<wire x1="50.165" y1="85.725" x2="1.27" y2="85.725" width="1.73" layer="1"/>
+<wire x1="50.165" y1="88.265" x2="1.27" y2="88.265" width="1.73" layer="1"/>
+<wire x1="50.165" y1="90.805" x2="1.27" y2="90.805" width="1.73" layer="1"/>
+<wire x1="50.165" y1="93.345" x2="1.27" y2="93.345" width="1.73" layer="1"/>
+<wire x1="50.165" y1="95.885" x2="1.27" y2="95.885" width="1.73" layer="1"/>
+<wire x1="50.165" y1="98.425" x2="1.27" y2="98.425" width="1.73" layer="1"/>
+</signal>
+<signal name="S$3">
+<via x="67.945" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$4">
+<via x="70.485" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$9">
+<via x="73.025" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$10">
+<via x="75.565" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$11">
+<via x="67.945" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$16">
+<via x="70.485" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$17">
+<via x="73.025" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$18">
+<via x="75.565" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$23">
+<via x="67.945" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$24">
+<via x="70.485" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$25">
+<via x="73.025" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$30">
+<via x="75.565" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$31">
+<via x="67.945" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$32">
+<via x="70.485" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$37">
+<via x="73.025" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$38">
+<via x="75.565" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$39">
+<via x="67.945" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$44">
+<via x="70.485" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$45">
+<via x="73.025" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$46">
+<via x="75.565" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$51">
+<via x="67.945" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$52">
+<via x="70.485" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$53">
+<via x="73.025" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$114">
+<via x="75.565" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$115">
+<via x="67.945" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$116">
+<via x="70.485" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$121">
+<via x="73.025" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$122">
+<via x="75.565" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$123">
+<via x="67.945" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$128">
+<via x="70.485" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$129">
+<via x="73.025" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$130">
+<via x="75.565" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$135">
+<via x="80.645" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$136">
+<via x="83.185" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$137">
+<via x="85.725" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$142">
+<via x="88.265" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$143">
+<via x="90.805" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$144">
+<via x="93.345" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$149">
+<via x="95.885" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$150">
+<via x="80.645" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$151">
+<via x="83.185" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$156">
+<via x="85.725" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$157">
+<via x="88.265" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$158">
+<via x="90.805" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$163">
+<via x="93.345" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$164">
+<via x="95.885" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$165">
+<via x="80.645" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$238">
+<via x="83.185" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$239">
+<via x="85.725" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$240">
+<via x="88.265" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$241">
+<via x="90.805" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$242">
+<via x="93.345" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$243">
+<via x="95.885" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$244">
+<via x="80.645" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$245">
+<via x="83.185" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$246">
+<via x="85.725" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$247">
+<via x="88.265" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$248">
+<via x="90.805" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$249">
+<via x="93.345" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$250">
+<via x="95.885" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$251">
+<via x="80.645" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$252">
+<via x="83.185" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$253">
+<via x="85.725" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$254">
+<via x="88.265" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$255">
+<via x="90.805" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$256">
+<via x="93.345" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$257">
+<via x="95.885" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$258">
+<via x="80.645" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$259">
+<via x="83.185" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$260">
+<via x="85.725" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$261">
+<via x="88.265" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$262">
+<via x="90.805" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$263">
+<via x="93.345" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$264">
+<via x="95.885" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$265">
+<via x="80.645" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$266">
+<via x="83.185" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$267">
+<via x="85.725" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$268">
+<via x="88.265" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$269">
+<via x="90.805" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$270">
+<via x="93.345" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$271">
+<via x="95.885" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$272">
+<via x="80.645" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$273">
+<via x="83.185" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$274">
+<via x="85.725" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$275">
+<via x="88.265" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$276">
+<via x="90.805" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$277">
+<via x="93.345" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$278">
+<via x="95.885" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$279">
+<via x="67.945" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$280">
+<via x="70.485" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$281">
+<via x="73.025" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$282">
+<via x="75.565" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$283">
+<via x="67.945" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$284">
+<via x="70.485" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$285">
+<via x="73.025" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$286">
+<via x="75.565" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$287">
+<via x="67.945" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$288">
+<via x="70.485" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$289">
+<via x="73.025" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$290">
+<via x="75.565" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$291">
+<via x="67.945" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$292">
+<via x="70.485" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$293">
+<via x="73.025" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$294">
+<via x="75.565" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$295">
+<via x="67.945" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$296">
+<via x="70.485" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$297">
+<via x="73.025" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$298">
+<via x="75.565" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$299">
+<via x="67.945" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$300">
+<via x="70.485" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$301">
+<via x="73.025" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$302">
+<via x="75.565" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$303">
+<via x="67.945" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$304">
+<via x="70.485" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$305">
+<via x="73.025" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$306">
+<via x="75.565" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$307">
+<via x="67.945" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$308">
+<via x="70.485" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$309">
+<via x="73.025" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$310">
+<via x="75.565" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$311">
+<via x="80.645" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$312">
+<via x="83.185" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$313">
+<via x="85.725" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$314">
+<via x="88.265" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$315">
+<via x="90.805" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$316">
+<via x="93.345" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$317">
+<via x="95.885" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$318">
+<via x="80.645" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$319">
+<via x="83.185" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$320">
+<via x="85.725" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$321">
+<via x="88.265" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$322">
+<via x="90.805" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$323">
+<via x="93.345" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$324">
+<via x="95.885" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$325">
+<via x="80.645" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$326">
+<via x="83.185" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$327">
+<via x="85.725" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$328">
+<via x="88.265" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$329">
+<via x="90.805" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$330">
+<via x="93.345" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$331">
+<via x="95.885" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$332">
+<via x="80.645" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$333">
+<via x="83.185" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$334">
+<via x="85.725" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$335">
+<via x="88.265" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$336">
+<via x="90.805" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$337">
+<via x="93.345" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$338">
+<via x="95.885" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$339">
+<via x="80.645" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$340">
+<via x="83.185" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$341">
+<via x="85.725" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$342">
+<via x="88.265" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$343">
+<via x="90.805" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$344">
+<via x="93.345" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$345">
+<via x="95.885" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$346">
+<via x="80.645" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$347">
+<via x="83.185" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$348">
+<via x="85.725" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$349">
+<via x="88.265" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$350">
+<via x="90.805" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$351">
+<via x="93.345" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$352">
+<via x="95.885" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$353">
+<via x="80.645" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$354">
+<via x="83.185" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$355">
+<via x="85.725" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$356">
+<via x="88.265" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$357">
+<via x="90.805" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$358">
+<via x="93.345" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$359">
+<via x="95.885" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$360">
+<via x="80.645" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$361">
+<via x="83.185" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$362">
+<via x="85.725" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$363">
+<via x="88.265" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$364">
+<via x="90.805" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$365">
+<via x="93.345" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$366">
+<via x="95.885" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$367">
+<via x="67.945" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$368">
+<via x="70.485" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$369">
+<via x="73.025" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$370">
+<via x="75.565" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$371">
+<via x="67.945" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$372">
+<via x="70.485" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$373">
+<via x="73.025" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$374">
+<via x="75.565" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$375">
+<via x="67.945" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$376">
+<via x="70.485" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$377">
+<via x="73.025" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$378">
+<via x="75.565" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$379">
+<via x="67.945" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$380">
+<via x="70.485" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$381">
+<via x="73.025" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$382">
+<via x="75.565" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$383">
+<via x="67.945" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$384">
+<via x="70.485" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$385">
+<via x="73.025" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$386">
+<via x="75.565" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$387">
+<via x="67.945" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$388">
+<via x="70.485" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$389">
+<via x="73.025" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$390">
+<via x="75.565" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="78.105" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$391">
+<via x="80.645" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$392">
+<via x="83.185" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$393">
+<via x="85.725" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$394">
+<via x="88.265" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$395">
+<via x="90.805" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$396">
+<via x="93.345" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$397">
+<via x="95.885" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$398">
+<via x="80.645" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$399">
+<via x="83.185" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$400">
+<via x="85.725" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$401">
+<via x="88.265" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$402">
+<via x="90.805" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$403">
+<via x="93.345" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$404">
+<via x="95.885" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$405">
+<via x="80.645" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$406">
+<via x="83.185" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$407">
+<via x="85.725" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$408">
+<via x="88.265" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$409">
+<via x="90.805" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$410">
+<via x="93.345" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$411">
+<via x="95.885" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$412">
+<via x="80.645" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$413">
+<via x="83.185" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$414">
+<via x="85.725" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$415">
+<via x="88.265" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$416">
+<via x="90.805" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$417">
+<via x="93.345" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$418">
+<via x="95.885" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$419">
+<via x="80.645" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$420">
+<via x="83.185" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$421">
+<via x="85.725" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$422">
+<via x="88.265" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$423">
+<via x="90.805" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$424">
+<via x="93.345" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$425">
+<via x="95.885" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$426">
+<via x="80.645" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$427">
+<via x="83.185" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$428">
+<via x="85.725" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$429">
+<via x="88.265" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$430">
+<via x="90.805" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$431">
+<via x="93.345" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$432">
+<via x="95.885" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$433">
+<via x="67.945" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$434">
+<via x="70.485" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$435">
+<via x="73.025" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$437">
+<via x="80.645" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$438">
+<via x="83.185" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$439">
+<via x="85.725" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$440">
+<via x="88.265" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$441">
+<via x="90.805" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$442">
+<via x="93.345" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$443">
+<via x="95.885" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="98.425" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$444">
+<via x="60.325" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$445">
+<via x="62.865" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$446">
+<via x="65.405" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="70.485" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="67.945" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+<via x="73.025" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$447">
+<via x="60.325" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$448">
+<via x="62.865" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$449">
+<via x="65.405" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$450">
+<via x="60.325" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$451">
+<via x="62.865" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$452">
+<via x="65.405" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$453">
+<via x="60.325" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$454">
+<via x="62.865" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$455">
+<via x="65.405" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$456">
+<via x="60.325" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$457">
+<via x="62.865" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$458">
+<via x="65.405" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$459">
+<via x="60.325" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$460">
+<via x="62.865" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$461">
+<via x="65.405" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$462">
+<via x="60.325" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$463">
+<via x="62.865" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$464">
+<via x="65.405" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$465">
+<via x="60.325" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$466">
+<via x="62.865" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$467">
+<via x="65.405" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$468">
+<via x="60.325" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$469">
+<via x="62.865" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$470">
+<via x="65.405" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$471">
+<via x="60.325" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$472">
+<via x="62.865" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$473">
+<via x="65.405" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$474">
+<via x="60.325" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$475">
+<via x="62.865" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$476">
+<via x="65.405" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$477">
+<via x="60.325" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$478">
+<via x="62.865" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$479">
+<via x="65.405" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$480">
+<via x="60.325" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$481">
+<via x="62.865" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$482">
+<via x="65.405" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$483">
+<via x="60.325" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$484">
+<via x="62.865" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$485">
+<via x="65.405" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$486">
+<via x="60.325" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$487">
+<via x="62.865" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$488">
+<via x="65.405" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$489">
+<via x="60.325" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$490">
+<via x="62.865" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$491">
+<via x="65.405" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$492">
+<via x="60.325" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$493">
+<via x="62.865" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$494">
+<via x="65.405" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$495">
+<via x="60.325" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$496">
+<via x="62.865" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$497">
+<via x="65.405" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$498">
+<via x="60.325" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$499">
+<via x="62.865" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$500">
+<via x="65.405" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$501">
+<via x="60.325" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$502">
+<via x="62.865" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$503">
+<via x="65.405" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$504">
+<via x="60.325" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$505">
+<via x="62.865" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$506">
+<via x="65.405" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$507">
+<via x="60.325" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$508">
+<via x="62.865" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$509">
+<via x="65.405" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$510">
+<via x="60.325" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$511">
+<via x="62.865" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$512">
+<via x="65.405" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$513">
+<via x="60.325" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$514">
+<via x="62.865" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$515">
+<via x="65.405" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$516">
+<via x="60.325" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$517">
+<via x="62.865" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$518">
+<via x="65.405" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$519">
+<via x="60.325" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$520">
+<via x="62.865" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$521">
+<via x="65.405" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$522">
+<via x="60.325" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$523">
+<via x="62.865" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$524">
+<via x="65.405" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$525">
+<via x="60.325" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$526">
+<via x="62.865" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$527">
+<via x="65.405" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$528">
+<via x="60.325" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$529">
+<via x="62.865" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$530">
+<via x="65.405" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$531">
+<via x="60.325" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$532">
+<via x="62.865" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$533">
+<via x="65.405" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$534">
+<via x="60.325" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$535">
+<via x="62.865" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$536">
+<via x="65.405" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$537">
+<via x="60.325" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$538">
+<via x="62.865" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$539">
+<via x="65.405" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$540">
+<via x="60.325" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$541">
+<via x="62.865" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$542">
+<via x="65.405" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$543">
+<via x="60.325" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$544">
+<via x="62.865" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$545">
+<via x="65.405" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$546">
+<via x="60.325" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$547">
+<via x="62.865" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$548">
+<via x="65.405" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$549">
+<via x="60.325" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$550">
+<via x="62.865" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$551">
+<via x="65.405" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$552">
+<via x="60.325" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$553">
+<via x="62.865" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$554">
+<via x="65.405" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$555">
+<via x="60.325" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$556">
+<via x="62.865" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$557">
+<via x="65.405" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$558">
+<via x="60.325" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$559">
+<via x="62.865" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$560">
+<via x="65.405" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$561">
+<via x="57.785" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$562">
+<via x="57.785" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$563">
+<via x="57.785" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$564">
+<via x="57.785" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$565">
+<via x="57.785" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$566">
+<via x="57.785" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$567">
+<via x="57.785" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$568">
+<via x="57.785" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$569">
+<via x="57.785" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$570">
+<via x="57.785" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$571">
+<via x="57.785" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$572">
+<via x="57.785" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$573">
+<via x="57.785" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$574">
+<via x="57.785" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$575">
+<via x="57.785" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$576">
+<via x="57.785" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$577">
+<via x="57.785" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$578">
+<via x="57.785" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$579">
+<via x="57.785" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$580">
+<via x="57.785" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$581">
+<via x="57.785" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$582">
+<via x="57.785" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$583">
+<via x="57.785" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$584">
+<via x="57.785" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$585">
+<via x="57.785" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$586">
+<via x="57.785" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$587">
+<via x="57.785" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$588">
+<via x="57.785" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$589">
+<via x="57.785" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$590">
+<via x="57.785" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$591">
+<via x="57.785" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$592">
+<via x="57.785" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$593">
+<via x="57.785" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$594">
+<via x="57.785" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$595">
+<via x="57.785" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$596">
+<via x="57.785" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$597">
+<via x="57.785" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$598">
+<via x="57.785" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$599">
+<via x="57.785" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$600">
+<via x="55.245" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$601">
+<via x="55.245" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$602">
+<via x="55.245" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$603">
+<via x="55.245" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$604">
+<via x="55.245" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$605">
+<via x="55.245" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$606">
+<via x="55.245" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$607">
+<via x="55.245" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$608">
+<via x="55.245" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$609">
+<via x="55.245" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$610">
+<via x="55.245" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$611">
+<via x="55.245" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$612">
+<via x="55.245" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$613">
+<via x="55.245" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$614">
+<via x="55.245" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$615">
+<via x="55.245" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$616">
+<via x="55.245" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$617">
+<via x="55.245" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$618">
+<via x="55.245" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$619">
+<via x="55.245" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$620">
+<via x="55.245" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$621">
+<via x="55.245" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$622">
+<via x="55.245" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$623">
+<via x="55.245" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$624">
+<via x="55.245" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$625">
+<via x="55.245" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$626">
+<via x="55.245" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$627">
+<via x="55.245" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$628">
+<via x="55.245" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$629">
+<via x="55.245" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$630">
+<via x="55.245" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$631">
+<via x="55.245" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$632">
+<via x="55.245" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$633">
+<via x="55.245" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$634">
+<via x="55.245" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$635">
+<via x="55.245" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$636">
+<via x="55.245" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$637">
+<via x="55.245" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$638">
+<via x="55.245" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$436">
+<via x="52.705" y="98.425" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$639">
+<via x="52.705" y="95.885" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$640">
+<via x="52.705" y="93.345" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$641">
+<via x="52.705" y="90.805" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$642">
+<via x="52.705" y="88.265" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$643">
+<via x="52.705" y="85.725" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$644">
+<via x="52.705" y="83.185" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$645">
+<via x="52.705" y="80.645" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$646">
+<via x="52.705" y="78.105" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$647">
+<via x="52.705" y="75.565" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$648">
+<via x="52.705" y="73.025" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$649">
+<via x="52.705" y="70.485" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$650">
+<via x="52.705" y="67.945" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$651">
+<via x="52.705" y="65.405" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$652">
+<via x="52.705" y="62.865" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$653">
+<via x="52.705" y="60.325" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$654">
+<via x="52.705" y="57.785" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$655">
+<via x="52.705" y="55.245" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$656">
+<via x="52.705" y="52.705" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$657">
+<via x="52.705" y="50.165" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$658">
+<via x="52.705" y="47.625" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$659">
+<via x="52.705" y="45.085" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$660">
+<via x="52.705" y="42.545" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$661">
+<via x="52.705" y="40.005" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$662">
+<via x="52.705" y="37.465" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$663">
+<via x="52.705" y="34.925" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$664">
+<via x="52.705" y="32.385" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$665">
+<via x="52.705" y="29.845" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$666">
+<via x="52.705" y="27.305" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$667">
+<via x="52.705" y="24.765" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$668">
+<via x="52.705" y="22.225" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$669">
+<via x="52.705" y="19.685" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$670">
+<via x="52.705" y="17.145" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$671">
+<via x="52.705" y="14.605" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$672">
+<via x="52.705" y="12.065" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$673">
+<via x="52.705" y="9.525" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$674">
+<via x="52.705" y="6.985" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$675">
+<via x="52.705" y="4.445" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+<signal name="S$676">
+<via x="52.705" y="1.905" extent="1-16" drill="1" diameter="1.9304"/>
+</signal>
+</signals>
+</board>
+</drawing>
+</eagle>

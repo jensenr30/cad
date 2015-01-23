@@ -344,10 +344,14 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zilog.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/000_custom_lbr/!synth_panel.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/000_custom_lbr/!synth_sch.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/000_custom_lbr/!synthdiy.lbr"
+UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/000_custom_lbr/ATtiny24A.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="252 123 1259 824"
+Loc="634 271 1445 868"
 State=2
 Number=0
 
