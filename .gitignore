@@ -6,3 +6,10 @@ Thumbs.db
 *.s#*
 *.l#*
 *.b#*
+
+_EAGLE-6.6.0/ulp/*
+_EAGLE-6.6.0/bin/*
+_EAGLE-6.6.0/doc/*
+_EAGLE-6.6.0/misc/*
+_EAGLE-6.6.0/projects/*
+_EAGLE-6.6.0/scr/*
