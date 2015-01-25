@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1887,6 +1887,15 @@
 <circle x="241.3" y="4.7625" radius="0.762" width="0.0508" layer="44"/>
 <wire x1="241.3" y1="6.0325" x2="241.3" y2="3.4925" width="0.127" layer="44"/>
 <wire x1="242.57" y1="4.7625" x2="240.03" y2="4.7625" width="0.127" layer="44"/>
+</package>
+<package name="KNOB_BOSS-LARGE">
+<circle x="0" y="0" radius="16.66875" width="0.127" layer="101"/>
+</package>
+<package name="KNOB_BOSS_MEDIUM">
+<circle x="0" y="0" radius="12.7" width="0.127" layer="101"/>
+</package>
+<package name="KNBO_BOSS_SMALL">
+<circle x="0" y="0" radius="9.7234375" width="0.127" layer="101"/>
 </package>
 </packages>
 <symbols>

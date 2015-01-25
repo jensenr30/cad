@@ -7,6 +7,11 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="A:/Engineering/eagle/_EAGLE-6.6.0/lbr/!ATMEGA328.lbr"
+UsedLibrary="A:/Engineering/eagle/_EAGLE-6.6.0/lbr/!ATtiny24A.lbr"
+UsedLibrary="A:/Engineering/eagle/_EAGLE-6.6.0/lbr/!synth_panel.lbr"
+UsedLibrary="A:/Engineering/eagle/_EAGLE-6.6.0/lbr/!synth_sch.lbr"
+UsedLibrary="A:/Engineering/eagle/_EAGLE-6.6.0/lbr/!synthdiy.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/41xx.lbr"
@@ -344,15 +349,11 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zetex.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/zilog.lbr"
-UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/!synth_panel.lbr"
-UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/!synth_sch.lbr"
-UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/!synthdiy.lbr"
-UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/!ATtiny24A.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="250 121 1061 718"
-State=1
+Loc="402 244 1213 841"
+State=2
 Number=0
 
 [Desktop]
