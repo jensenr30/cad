@@ -12655,7 +12655,7 @@ general purpose rectifier, 1 A</description>
 <part name="R82" library="resistor" deviceset="R-US_" device="0204/7" value="2.2 kΩ"/>
 <part name="P-14" library="supply1" deviceset="V-" device="" value="-12 V"/>
 <part name="S1" library="switch" deviceset="255SB" device=""/>
-<part name="C23" library="rcl" deviceset="C-US" device="025-060X050" value="33 µF"/>
+<part name="C23" library="rcl" deviceset="C-US" device="025-060X050" value="1 µF"/>
 <part name="P+17" library="supply1" deviceset="V+" device="" value="+12 V"/>
 <part name="IC1" library="linear" deviceset="TL084" device="P"/>
 <part name="R-CV-B-ATTN" library="pot" deviceset="TRIM_US-" device="B64Y" value="100 kΩ"/>
@@ -12754,7 +12754,7 @@ general purpose rectifier, 1 A</description>
 <part name="R-RESET-LVL" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
 <part name="P+4" library="supply1" deviceset="V+" device="" value="+12 V"/>
 <part name="P+7" library="supply1" deviceset="V+" device="" value="+12 V"/>
-<part name="C5" library="capacitor-wima" deviceset="C" device="2.5/2" value="470 nF"/>
+<part name="C5" library="capacitor-wima" deviceset="C" device="2.5/2" value="2 nF"/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="R6" library="resistor" deviceset="R-US_" device="0204/7" value="1 kΩ"/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
