@@ -12371,6 +12371,210 @@ Distributor Buerklin, 11G810</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor">
+<description>&lt;b&gt;Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92">
+<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.781"/>
+<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.3185"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.1"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.2936"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2N3904" prefix="T">
+<description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92">
+<connects>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="C" pad="1"/>
+<connect gate="G1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="transistor-pnp">
+<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92">
+<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PNP">
+<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="94"/>
+<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="94"/>
+<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
+<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2N3906" prefix="Q">
+<description>&lt;b&gt;PNP Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO41-10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="A" x="5.08" y="0" drill="1.1176"/>
+<pad name="C" x="-5.08" y="0" drill="1.1176"/>
+<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N4004" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+general purpose rectifier, 1 A</description>
+<gates>
+<gate name="1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO41-10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12408,7 +12612,7 @@ Distributor Buerklin, 11G810</description>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="V+" device="" value="+12 V"/>
 <part name="P-5" library="supply1" deviceset="V-" device="" value="-12 V"/>
-<part name="IC11" library="!synthdiy" deviceset="CA3046" device=""/>
+<part name="IC0" library="!synthdiy" deviceset="CA3046" device=""/>
 <part name="R53" library="resistor" deviceset="R-US_" device="0204/7" value="3.9 kΩ"/>
 <part name="R54" library="resistor" deviceset="R-US_" device="0204/7" value="100 kΩ"/>
 <part name="R55" library="resistor" deviceset="R-US_" device="0204/7" value="22 kΩ"/>
@@ -12419,7 +12623,7 @@ Distributor Buerklin, 11G810</description>
 <part name="C16" library="capacitor-wima" deviceset="C" device="2.5/2" value="18 nF"/>
 <part name="SUPPLY30" library="supply2" deviceset="GND" device=""/>
 <part name="P+11" library="supply1" deviceset="V+" device="" value="+12 V"/>
-<part name="R-MIRROR-BIAS1" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
+<part name="R-MIRROR-BIAS" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
 <part name="C17" library="capacitor-wima" deviceset="C" device="5/2.5" value="0.1 µF"/>
 <part name="R59" library="resistor" deviceset="R-US_" device="0204/7" value="22 kΩ"/>
 <part name="SUPPLY31" library="supply2" deviceset="GND" device=""/>
@@ -12436,7 +12640,7 @@ Distributor Buerklin, 11G810</description>
 <part name="R63" library="resistor" deviceset="R-US_" device="0204/7" value="1 kΩ"/>
 <part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
 <part name="R64" library="resistor" deviceset="R-US_" device="0204/7" value="47 kΩ"/>
-<part name="R-CV1-SCALE1" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
+<part name="R-CV-FREQ-SCALE" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
 <part name="Q5" library="!synth_sch" deviceset="2N7000" device=""/>
 <part name="Q6" library="!synth_sch" deviceset="2N7000" device=""/>
 <part name="P-13" library="supply1" deviceset="V-" device="" value="-12 V"/>
@@ -12450,7 +12654,7 @@ Distributor Buerklin, 11G810</description>
 <part name="R81" library="resistor" deviceset="R-US_" device="0204/7" value="2.2 kΩ"/>
 <part name="R82" library="resistor" deviceset="R-US_" device="0204/7" value="2.2 kΩ"/>
 <part name="P-14" library="supply1" deviceset="V-" device="" value="-12 V"/>
-<part name="S2" library="switch" deviceset="255SB" device=""/>
+<part name="S1" library="switch" deviceset="255SB" device=""/>
 <part name="C23" library="rcl" deviceset="C-US" device="025-060X050" value="33 µF"/>
 <part name="P+17" library="supply1" deviceset="V+" device="" value="+12 V"/>
 <part name="IC1" library="linear" deviceset="TL084" device="P"/>
@@ -12532,6 +12736,28 @@ Distributor Buerklin, 11G810</description>
 <part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-US" device="025-060X050" value="10 µF"/>
 <part name="C4" library="rcl" deviceset="C-US" device="025-060X050" value="10 µF"/>
+<part name="RESET" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
+<part name="T1" library="transistor" deviceset="2N3904" device=""/>
+<part name="Q3" library="transistor-pnp" deviceset="2N3906" device=""/>
+<part name="D1" library="diode" deviceset="1N4004" device=""/>
+<part name="D2" library="diode" deviceset="1N4004" device=""/>
+<part name="SUPPLY21" library="supply2" deviceset="GND" device=""/>
+<part name="R1" library="resistor" deviceset="R-US_" device="0204/7" value="100 kΩ"/>
+<part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
+<part name="T3" library="transistor" deviceset="2N3904" device=""/>
+<part name="T4" library="transistor" deviceset="2N3904" device=""/>
+<part name="R3" library="resistor" deviceset="R-US_" device="0204/7" value="100 kΩ"/>
+<part name="SUPPLY23" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
+<part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="10 kΩ"/>
+<part name="R-RESET-LVL" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
+<part name="P+4" library="supply1" deviceset="V+" device="" value="+12 V"/>
+<part name="P+7" library="supply1" deviceset="V+" device="" value="+12 V"/>
+<part name="C5" library="capacitor-wima" deviceset="C" device="2.5/2" value="470 nF"/>
+<part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
+<part name="R6" library="resistor" deviceset="R-US_" device="0204/7" value="1 kΩ"/>
+<part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12936,7 +13162,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <plain>
 </plain>
 <instances>
-<instance part="IC11" gate="T1-T2" x="96.52" y="7.62" smashed="yes">
+<instance part="IC0" gate="T1-T2" x="96.52" y="7.62" smashed="yes">
 <attribute name="NAME" x="104.775" y="13.97" size="1.778" layer="95"/>
 <attribute name="VALUE" x="104.775" y="11.43" size="1.778" layer="96"/>
 </instance>
@@ -12953,7 +13179,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 </instance>
 <instance part="SUPPLY30" gate="GND" x="86.36" y="15.24"/>
 <instance part="P+11" gate="1" x="53.34" y="55.88"/>
-<instance part="R-MIRROR-BIAS1" gate="G$1" x="99.06" y="35.56" smashed="yes" rot="R270">
+<instance part="R-MIRROR-BIAS" gate="G$1" x="99.06" y="35.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="88.9" y="40.64" size="1.778" layer="95"/>
 <attribute name="VALUE" x="96.52" y="38.1" size="1.778" layer="96"/>
 </instance>
@@ -12982,7 +13208,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <instance part="R63" gate="G$1" x="35.56" y="-2.54" rot="R180"/>
 <instance part="SUPPLY35" gate="GND" x="17.78" y="7.62"/>
 <instance part="R64" gate="G$1" x="17.78" y="-2.54" rot="R180"/>
-<instance part="R-CV1-SCALE1" gate="G$1" x="5.08" y="10.16" smashed="yes" rot="MR0">
+<instance part="R-CV-FREQ-SCALE" gate="G$1" x="5.08" y="10.16" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.16" y="2.54" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="7.62" y="6.604" size="1.778" layer="96" rot="MR90"/>
 </instance>
@@ -12999,9 +13225,12 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <instance part="R81" gate="G$1" x="215.9" y="10.16" rot="R270"/>
 <instance part="R82" gate="G$1" x="223.52" y="10.16" rot="R270"/>
 <instance part="P-14" gate="1" x="218.44" y="-2.54"/>
-<instance part="S2" gate="1" x="116.84" y="50.8"/>
-<instance part="C23" gate="G$1" x="116.84" y="63.5"/>
-<instance part="P+17" gate="1" x="116.84" y="71.12"/>
+<instance part="S1" gate="1" x="106.68" y="50.8" rot="MR270"/>
+<instance part="C23" gate="G$1" x="93.98" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="92.964" y="56.769" size="1.778" layer="95"/>
+<attribute name="VALUE" x="92.456" y="54.229" size="1.778" layer="96"/>
+</instance>
+<instance part="P+17" gate="1" x="88.9" y="55.88"/>
 <instance part="IC2" gate="A" x="35.56" y="10.16"/>
 <instance part="IC2" gate="B" x="170.18" y="17.78"/>
 <instance part="IC2" gate="C" x="63.5" y="35.56"/>
@@ -13012,7 +13241,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <nets>
 <net name="N$61" class="0">
 <segment>
-<pinref part="IC11" gate="T1-T2" pin="E"/>
+<pinref part="IC0" gate="T1-T2" pin="E"/>
 <wire x1="101.6" y1="-7.62" x2="101.6" y2="-5.08" width="0.1524" layer="91"/>
 <pinref part="R53" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="-7.62" x2="101.6" y2="-7.62" width="0.1524" layer="91"/>
@@ -13027,7 +13256,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="IC11" gate="T1-T2" pin="B2"/>
+<pinref part="IC0" gate="T1-T2" pin="B2"/>
 <pinref part="SUPPLY29" gate="GND" pin="GND"/>
 <wire x1="114.3" y1="7.62" x2="116.84" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="7.62" x2="116.84" y2="5.08" width="0.1524" layer="91"/>
@@ -13128,7 +13357,8 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <segment>
 <pinref part="C23" gate="G$1" pin="1"/>
 <pinref part="P+17" gate="1" pin="V+"/>
-<wire x1="116.84" y1="66.04" x2="116.84" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="50.8" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="50.8" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$64" class="0">
@@ -13154,7 +13384,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 </net>
 <net name="N$66" class="0">
 <segment>
-<pinref part="R-MIRROR-BIAS1" gate="G$1" pin="A"/>
+<pinref part="R-MIRROR-BIAS" gate="G$1" pin="A"/>
 <pinref part="R55" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
 </segment>
@@ -13163,9 +13393,9 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <segment>
 <wire x1="71.12" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-5.08" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="IC11" gate="T1-T2" pin="C1"/>
+<pinref part="IC0" gate="T1-T2" pin="C1"/>
 <wire x1="99.06" y1="30.48" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="R-MIRROR-BIAS1" gate="G$1" pin="S"/>
+<pinref part="R-MIRROR-BIAS" gate="G$1" pin="S"/>
 <pinref part="C16" gate="G$1" pin="1"/>
 <wire x1="99.06" y1="27.94" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="25.4" x2="99.06" y2="20.32" width="0.1524" layer="91"/>
@@ -13174,7 +13404,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <junction x="99.06" y="20.32"/>
 <wire x1="68.58" y1="25.4" x2="99.06" y2="25.4" width="0.1524" layer="91"/>
 <junction x="99.06" y="25.4"/>
-<pinref part="R-MIRROR-BIAS1" gate="G$1" pin="E"/>
+<pinref part="R-MIRROR-BIAS" gate="G$1" pin="E"/>
 <wire x1="106.68" y1="35.56" x2="109.22" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="35.56" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
@@ -13260,7 +13490,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 </net>
 <net name="N$80" class="0">
 <segment>
-<pinref part="IC11" gate="T1-T2" pin="B1"/>
+<pinref part="IC0" gate="T1-T2" pin="B1"/>
 <wire x1="88.9" y1="7.62" x2="50.8" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13268,7 +13498,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <segment>
 <pinref part="R64" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
-<pinref part="R-CV1-SCALE1" gate="G$1" pin="A"/>
+<pinref part="R-CV-FREQ-SCALE" gate="G$1" pin="A"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -13335,10 +13565,10 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 </net>
 <net name="RAMP-DOWN-RAW" class="0">
 <segment>
-<pinref part="IC11" gate="T1-T2" pin="C2"/>
+<pinref part="IC0" gate="T1-T2" pin="C2"/>
 <wire x1="104.14" y1="17.78" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="22.86" x2="111.76" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="22.86" x2="127" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="127" y1="22.86" x2="127" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C19" gate="G$1" pin="1"/>
 <junction x="127" y="22.86"/>
@@ -13349,10 +13579,9 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <wire x1="134.62" y1="20.32" x2="127" y2="20.32" width="0.1524" layer="91"/>
 <junction x="127" y="20.32"/>
 <wire x1="162.56" y1="15.24" x2="127" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="22.86" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="P"/>
-<wire x1="119.38" y1="50.8" x2="119.38" y2="45.72" width="0.1524" layer="91"/>
-<junction x="119.38" y="22.86"/>
+<wire x1="111.76" y1="22.86" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="P"/>
+<junction x="111.76" y="22.86"/>
 <wire x1="127" y1="15.24" x2="127" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="127" y1="-17.78" x2="129.54" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="127" y="15.24"/>
@@ -13363,21 +13592,234 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <net name="N$108" class="0">
 <segment>
 <pinref part="C23" gate="G$1" pin="2"/>
-<pinref part="S2" gate="1" pin="O"/>
-<wire x1="116.84" y1="58.42" x2="116.84" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="O"/>
+<wire x1="99.06" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CV-COMBINED" class="0">
 <segment>
-<pinref part="R-CV1-SCALE1" gate="G$1" pin="S"/>
+<pinref part="R-CV-FREQ-SCALE" gate="G$1" pin="S"/>
 <wire x1="0" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
 <label x="-5.08" y="10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="R-CV1-SCALE1" gate="G$1" pin="E"/>
+<pinref part="R-CV-FREQ-SCALE" gate="G$1" pin="E"/>
 <wire x1="-2.54" y1="10.16" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="17.78" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="20.32" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="20.32" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
 <junction x="-2.54" y="10.16"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>Reset
+this part of the circuit will pull the voltage on the cap back up to its max value</description>
+<plain>
+</plain>
+<instances>
+<instance part="RESET" gate="J1" x="-10.16" y="35.56"/>
+<instance part="T1" gate="G1" x="43.18" y="38.1" smashed="yes">
+<attribute name="NAME" x="46.736" y="39.116" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.99" y="36.068" size="1.778" layer="96"/>
+</instance>
+<instance part="Q3" gate="G$1" x="63.5" y="45.72" smashed="yes">
+<attribute name="NAME" x="67.818" y="45.72" size="1.778" layer="95"/>
+<attribute name="VALUE" x="67.818" y="42.672" size="1.778" layer="96"/>
+</instance>
+<instance part="D1" gate="1" x="30.48" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.1874" y="31.242" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.7274" y="28.702" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D2" gate="1" x="30.48" y="7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.9334" y="5.588" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="28.4734" y="3.048" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY21" gate="GND" x="0" y="27.94"/>
+<instance part="R1" gate="G$1" x="12.7" y="38.1" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="44.2214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="41.402" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY22" gate="GND" x="30.48" y="25.4"/>
+<instance part="T3" gate="G1" x="35.56" y="12.7" smashed="yes">
+<attribute name="NAME" x="39.116" y="13.716" size="1.778" layer="95"/>
+<attribute name="VALUE" x="39.37" y="10.668" size="1.778" layer="96"/>
+</instance>
+<instance part="T4" gate="G1" x="78.74" y="25.4" smashed="yes">
+<attribute name="NAME" x="82.296" y="26.416" size="1.778" layer="95"/>
+<attribute name="VALUE" x="82.55" y="23.368" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="12.7" y="12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="18.8214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="16.002" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY23" gate="GND" x="30.48" y="0"/>
+<instance part="SUPPLY24" gate="GND" x="45.72" y="27.94"/>
+<instance part="SUPPLY25" gate="GND" x="38.1" y="2.54"/>
+<instance part="R5" gate="G$1" x="53.34" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="54.61" y="51.8414" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="57.15" y="49.022" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R-RESET-LVL" gate="G$1" x="66.04" y="15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.12" y="22.86" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="68.58" y="17.78" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+4" gate="1" x="81.28" y="35.56"/>
+<instance part="P+7" gate="1" x="66.04" y="55.88"/>
+<instance part="C5" gate="G$1" x="20.32" y="5.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.716" y="5.715" size="1.778" layer="95"/>
+<attribute name="VALUE" x="11.684" y="2.667" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY26" gate="GND" x="20.32" y="-2.54"/>
+<instance part="R6" gate="G$1" x="66.04" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="59.9186" y="34.29" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="62.738" y="36.83" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY27" gate="GND" x="66.04" y="0"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="RESET" gate="J1" pin="P$1"/>
+<wire x1="-2.54" y1="33.02" x2="0" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="SUPPLY21" gate="GND" pin="GND"/>
+<wire x1="0" y1="33.02" x2="0" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="RESET" gate="J1" pin="P3"/>
+<wire x1="-2.54" y1="35.56" x2="0" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="0" y1="35.56" x2="0" y2="33.02" width="0.1524" layer="91"/>
+<junction x="0" y="33.02"/>
+</segment>
+<segment>
+<pinref part="D1" gate="1" pin="A"/>
+<pinref part="SUPPLY22" gate="GND" pin="GND"/>
+<wire x1="30.48" y1="27.94" x2="30.48" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D2" gate="1" pin="A"/>
+<pinref part="SUPPLY23" gate="GND" pin="GND"/>
+<wire x1="30.48" y1="5.08" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T1" gate="G1" pin="E"/>
+<pinref part="SUPPLY24" gate="GND" pin="GND"/>
+<wire x1="45.72" y1="30.48" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T3" gate="G1" pin="E"/>
+<pinref part="SUPPLY25" gate="GND" pin="GND"/>
+<wire x1="38.1" y1="5.08" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="SUPPLY26" gate="GND" pin="GND"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R-RESET-LVL" gate="G$1" pin="E"/>
+<pinref part="SUPPLY27" gate="GND" pin="GND"/>
+<wire x1="66.04" y1="2.54" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R-RESET-LVL" gate="G$1" pin="S"/>
+<wire x1="66.04" y1="5.08" x2="66.04" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="15.24" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="15.24" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
+<junction x="66.04" y="5.08"/>
+</segment>
+</net>
+<net name="V+" class="0">
+<segment>
+<pinref part="T4" gate="G1" pin="C"/>
+<pinref part="P+4" gate="1" pin="V+"/>
+<wire x1="81.28" y1="33.02" x2="81.28" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="Q3" gate="G$1" pin="E"/>
+<pinref part="P+7" gate="1" pin="V+"/>
+<wire x1="66.04" y1="53.34" x2="66.04" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="J1" pin="P2"/>
+<wire x1="7.62" y1="38.1" x2="5.08" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="38.1" x2="-2.54" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
+<junction x="5.08" y="38.1"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="12.7" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="T1" gate="G1" pin="B"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="38.1" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="38.1" y1="38.1" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="38.1" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="35.56" x2="30.48" y2="38.1" width="0.1524" layer="91"/>
+<junction x="30.48" y="38.1"/>
+<pinref part="T3" gate="G1" pin="C"/>
+<wire x1="38.1" y1="17.78" x2="38.1" y2="38.1" width="0.1524" layer="91"/>
+<junction x="38.1" y="38.1"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="20.32" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="12.7" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
+<junction x="30.48" y="12.7"/>
+<wire x1="30.48" y1="12.7" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="T3" gate="G1" pin="B"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
+<junction x="20.32" y="12.7"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="T1" gate="G1" pin="C"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="45.72" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="Q3" gate="G$1" pin="B"/>
+<wire x1="60.96" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R-RESET-LVL" gate="G$1" pin="A"/>
+<wire x1="66.04" y1="27.94" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="T4" gate="G1" pin="B"/>
+<wire x1="66.04" y1="25.4" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="25.4" x2="66.04" y2="25.4" width="0.1524" layer="91"/>
+<junction x="66.04" y="25.4"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="Q3" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RAMP-DOWN-RAW" class="0">
+<segment>
+<pinref part="T4" gate="G1" pin="E"/>
+<wire x1="81.28" y1="20.32" x2="81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
+<label x="83.82" y="12.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
