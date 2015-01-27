@@ -13234,7 +13234,7 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <instance part="IC2" gate="A" x="35.56" y="10.16"/>
 <instance part="IC2" gate="B" x="170.18" y="17.78"/>
 <instance part="IC2" gate="C" x="63.5" y="35.56"/>
-<instance part="IC2" gate="D" x="78.74" y="-7.62"/>
+<instance part="IC2" gate="D" x="78.74" y="-7.62" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -13391,7 +13391,6 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 </net>
 <net name="N$67" class="0">
 <segment>
-<wire x1="71.12" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-5.08" x2="68.58" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="IC0" gate="T1-T2" pin="C1"/>
 <wire x1="99.06" y1="30.48" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
@@ -13409,7 +13408,8 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <wire x1="109.22" y1="35.56" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="27.94" x2="99.06" y2="27.94" width="0.1524" layer="91"/>
 <junction x="99.06" y="27.94"/>
-<pinref part="IC2" gate="D" pin="+IN"/>
+<pinref part="IC2" gate="D" pin="-IN"/>
+<wire x1="71.12" y1="-5.08" x2="68.58" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -13418,12 +13418,12 @@ Control circuitry resets this downward sloping ramp when it falls below some thr
 <pinref part="R61" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="-7.62" x2="63.5" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="-10.16" x2="63.5" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="-10.16" x2="63.5" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="63.5" y="-10.16"/>
 <wire x1="63.5" y1="-10.16" x2="55.88" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="-10.16" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="D" pin="-IN"/>
+<pinref part="IC2" gate="D" pin="+IN"/>
+<wire x1="71.12" y1="-10.16" x2="63.5" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V-" class="0">
