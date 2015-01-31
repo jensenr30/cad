@@ -14315,7 +14315,7 @@ Source: www.kingbright.com</description>
 <part name="R15" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
 <part name="R17" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R25" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
+<part name="R25" library="resistor" deviceset="R-US_" device="0204/7" value="22 kΩ"/>
 <part name="R26" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
 <part name="R27" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
 <part name="R30" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
@@ -14330,6 +14330,10 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY43" library="supply2" deviceset="GND" device=""/>
 <part name="IC9" library="linear" deviceset="TL082" device="P"/>
 <part name="IC10" library="linear" deviceset="TL082" device="P"/>
+<part name="P+1" library="supply1" deviceset="V+" device="" value="+12 V"/>
+<part name="T5" library="transistor" deviceset="2N3904" device=""/>
+<part name="R38" library="resistor" deviceset="R-US_" device="0204/7" value="220 kΩ"/>
+<part name="SUPPLY20" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15254,6 +15258,15 @@ this part of the circuit will pull the voltage on the cap back up to its max val
 <attribute name="VALUE" x="62.738" y="34.29" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY27" gate="GND" x="66.04" y="-2.54"/>
+<instance part="T5" gate="G1" x="22.86" y="-20.32" smashed="yes">
+<attribute name="NAME" x="26.416" y="-19.304" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.67" y="-22.352" size="1.778" layer="96"/>
+</instance>
+<instance part="R38" gate="G$1" x="12.7" y="-20.32" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="-14.1986" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="16.51" y="-17.018" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY20" gate="GND" x="25.4" y="-30.48"/>
 </instances>
 <busses>
 </busses>
@@ -15305,6 +15318,11 @@ this part of the circuit will pull the voltage on the cap back up to its max val
 <wire x1="58.42" y1="2.54" x2="66.04" y2="2.54" width="0.1524" layer="91"/>
 <junction x="66.04" y="2.54"/>
 </segment>
+<segment>
+<pinref part="T5" gate="G1" pin="E"/>
+<pinref part="SUPPLY20" gate="GND" pin="GND"/>
+<wire x1="25.4" y1="-27.94" x2="25.4" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -15328,6 +15346,10 @@ this part of the circuit will pull the voltage on the cap back up to its max val
 <junction x="5.08" y="38.1"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="12.7" x2="5.08" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R38" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-20.32" x2="7.62" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="5.08" y="12.7"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -15386,23 +15408,34 @@ this part of the circuit will pull the voltage on the cap back up to its max val
 <junction x="66.04" y="22.86"/>
 </segment>
 </net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="Q3" gate="G$1" pin="C"/>
-<wire x1="66.04" y1="35.56" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-<junction x="66.04" y="38.1"/>
-<wire x1="66.04" y1="38.1" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<label x="86.36" y="38.1" size="1.778" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="RAMP-DOWN-RAW" class="0">
 <segment>
 <pinref part="T4" gate="G1" pin="E"/>
 <wire x1="81.28" y1="17.78" x2="81.28" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="10.16" x2="83.82" y2="10.16" width="0.1524" layer="91"/>
 <label x="83.82" y="10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="47393747" class="0">
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="Q3" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="35.56" x2="66.04" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="T5" gate="G1" pin="B"/>
+<pinref part="R38" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="-20.32" x2="17.78" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="T5" gate="G1" pin="C"/>
+<wire x1="25.4" y1="-15.24" x2="25.4" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-12.7" x2="27.94" y2="-12.7" width="0.1524" layer="91"/>
+<label x="27.94" y="-12.7" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -16405,13 +16438,16 @@ The brightness of the LED will correspond to the voltage of the signal.</descrip
 <instance part="LED-CV-A" gate="G$1" x="22.86" y="55.88"/>
 <instance part="LED-CV-B" gate="G$1" x="33.02" y="55.88"/>
 <instance part="LED-CV-PWM" gate="G$1" x="43.18" y="55.88"/>
-<instance part="LED-RESET" gate="G$1" x="53.34" y="55.88"/>
-<instance part="LED-RAMP-DOWN" gate="G$1" x="73.66" y="55.88"/>
-<instance part="LED-RAMP-UP" gate="G$1" x="83.82" y="55.88"/>
-<instance part="LED-TRIANGLE" gate="G$1" x="93.98" y="55.88"/>
-<instance part="LED-SINE" gate="G$1" x="104.14" y="55.88"/>
-<instance part="LED-SQUARE" gate="G$1" x="114.3" y="55.88"/>
-<instance part="LED-PWM" gate="G$1" x="124.46" y="55.88"/>
+<instance part="LED-RESET" gate="G$1" x="33.02" y="78.74" smashed="yes" rot="MR90">
+<attribute name="NAME" x="23.876" y="82.296" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="28.448" y="84.455" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="LED-RAMP-DOWN" gate="G$1" x="63.5" y="55.88"/>
+<instance part="LED-RAMP-UP" gate="G$1" x="73.66" y="55.88"/>
+<instance part="LED-TRIANGLE" gate="G$1" x="83.82" y="55.88"/>
+<instance part="LED-SINE" gate="G$1" x="93.98" y="55.88"/>
+<instance part="LED-SQUARE" gate="G$1" x="104.14" y="55.88"/>
+<instance part="LED-PWM" gate="G$1" x="114.3" y="55.88"/>
 <instance part="R15" gate="G$1" x="22.86" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.3586" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="27.178" y="46.99" size="1.778" layer="96" rot="R270"/>
@@ -16424,33 +16460,36 @@ The brightness of the LED will correspond to the voltage of the signal.</descrip
 <attribute name="NAME" x="44.6786" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="47.498" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R25" gate="G$1" x="53.34" y="43.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="54.8386" y="46.99" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="57.658" y="46.99" size="1.778" layer="96" rot="R270"/>
+<instance part="R25" gate="G$1" x="45.72" y="78.74" smashed="yes">
+<attribute name="NAME" x="43.434" y="80.2386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="42.926" y="83.058" size="1.778" layer="96"/>
 </instance>
-<instance part="R26" gate="G$1" x="73.66" y="43.18" smashed="yes" rot="R270">
+<instance part="R26" gate="G$1" x="63.5" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="64.9986" y="46.99" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="67.818" y="46.99" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R27" gate="G$1" x="73.66" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="75.1586" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="77.978" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R27" gate="G$1" x="83.82" y="43.18" smashed="yes" rot="R270">
+<instance part="R30" gate="G$1" x="83.82" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="85.3186" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="88.138" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R30" gate="G$1" x="93.98" y="43.18" smashed="yes" rot="R270">
+<instance part="R31" gate="G$1" x="93.98" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="95.4786" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="98.298" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R31" gate="G$1" x="104.14" y="43.18" smashed="yes" rot="R270">
+<instance part="R32" gate="G$1" x="104.14" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="105.6386" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="108.458" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R32" gate="G$1" x="114.3" y="43.18" smashed="yes" rot="R270">
+<instance part="R33" gate="G$1" x="114.3" y="43.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="115.7986" y="46.99" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="118.618" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R33" gate="G$1" x="124.46" y="43.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="125.9586" y="46.99" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="128.778" y="46.99" size="1.778" layer="96" rot="R270"/>
+<instance part="P+1" gate="1" x="53.34" y="83.82" smashed="yes">
+<attribute name="VALUE" x="57.15" y="79.756" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -16477,61 +16516,53 @@ The brightness of the LED will correspond to the voltage of the signal.</descrip
 <wire x1="43.18" y1="50.8" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="LED-RESET" gate="G$1" pin="C"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="50.8" x2="53.34" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="LED-RAMP-DOWN" gate="G$1" pin="C"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="50.8" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="50.8" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
 <segment>
 <pinref part="LED-RAMP-UP" gate="G$1" pin="C"/>
 <pinref part="R27" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="50.8" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="50.8" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
 <segment>
 <pinref part="LED-TRIANGLE" gate="G$1" pin="C"/>
 <pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="50.8" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="50.8" x2="83.82" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$50" class="0">
 <segment>
 <pinref part="LED-SINE" gate="G$1" pin="C"/>
 <pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="50.8" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="50.8" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$51" class="0">
 <segment>
 <pinref part="LED-SQUARE" gate="G$1" pin="C"/>
 <pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="50.8" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="50.8" x2="104.14" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$52" class="0">
 <segment>
 <pinref part="LED-PWM" gate="G$1" pin="C"/>
 <pinref part="R33" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="50.8" x2="124.46" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="50.8" x2="114.3" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-5V" class="0">
 <segment>
 <pinref part="R33" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="38.1" x2="124.46" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="38.1" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="35.56" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="35.56" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="35.56" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="35.56" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
@@ -16546,30 +16577,27 @@ The brightness of the LED will correspond to the voltage of the signal.</descrip
 <wire x1="33.02" y1="38.1" x2="33.02" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="43.18" y1="38.1" x2="43.18" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="38.1" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="73.66" y1="38.1" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="38.1" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="38.1" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="38.1" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="93.98" y1="38.1" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="38.1" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="38.1" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="38.1" x2="93.98" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="38.1" x2="114.3" y2="35.56" width="0.1524" layer="91"/>
-<junction x="114.3" y="35.56"/>
+<wire x1="104.14" y1="38.1" x2="104.14" y2="35.56" width="0.1524" layer="91"/>
 <junction x="104.14" y="35.56"/>
 <junction x="93.98" y="35.56"/>
 <junction x="83.82" y="35.56"/>
 <junction x="73.66" y="35.56"/>
-<junction x="53.34" y="35.56"/>
+<junction x="63.5" y="35.56"/>
 <junction x="43.18" y="35.56"/>
 <junction x="33.02" y="35.56"/>
-<junction x="63.5" y="35.56"/>
-<wire x1="63.5" y1="35.56" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="27.94" x2="58.42" y2="27.94" width="0.1524" layer="91"/>
-<label x="58.42" y="27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+<junction x="53.34" y="35.56"/>
+<wire x1="53.34" y1="35.56" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="27.94" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<label x="48.26" y="27.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CV-A" class="0">
@@ -16598,58 +16626,72 @@ The brightness of the LED will correspond to the voltage of the signal.</descrip
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="LED-RESET" gate="G$1" pin="A"/>
-<wire x1="53.34" y1="58.42" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
 <label x="20.32" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="LED-RESET" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="RAMP-UP-RAW" class="0">
 <segment>
 <pinref part="LED-RAMP-UP" gate="G$1" pin="A"/>
-<wire x1="83.82" y1="58.42" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="93.98" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="58.42" x2="73.66" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="93.98" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
 <label x="20.32" y="93.98" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TRIANGLE-RAW" class="0">
 <segment>
 <pinref part="LED-TRIANGLE" gate="G$1" pin="A"/>
-<wire x1="93.98" y1="58.42" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="99.06" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="58.42" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="99.06" x2="20.32" y2="99.06" width="0.1524" layer="91"/>
 <label x="20.32" y="99.06" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SINE-RAW" class="0">
 <segment>
 <pinref part="LED-SINE" gate="G$1" pin="A"/>
-<wire x1="104.14" y1="58.42" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="104.14" x2="20.32" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="58.42" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="104.14" x2="20.32" y2="104.14" width="0.1524" layer="91"/>
 <label x="20.32" y="104.14" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SQUARE-RAW" class="0">
 <segment>
 <pinref part="LED-SQUARE" gate="G$1" pin="A"/>
-<wire x1="114.3" y1="58.42" x2="114.3" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="58.42" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="109.22" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
 <label x="20.32" y="109.22" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PWM-RAW" class="0">
 <segment>
 <pinref part="LED-PWM" gate="G$1" pin="A"/>
-<wire x1="124.46" y1="58.42" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="58.42" x2="114.3" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="114.3" x2="20.32" y2="114.3" width="0.1524" layer="91"/>
 <label x="20.32" y="114.3" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RAMP-DOWN-RAW" class="0">
 <segment>
 <pinref part="LED-RAMP-DOWN" gate="G$1" pin="A"/>
-<wire x1="73.66" y1="58.42" x2="73.66" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="58.42" x2="63.5" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="88.9" x2="20.32" y2="88.9" width="0.1524" layer="91"/>
 <label x="20.32" y="88.9" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="V+" class="0">
+<segment>
+<pinref part="R25" gate="G$1" pin="2"/>
+<pinref part="P+1" gate="1" pin="V+"/>
+<wire x1="50.8" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="78.74" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="LED-RESET" gate="G$1" pin="A"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
