@@ -15824,7 +15824,7 @@ It is only active when the CV-PWM jack is empty</text>
 <instance part="IC9" gate="A" x="-33.02" y="-15.24"/>
 <instance part="IC9" gate="B" x="-33.02" y="-30.48"/>
 <instance part="IC10" gate="A" x="7.62" y="-25.4"/>
-<instance part="IC10" gate="B" x="35.56" y="-22.86"/>
+<instance part="IC10" gate="B" x="35.56" y="-22.86" rot="MR180"/>
 </instances>
 <busses>
 </busses>
@@ -15932,12 +15932,12 @@ It is only active when the CV-PWM jack is empty</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="43.18" y1="-22.86" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-22.86" x2="53.34" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-12.7" x2="63.5" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="R-PWM-GAIN" gate="G$1" pin="A"/>
 <wire x1="63.5" y1="-12.7" x2="63.5" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="IC10" gate="B" pin="OUT"/>
+<wire x1="43.18" y1="-22.86" x2="53.34" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWM-RAW" class="0">
@@ -15973,14 +15973,14 @@ It is only active when the CV-PWM jack is empty</text>
 </net>
 <net name="RAMP-UP-RAW" class="0">
 <segment>
-<wire x1="27.94" y1="-20.32" x2="20.32" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="12.7" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
 <label x="15.24" y="12.7" size="1.778" layer="95" rot="MR0" xref="yes"/>
 <wire x1="20.32" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="-20.32" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
 <junction x="20.32" y="12.7"/>
 <pinref part="IC4" gate="A" pin="-IN"/>
-<pinref part="IC10" gate="B" pin="+IN"/>
+<pinref part="IC10" gate="B" pin="-IN"/>
+<wire x1="20.32" y1="-20.32" x2="27.94" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -16079,9 +16079,9 @@ It is only active when the CV-PWM jack is empty</text>
 <junction x="20.32" y="-35.56"/>
 <label x="25.4" y="-35.56" size="1.778" layer="95" xref="yes"/>
 <pinref part="IC10" gate="A" pin="OUT"/>
+<pinref part="IC10" gate="B" pin="+IN"/>
+<wire x1="20.32" y1="-25.4" x2="27.94" y2="-25.4" width="0.1524" layer="91"/>
 <junction x="20.32" y="-25.4"/>
-<pinref part="IC10" gate="B" pin="-IN"/>
-<wire x1="27.94" y1="-25.4" x2="20.32" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
