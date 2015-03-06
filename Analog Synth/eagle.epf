@@ -21,18 +21,18 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/pinhead.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/resistor.lbr"
 
 [Win_1]
-Type="Control Panel"
-Loc="385 97 1557 890"
-State=0
-Number=0
-
-[Win_2]
 Type="CAM Processor"
 Loc="652 321 1251 756"
 State=2
-Number=3
+Number=4
 File="VCA-v1/Voltage Controlled Amplifier v1.brd"
-Job="A:/Engineering/eagle/001 Gerber/sparkfun/sfe-custom-274x.cam"
+Job="A:/Engineering/eagle/001 Gerber/sparkfun/274x-silkscreen-has-Names.cam"
+
+[Win_2]
+Type="Control Panel"
+Loc="385 97 1557 890"
+State=2
+Number=0
 
 [Desktop]
 Screen="3200 2104"
