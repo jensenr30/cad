@@ -201,6 +201,12 @@
 <pad name="P$8" x="1.27" y="-2.54" drill="0.8"/>
 <pad name="P$9" x="-1.27" y="-5.08" drill="0.8"/>
 <pad name="P$10" x="1.27" y="-5.08" drill="0.8"/>
+<text x="-1.905" y="-7.62" size="1.27" layer="21">-12V</text>
+<text x="1.27" y="-7.62" size="1.27" layer="22" rot="MR0">-12V</text>
+<text x="-1.905" y="1.905" size="1.27" layer="22" rot="MR270">GND</text>
+<text x="-1.905" y="-1.905" size="1.27" layer="21" rot="R90">GND</text>
+<text x="-1.905" y="6.35" size="1.27" layer="21">+12V</text>
+<text x="1.905" y="6.35" size="1.27" layer="22" rot="MR0">+12V</text>
 </package>
 </packages>
 <symbols>
