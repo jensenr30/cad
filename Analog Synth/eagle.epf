@@ -360,7 +360,7 @@ UsedLibrary="C:/Program Files (x86)/EAGLE-6.5.0/lbr/resistor.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="168 67 1340 881"
+Loc="96 66 1101 733"
 State=2
 Number=0
 
