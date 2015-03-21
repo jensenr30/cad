@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
@@ -1897,6 +1897,16 @@
 <package name="KNBO_BOSS_SMALL">
 <circle x="0" y="0" radius="9.7234375" width="0.127" layer="101"/>
 </package>
+<package name="ALTOIDS">
+<wire x1="80.771959375" y1="0" x2="13.07545" y2="0" width="0.127" layer="21"/>
+<wire x1="13.07545" y1="0" x2="0" y2="13.07545" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="13.07545" x2="0" y2="44.7725125" width="0.127" layer="21"/>
+<wire x1="0" y1="44.7725125" x2="13.2274875" y2="58" width="0.127" layer="21" curve="-90"/>
+<wire x1="13.2274875" y1="58" x2="80.4526625" y2="58" width="0.127" layer="21"/>
+<wire x1="80.4526625" y1="58" x2="93" y2="45.4526625" width="0.127" layer="21" curve="-90"/>
+<wire x1="93" y1="45.4526625" x2="93" y2="12.228040625" width="0.127" layer="21"/>
+<wire x1="93" y1="12.228040625" x2="80.771959375" y2="0" width="0.127" layer="21" curve="-90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="POTENTIOMETER_TAYDA_6MM">
@@ -2078,6 +2088,17 @@
 </gates>
 <devices>
 <device name="" package="3.5MM_JACK_TAYDA">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ALTOIDS">
+<gates>
+</gates>
+<devices>
+<device name="" package="ALTOIDS">
 <technologies>
 <technology name=""/>
 </technologies>
