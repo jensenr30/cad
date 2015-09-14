@@ -2810,8 +2810,8 @@ design rules under a new name.</description>
 <element name="C21" library="capacitor-wima" package="C5B2.5" value="0.1 µF" x="-57.15" y="-213.36"/>
 <element name="C6" library="capacitor-wima" package="C5B2.5" value="0.1 µF" x="-57.15" y="-220.98"/>
 <element name="R5" library="resistor" package="0204/7" value="2.7 kΩ" x="-57.15" y="-227.33"/>
-<element name="C22" library="rcl" package="C025-060X050" value="10 µF" x="-58.42" y="-233.68"/>
-<element name="C23" library="rcl" package="C025-060X050" value="10 µF" x="-58.42" y="-242.57"/>
+<element name="C22" library="rcl" package="C025-060X050" value="47 µF" x="-58.42" y="-233.68"/>
+<element name="C23" library="rcl" package="C025-060X050" value="100 µF" x="-58.42" y="-242.57"/>
 <element name="C24" library="capacitor-wima" package="C5B2.5" value="0.1 µF" x="-57.15" y="-248.92"/>
 <element name="LED-AUDIO_IN" library="led" package="LED3MM" value="" x="-59.69" y="-255.27"/>
 <element name="LED-ECHO_OUT" library="led" package="LED3MM" value="" x="-59.69" y="-260.35"/>

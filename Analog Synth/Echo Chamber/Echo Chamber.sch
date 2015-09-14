@@ -12205,8 +12205,8 @@ grid 2.54 mm</description>
 <part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="2.7 kΩ"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
-<part name="C22" library="rcl" deviceset="C-US" device="025-060X050" value="10 µF"/>
-<part name="C23" library="rcl" deviceset="C-US" device="025-060X050" value="10 µF"/>
+<part name="C22" library="rcl" deviceset="C-US" device="025-060X050" value="47 µF"/>
+<part name="C23" library="rcl" deviceset="C-US" device="025-060X050" value="100 µF"/>
 <part name="C24" library="capacitor-wima" deviceset="C" device="5/2.5" value="0.1 µF"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
