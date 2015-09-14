@@ -12397,6 +12397,13 @@ Filtering</description>
 <sheet>
 <description>Audio In/Out</description>
 <plain>
+<text x="15.24" y="50.8" size="1.778" layer="98">LED1-TRIM and LED2-TRIM should be adjusted
+so that the LEDs have just turned completely
+off when there is no audio. These need not be
+multi-turn potentiometers.</text>
+<text x="-66.04" y="53.34" size="1.778" layer="98">D5 is to prevent C4 from accumulating a large
+reverse-voltage. Under normal conditions, D5
+should never turn on.</text>
 </plain>
 <instances>
 <instance part="SUPPLY9" gate="GND" x="-50.8" y="27.94"/>
@@ -12715,6 +12722,8 @@ Filtering</description>
 <sheet>
 <description>Echo Module</description>
 <plain>
+<text x="-55.88" y="76.2" size="1.778" layer="98">This circuit was modified from the original
+example circuit from the PT2399 data sheet</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="7.62" y="10.16"/>
@@ -13062,4 +13071,10 @@ Filtering</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
