@@ -8092,12 +8092,33 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="-12V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="+12V">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="-12V" prefix="P-">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="-12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" prefix="P+">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8351,6 +8372,114 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="v-reg">
+<description>&lt;b&gt;Voltage Regulators&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="78LXX">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.098957"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.09954"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.293591"/>
+<pad name="OUT" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="GND" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="IN" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-0.635" y="0.889" size="1.27" layer="51" ratio="10">-</text>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.778" y="-0.635" size="1.27" layer="51" ratio="10">O</text>
+<text x="0.635" y="-0.635" size="1.27" layer="51" ratio="10">I</text>
+</package>
+<package name="79LXX">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.098957"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.09954"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.293591"/>
+<pad name="GND" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="IN" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="OUT" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="-1.778" y="-0.635" size="1.27" layer="51" ratio="10">+</text>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="0.635" y="-0.635" size="1.27" layer="51" ratio="10">O</text>
+<text x="-0.635" y="0.889" size="1.27" layer="51" ratio="10">I</text>
+</package>
+</packages>
+<symbols>
+<symbol name="78XX">
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<text x="2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
+<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
+<text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
+<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="79XX">
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.4064" layer="94"/>
+<text x="2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.032" y="2.794" size="1.524" layer="95">GND</text>
+<text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
+<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
+<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
+<pin name="GND" x="0" y="7.62" visible="off" length="short" direction="in" rot="R270"/>
+<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="78LXX" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="78LXX">
+<connects>
+<connect gate="1" pin="GND" pad="GND"/>
+<connect gate="1" pin="IN" pad="IN"/>
+<connect gate="1" pin="OUT" pad="OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="79LXX" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="79XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="79LXX">
+<connects>
+<connect gate="A" pin="GND" pad="GND"/>
+<connect gate="A" pin="IN" pad="IN"/>
+<connect gate="A" pin="OUT" pad="OUT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8448,6 +8577,29 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="R27" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
 <part name="SUPPLY27" library="supply2" deviceset="-5V" device=""/>
 <part name="U$3" library="!synth_sch" deviceset="EURORACK-POWER" device=""/>
+<part name="IC3" library="v-reg" deviceset="78LXX" device="" value="78L09"/>
+<part name="IC4" library="v-reg" deviceset="78LXX" device=""/>
+<part name="IC5" library="v-reg" deviceset="79LXX" device="" value="79L09\"/>
+<part name="IC6" library="v-reg" deviceset="79LXX" device=""/>
+<part name="C8" library="resistor" deviceset="C-EU" device="025-050X050" value="100p"/>
+<part name="SUPPLY31" library="supply2" deviceset="-5V" device=""/>
+<part name="R28" library="resistor" deviceset="R-US_" device="0204/7" value="7.5"/>
+<part name="R29" library="resistor" deviceset="R-US_" device="0204/7" value="7.5"/>
+<part name="P-3" library="supply1" deviceset="-12V" device=""/>
+<part name="P+1" library="supply1" deviceset="+12V" device=""/>
+<part name="P+2" library="supply1" deviceset="+12V" device=""/>
+<part name="SUPPLY30" library="supply2" deviceset="+5V" device=""/>
+<part name="SUPPLY32" library="supply2" deviceset="+9V" device=""/>
+<part name="P-4" library="supply1" deviceset="-12V" device=""/>
+<part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY37" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY38" library="supply2" deviceset="-9V" device=""/>
+<part name="P+3" library="supply1" deviceset="+12V" device=""/>
+<part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
+<part name="P-5" library="supply1" deviceset="-12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9425,36 +9577,33 @@ This part of the circuit handles the input +-12 V supply lines. It creates inter
 </plain>
 <instances>
 <instance part="U$3" gate="G$1" x="2.54" y="50.8"/>
+<instance part="IC3" gate="1" x="43.18" y="63.5"/>
+<instance part="IC4" gate="1" x="73.66" y="63.5"/>
+<instance part="IC5" gate="A" x="43.18" y="33.02"/>
+<instance part="IC6" gate="A" x="83.82" y="33.02"/>
+<instance part="C8" gate="G$1" x="78.74" y="106.68" rot="MR270"/>
+<instance part="SUPPLY31" gate="-5V" x="93.98" y="27.94"/>
+<instance part="R28" gate="G$1" x="2.54" y="73.66" rot="R90"/>
+<instance part="R29" gate="G$1" x="2.54" y="27.94" rot="R90"/>
+<instance part="P-3" gate="1" x="2.54" y="17.78"/>
+<instance part="P+1" gate="1" x="2.54" y="83.82"/>
+<instance part="P+2" gate="1" x="33.02" y="71.12"/>
+<instance part="SUPPLY30" gate="+5V" x="83.82" y="68.58"/>
+<instance part="SUPPLY32" gate="G$1" x="53.34" y="68.58"/>
+<instance part="P-4" gate="1" x="33.02" y="25.4"/>
+<instance part="SUPPLY34" gate="GND" x="43.18" y="43.18" rot="R180"/>
+<instance part="SUPPLY35" gate="GND" x="43.18" y="53.34"/>
+<instance part="SUPPLY36" gate="GND" x="12.7" y="48.26"/>
+<instance part="SUPPLY37" gate="GND" x="-10.16" y="48.26"/>
+<instance part="SUPPLY38" gate="G$1" x="53.34" y="27.94"/>
+<instance part="P+3" gate="1" x="63.5" y="71.12"/>
+<instance part="SUPPLY39" gate="GND" x="83.82" y="43.18" rot="R180"/>
+<instance part="SUPPLY40" gate="GND" x="73.66" y="53.34"/>
+<instance part="P-5" gate="1" x="73.66" y="25.4"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="N$27" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$3"/>
-<wire x1="0" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="55.88" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$5"/>
-<wire x1="0" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="50.8" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$7"/>
-<wire x1="-5.08" y1="45.72" x2="0" y2="45.72" width="0.1524" layer="91"/>
-<junction x="-5.08" y="50.8"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="P$8"/>
-<wire x1="2.54" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="45.72" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$6"/>
-<wire x1="2.54" y1="50.8" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="50.8" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$4"/>
-<wire x1="7.62" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
-<junction x="7.62" y="50.8"/>
-</segment>
-</net>
 <net name="N$34" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
@@ -9467,6 +9616,7 @@ This part of the circuit handles the input +-12 V supply lines. It creates inter
 <wire x1="7.62" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="66.04" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
 <junction x="2.54" y="66.04"/>
+<pinref part="R28" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -9481,6 +9631,123 @@ This part of the circuit handles the input +-12 V supply lines. It creates inter
 <wire x1="7.62" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="35.56" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
 <junction x="2.54" y="35.56"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="R29" gate="G$1" pin="1"/>
+<pinref part="P-3" gate="1" pin="-12V"/>
+<wire x1="2.54" y1="20.32" x2="2.54" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="A" pin="IN"/>
+<wire x1="35.56" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="P-4" gate="1" pin="-12V"/>
+<wire x1="33.02" y1="33.02" x2="33.02" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="A" pin="IN"/>
+<wire x1="76.2" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="33.02" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="P-5" gate="1" pin="-12V"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="R28" gate="G$1" pin="2"/>
+<pinref part="P+1" gate="1" pin="+12V"/>
+<wire x1="2.54" y1="81.28" x2="2.54" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="1" pin="IN"/>
+<wire x1="35.56" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="63.5" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="IN"/>
+<wire x1="66.04" y1="63.5" x2="63.5" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="P+3" gate="1" pin="+12V"/>
+<wire x1="63.5" y1="63.5" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="GND"/>
+<pinref part="SUPPLY35" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY36" gate="GND" pin="GND"/>
+<wire x1="12.7" y1="53.34" x2="12.7" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$8"/>
+<wire x1="2.54" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="45.72" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$6"/>
+<wire x1="2.54" y1="50.8" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="50.8" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$4"/>
+<wire x1="7.62" y1="53.34" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
+<junction x="7.62" y="50.8"/>
+<junction x="7.62" y="53.34"/>
+<wire x1="7.62" y1="53.34" x2="12.7" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY37" gate="GND" pin="GND"/>
+<wire x1="-10.16" y1="50.8" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<wire x1="0" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="55.88" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$5"/>
+<wire x1="-5.08" y1="53.34" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="0" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="50.8" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$7"/>
+<wire x1="-5.08" y1="45.72" x2="0" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-5.08" y="50.8"/>
+<wire x1="-10.16" y1="53.34" x2="-5.08" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-5.08" y="53.34"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="A" pin="GND"/>
+<pinref part="SUPPLY39" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="1" pin="GND"/>
+<pinref part="SUPPLY40" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="+9V" class="0">
+<segment>
+<pinref part="IC3" gate="1" pin="OUT"/>
+<wire x1="50.8" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="SUPPLY32" gate="G$1" pin="+9V"/>
+<wire x1="53.34" y1="63.5" x2="53.34" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="-9V" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="OUT"/>
+<wire x1="50.8" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="33.02" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY38" gate="G$1" pin="-9V"/>
+</segment>
+</net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="IC4" gate="1" pin="OUT"/>
+<wire x1="81.28" y1="63.5" x2="83.82" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="63.5" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="SUPPLY30" gate="+5V" pin="+5V"/>
+</segment>
+</net>
+<net name="-5V" class="0">
+<segment>
+<pinref part="IC6" gate="A" pin="OUT"/>
+<wire x1="91.44" y1="33.02" x2="93.98" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="33.02" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="SUPPLY31" gate="-5V" pin="-5V"/>
 </segment>
 </net>
 </nets>
