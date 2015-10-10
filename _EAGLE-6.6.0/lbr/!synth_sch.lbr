@@ -248,6 +248,8 @@
 <text x="-1.651" y="-1.651" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="1.397" y="0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="CA3096">
+</package>
 </packages>
 <symbols>
 <symbol name="8038">
@@ -442,6 +444,8 @@
 <text x="10.668" y="0.254" size="1.016" layer="97">9</text>
 <text x="10.668" y="35.814" size="1.016" layer="97">16</text>
 </symbol>
+<symbol name="CA3096">
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="8038">
@@ -590,6 +594,17 @@
 <connect gate="G$1" pin="P$8" pad="8"/>
 <connect gate="G$1" pin="P$9" pad="9"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CA3096">
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
