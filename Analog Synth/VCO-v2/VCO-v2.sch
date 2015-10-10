@@ -7648,6 +7648,54 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="-1.27" y="1.016" size="0.9906" layer="21">&gt;NAME</text>
 <text x="-2.794" y="-2.794" size="0.9906" layer="21">&gt;VALUE</text>
 </package>
+<package name="EURORACK-POWER">
+<wire x1="-4.365625" y1="9.921875" x2="-4.365625" y2="-9.921875" width="0.127" layer="21"/>
+<wire x1="4.365625" y1="9.921875" x2="4.365625" y2="-9.921875" width="0.127" layer="21"/>
+<wire x1="-4.365625" y1="9.921875" x2="4.365625" y2="9.921875" width="0.127" layer="21"/>
+<wire x1="-4.365625" y1="-9.921875" x2="4.365625" y2="-9.921875" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.175" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.905" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="3.175" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-0.635" x2="3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0.635" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="1.905" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.905" x2="3.175" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="4.3434" y2="2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="4.3434" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.905" x2="4.3434" y2="-1.905" width="0.127" layer="21"/>
+<wire x1="4.3434" y1="-1.27" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-0.635" x2="4.3434" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="4.3434" y1="0" x2="3.175" y2="0" width="0.127" layer="21"/>
+<wire x1="3.175" y1="0.635" x2="4.3434" y2="0.635" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.3434" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.905" x2="4.3434" y2="1.905" width="0.127" layer="21"/>
+<rectangle x1="3.2004" y1="-2.5146" x2="4.3434" y2="2.54" layer="21"/>
+<wire x1="-3.81" y1="9.525" x2="-3.81" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-9.525" x2="3.81" y2="-9.525" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-9.525" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="2.54" x2="3.81" y2="9.525" width="0.127" layer="21"/>
+<wire x1="3.81" y1="9.525" x2="-3.81" y2="9.525" width="0.127" layer="21"/>
+<pad name="P$1" x="-1.27" y="5.08" drill="0.8"/>
+<pad name="P$2" x="1.27" y="5.08" drill="0.8"/>
+<pad name="P$3" x="-1.27" y="2.54" drill="0.8"/>
+<pad name="P$4" x="1.27" y="2.54" drill="0.8"/>
+<pad name="P$5" x="-1.27" y="0" drill="0.8"/>
+<pad name="P$6" x="1.27" y="0" drill="0.8"/>
+<pad name="P$7" x="-1.27" y="-2.54" drill="0.8"/>
+<pad name="P$8" x="1.27" y="-2.54" drill="0.8"/>
+<pad name="P$9" x="-1.27" y="-5.08" drill="0.8"/>
+<pad name="P$10" x="1.27" y="-5.08" drill="0.8"/>
+<text x="-1.905" y="-7.62" size="1.27" layer="21">-12V</text>
+<text x="1.27" y="-7.62" size="1.27" layer="22" rot="MR0">-12V</text>
+<text x="-1.905" y="1.905" size="1.27" layer="22" rot="MR270">GND</text>
+<text x="-1.905" y="-1.905" size="1.27" layer="21" rot="R90">GND</text>
+<text x="-1.905" y="6.35" size="1.27" layer="21">+12V</text>
+<text x="1.905" y="6.35" size="1.27" layer="22" rot="MR0">+12V</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MONO_JACK">
@@ -7709,6 +7757,37 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <text x="-3.302" y="3.302" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-3.302" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="EURORACK-POWER">
+<wire x1="2.54" y1="12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="2.54" y2="12.7" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="0" y="10.16" radius="0.508" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="0.508" width="0.254" layer="94"/>
+<text x="-2.032" y="11.43" size="0.8128" layer="94">+12</text>
+<text x="-2.032" y="-8.89" size="0.8128" layer="94">-12</text>
+<text x="-2.286" y="1.27" size="0.8128" layer="94">Gnd</text>
+<circle x="0" y="5.08" radius="0.508" width="0.254" layer="94"/>
+<text x="-2.032" y="6.35" size="0.8128" layer="94">Gnd</text>
+<circle x="-2.54" y="0" radius="0.508" width="0.254" layer="94"/>
+<circle x="-2.54" y="5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="0.508" width="0.254" layer="94"/>
+<text x="-2.286" y="-3.81" size="0.8128" layer="94">Gnd</text>
+<circle x="-2.54" y="-5.08" radius="0.508" width="0.254" layer="94"/>
+<circle x="-2.54" y="-10.16" radius="0.508" width="0.254" layer="94"/>
+<circle x="-2.54" y="10.16" radius="0.508" width="0.254" layer="94"/>
+<pin name="P$1" x="-2.54" y="10.16" visible="off" length="point" rot="R180"/>
+<pin name="P$2" x="0" y="10.16" visible="off" length="point"/>
+<pin name="P$3" x="-2.54" y="5.08" visible="off" length="point" rot="R180"/>
+<pin name="P$4" x="0" y="5.08" visible="off" length="point"/>
+<pin name="P$5" x="-2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="P$6" x="0" y="0" visible="off" length="point"/>
+<pin name="P$7" x="-2.54" y="-5.08" visible="off" length="point" rot="R180"/>
+<pin name="P$8" x="0" y="-5.08" visible="off" length="point"/>
+<pin name="P$9" x="-2.54" y="-10.16" visible="off" length="point" rot="R180"/>
+<pin name="P$10" x="0" y="-10.16" visible="off" length="point"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MONO_JACK">
@@ -7740,6 +7819,30 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <connect gate="G$1" pin="D" pad="D"/>
 <connect gate="G$1" pin="G" pad="G"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EURORACK-POWER">
+<gates>
+<gate name="G$1" symbol="EURORACK-POWER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EURORACK-POWER">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$10" pad="P$10"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8344,6 +8447,7 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="R26" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
 <part name="R27" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
 <part name="SUPPLY27" library="supply2" deviceset="-5V" device=""/>
+<part name="U$3" library="!synth_sch" deviceset="EURORACK-POWER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8703,8 +8807,6 @@ be made externally.</text>
 <attribute name="VALUE" x="15.24" y="17.78" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="IC2" gate="B" x="152.4" y="66.04" rot="MR180"/>
-<instance part="IC2" gate="C" x="200.66" y="55.88"/>
-<instance part="IC2" gate="D" x="226.06" y="50.8"/>
 <instance part="R8" gate="G$1" x="33.02" y="20.32"/>
 <instance part="C4" gate="G$1" x="10.16" y="30.48" rot="R90"/>
 <instance part="SUPPLY13" gate="GND" x="2.54" y="12.7"/>
@@ -9300,6 +9402,85 @@ transients are injected back into the CV_SUM_POINT to raise the effective CV sli
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-10.16" x2="111.76" y2="-10.16" width="0.1524" layer="91"/>
 <label x="111.76" y="-10.16" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="IC2" gate="C" x="7.62" y="35.56"/>
+<instance part="IC2" gate="D" x="38.1" y="35.56"/>
+</instances>
+<busses>
+</busses>
+<nets>
+</nets>
+</sheet>
+<sheet>
+<description>Power
+This part of the circuit handles the input +-12 V supply lines. It creates internal regulated voltage supplies for +5, +9, -5, and -9 V.</description>
+<plain>
+</plain>
+<instances>
+<instance part="U$3" gate="G$1" x="2.54" y="50.8"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="N$27" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$3"/>
+<wire x1="0" y1="55.88" x2="-5.08" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="55.88" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$5"/>
+<wire x1="0" y1="50.8" x2="-5.08" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="50.8" x2="-5.08" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$7"/>
+<wire x1="-5.08" y1="45.72" x2="0" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-5.08" y="50.8"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$8"/>
+<wire x1="2.54" y1="45.72" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="45.72" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$6"/>
+<wire x1="2.54" y1="50.8" x2="7.62" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="50.8" x2="7.62" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$4"/>
+<wire x1="7.62" y1="55.88" x2="2.54" y2="55.88" width="0.1524" layer="91"/>
+<junction x="7.62" y="50.8"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="0" y1="60.96" x2="-5.08" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="60.96" x2="-5.08" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="66.04" x2="2.54" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="66.04" x2="7.62" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
+<wire x1="7.62" y1="60.96" x2="2.54" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="66.04" x2="2.54" y2="68.58" width="0.1524" layer="91"/>
+<junction x="2.54" y="66.04"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="P$9"/>
+<wire x1="0" y1="40.64" x2="-5.08" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="40.64" x2="-5.08" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="35.56" x2="2.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="35.56" x2="7.62" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="P$10"/>
+<wire x1="7.62" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="35.56" x2="2.54" y2="33.02" width="0.1524" layer="91"/>
+<junction x="2.54" y="35.56"/>
 </segment>
 </net>
 </nets>
