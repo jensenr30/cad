@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,12 +53,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -8173,6 +8173,81 @@ Distributor Buerklin, 11G810</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-small-signal">
+<description>&lt;b&gt;Small Signal Transistors&lt;/b&gt;&lt;p&gt;
+Packages from :&lt;br&gt;
+www.infineon.com; &lt;br&gt;
+www.semiconductors.com;&lt;br&gt;
+www.irf.com&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92R">
+<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
+<pad name="D" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="S" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="G" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="0" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="JFETN">
+<wire x1="2.54" y1="-1.905" x2="0.5334" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.667" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="0.508" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="0" x2="-1.524" y2="0.508" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="0.508" x2="-1.524" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-0.508" x2="-0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.397" y2="0.254" width="0.3048" layer="94"/>
+<wire x1="-1.397" y1="0.254" x2="-1.397" y2="-0.254" width="0.3048" layer="94"/>
+<wire x1="-1.397" y1="-0.254" x2="-0.762" y2="0" width="0.3048" layer="94"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.27" y="2.54" size="0.8128" layer="93">D</text>
+<text x="1.27" y="-3.175" size="0.8128" layer="93">S</text>
+<text x="-3.175" y="-1.27" size="0.8128" layer="93">G</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="G" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="J310" prefix="Q">
+<description>&lt;b&gt;N-Channel RF Amplifier&lt;/b&gt; J309, J310&lt;p&gt;
+Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
+<gates>
+<gate name="1" symbol="JFETN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92R">
+<connects>
+<connect gate="1" pin="D" pad="D"/>
+<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8242,6 +8317,33 @@ Distributor Buerklin, 11G810</description>
 <part name="T3" library="transistor-neu-to92" deviceset="2N3904" device=""/>
 <part name="R19" library="resistor" deviceset="R-US_" device="0204/7" value="2.2k"/>
 <part name="R20" library="resistor" deviceset="R-US_" device="0204/7" value="100k"/>
+<part name="SUPPLY14" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY15" library="supply2" deviceset="+9V" device=""/>
+<part name="SUPPLY19" library="supply2" deviceset="-5V" device=""/>
+<part name="SUPPLY20" library="supply2" deviceset="-5V" device=""/>
+<part name="Q1" library="transistor-small-signal" deviceset="J310" device=""/>
+<part name="SUPPLY28" library="supply2" deviceset="-5V" device=""/>
+<part name="SUPPLY29" library="supply2" deviceset="GND" device=""/>
+<part name="T7" library="transistor-neu-to92" deviceset="2N3904" device=""/>
+<part name="HIGH-FREQ" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k trim"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="025-050X050" value="300p"/>
+<part name="R21" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="R22" library="resistor" deviceset="R-US_" device="0204/7" value="100k"/>
+<part name="SUPPLY21" library="supply2" deviceset="-5V" device=""/>
+<part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
+<part name="R23" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="Q2" library="transistor-small-signal" deviceset="J310" device=""/>
+<part name="SUPPLY23" library="supply2" deviceset="-5V" device=""/>
+<part name="SUPPLY24" library="supply2" deviceset="GND" device=""/>
+<part name="T4" library="transistor-neu-to92" deviceset="2N3904" device=""/>
+<part name="C6" library="resistor" deviceset="C-EU" device="025-050X050" value="300p"/>
+<part name="R24" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="R25" library="resistor" deviceset="R-US_" device="0204/7" value="100k"/>
+<part name="SUPPLY25" library="supply2" deviceset="-5V" device=""/>
+<part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
+<part name="R26" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="R27" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
+<part name="SUPPLY27" library="supply2" deviceset="-5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8839,8 +8941,8 @@ This part of the circuit detects when the voltage across the capacitors is too h
 <instance part="R13" gate="G$1" x="-15.24" y="15.24" rot="R180"/>
 <instance part="R15" gate="G$1" x="-27.94" y="15.24" rot="R180"/>
 <instance part="R16" gate="G$1" x="7.62" y="40.64" rot="R90"/>
-<instance part="SUPPLY16" gate="G$1" x="17.78" y="53.34"/>
-<instance part="SUPPLY17" gate="-5V" x="30.48" y="0"/>
+<instance part="SUPPLY16" gate="G$1" x="58.42" y="50.8"/>
+<instance part="SUPPLY17" gate="-5V" x="7.62" y="5.08"/>
 <instance part="SUPPLY18" gate="G$1" x="-5.08" y="-5.08"/>
 <instance part="R17" gate="G$1" x="25.4" y="40.64" rot="MR270"/>
 <instance part="R18" gate="G$1" x="-2.54" y="22.86" rot="R90"/>
@@ -8854,6 +8956,10 @@ This part of the circuit detects when the voltage across the capacitors is too h
 </instance>
 <instance part="R19" gate="G$1" x="58.42" y="40.64" rot="R90"/>
 <instance part="R20" gate="G$1" x="43.18" y="22.86" rot="R180"/>
+<instance part="SUPPLY14" gate="G$1" x="7.62" y="50.8"/>
+<instance part="SUPPLY15" gate="G$1" x="25.4" y="50.8"/>
+<instance part="SUPPLY19" gate="-5V" x="25.4" y="5.08"/>
+<instance part="SUPPLY20" gate="-5V" x="58.42" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -8917,40 +9023,6 @@ This part of the circuit detects when the voltage across the capacitors is too h
 <junction x="-5.08" y="0"/>
 </segment>
 </net>
-<net name="-5V" class="0">
-<segment>
-<pinref part="T1" gate="G1" pin="E"/>
-<wire x1="7.62" y1="10.16" x2="7.62" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="10.16" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
-<junction x="30.48" y="5.08"/>
-<pinref part="SUPPLY17" gate="-5V" pin="-5V"/>
-<wire x1="30.48" y1="5.08" x2="30.48" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G1" pin="E"/>
-<pinref part="T3" gate="G1" pin="E"/>
-<wire x1="58.42" y1="10.16" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="5.08" x2="30.48" y2="5.08" width="0.1524" layer="91"/>
-<junction x="25.4" y="5.08"/>
-<wire x1="30.48" y1="5.08" x2="25.4" y2="5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+9V" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="48.26" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="48.26" x2="17.78" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="48.26" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
-<junction x="17.78" y="48.26"/>
-<pinref part="SUPPLY16" gate="G$1" pin="+9V"/>
-<wire x1="17.78" y1="48.26" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="R19" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="45.72" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
-<junction x="25.4" y="48.26"/>
-</segment>
-</net>
 <net name="RAMP_UP" class="0">
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -8997,6 +9069,237 @@ This part of the circuit detects when the voltage across the capacitors is too h
 <wire x1="25.4" y1="33.02" x2="27.94" y2="33.02" width="0.1524" layer="91"/>
 <junction x="25.4" y="33.02"/>
 <label x="27.94" y="33.02" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="+9V" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="48.26" x2="7.62" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="G$1" pin="+9V"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="48.26" x2="25.4" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY15" gate="G$1" pin="+9V"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="45.72" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="SUPPLY16" gate="G$1" pin="+9V"/>
+</segment>
+</net>
+<net name="-5V" class="0">
+<segment>
+<pinref part="T2" gate="G1" pin="E"/>
+<wire x1="25.4" y1="10.16" x2="25.4" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY19" gate="-5V" pin="-5V"/>
+</segment>
+<segment>
+<pinref part="T3" gate="G1" pin="E"/>
+<wire x1="58.42" y1="10.16" x2="58.42" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY20" gate="-5V" pin="-5V"/>
+</segment>
+<segment>
+<pinref part="T1" gate="G1" pin="E"/>
+<pinref part="SUPPLY17" gate="-5V" pin="-5V"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<description>High Frequency Compensation
+This part of the circuit is responsible for compensating for the oscillator's switching time when transitioning between positive and negative slopes.
+transients are injected back into the CV_SUM_POINT to raise the effective CV slightly at high frequencies</description>
+<plain>
+</plain>
+<instances>
+<instance part="Q1" gate="1" x="43.18" y="-10.16"/>
+<instance part="SUPPLY28" gate="-5V" x="45.72" y="-25.4"/>
+<instance part="SUPPLY29" gate="GND" x="45.72" y="15.24" rot="R180"/>
+<instance part="T7" gate="G1" x="33.02" y="0" smashed="yes" rot="MR90">
+<attribute name="NAME" x="26.67" y="-0.508" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="27.178" y="2.286" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="HIGH-FREQ" gate="G$1" x="66.04" y="-12.7" smashed="yes" rot="MR180">
+<attribute name="NAME" x="60.96" y="-6.35" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="63.5" y="-6.858" size="1.778" layer="96" rot="MR270"/>
+</instance>
+<instance part="C7" gate="G$1" x="25.4" y="-10.16" rot="MR270"/>
+<instance part="R21" gate="G$1" x="45.72" y="5.08" rot="R90"/>
+<instance part="R22" gate="G$1" x="35.56" y="-17.78" rot="R90"/>
+<instance part="SUPPLY21" gate="-5V" x="35.56" y="-25.4"/>
+<instance part="SUPPLY22" gate="GND" x="33.02" y="15.24" rot="R180"/>
+<instance part="R23" gate="G$1" x="55.88" y="-2.54"/>
+<instance part="Q2" gate="1" x="88.9" y="-10.16" rot="MR0"/>
+<instance part="SUPPLY23" gate="-5V" x="86.36" y="-25.4" rot="MR0"/>
+<instance part="SUPPLY24" gate="GND" x="86.36" y="15.24" rot="MR180"/>
+<instance part="T4" gate="G1" x="99.06" y="0" smashed="yes" rot="R90">
+<attribute name="NAME" x="105.41" y="-0.508" size="1.778" layer="95"/>
+<attribute name="VALUE" x="104.902" y="2.286" size="1.778" layer="96"/>
+</instance>
+<instance part="C6" gate="G$1" x="106.68" y="-10.16" rot="R270"/>
+<instance part="R24" gate="G$1" x="86.36" y="5.08" rot="MR90"/>
+<instance part="R25" gate="G$1" x="96.52" y="-17.78" rot="MR90"/>
+<instance part="SUPPLY25" gate="-5V" x="96.52" y="-25.4" rot="MR0"/>
+<instance part="SUPPLY26" gate="GND" x="99.06" y="15.24" rot="MR180"/>
+<instance part="R26" gate="G$1" x="76.2" y="-2.54" rot="MR0"/>
+<instance part="R27" gate="G$1" x="73.66" y="-20.32" rot="MR270"/>
+<instance part="SUPPLY27" gate="-5V" x="66.04" y="-25.4"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="-5V" class="0">
+<segment>
+<pinref part="Q1" gate="1" pin="S"/>
+<pinref part="SUPPLY28" gate="-5V" pin="-5V"/>
+<wire x1="45.72" y1="-22.86" x2="45.72" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="SUPPLY21" gate="-5V" pin="-5V"/>
+</segment>
+<segment>
+<pinref part="Q2" gate="1" pin="S"/>
+<pinref part="SUPPLY23" gate="-5V" pin="-5V"/>
+<wire x1="86.36" y1="-22.86" x2="86.36" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R25" gate="G$1" pin="1"/>
+<pinref part="SUPPLY25" gate="-5V" pin="-5V"/>
+</segment>
+<segment>
+<pinref part="HIGH-FREQ" gate="G$1" pin="E"/>
+<wire x1="66.04" y1="-20.32" x2="66.04" y2="-22.86" width="0.1524" layer="91"/>
+<pinref part="SUPPLY27" gate="-5V" pin="-5V"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="SUPPLY29" gate="GND" pin="GND"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="12.7" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T7" gate="G1" pin="C"/>
+<wire x1="38.1" y1="2.54" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="7.62" x2="33.02" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="7.62" x2="27.94" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="T7" gate="G1" pin="E"/>
+<wire x1="33.02" y1="7.62" x2="33.02" y2="12.7" width="0.1524" layer="91"/>
+<junction x="33.02" y="7.62"/>
+<pinref part="SUPPLY22" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="SUPPLY24" gate="GND" pin="GND"/>
+<pinref part="R24" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="12.7" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="T4" gate="G1" pin="C"/>
+<wire x1="93.98" y1="2.54" x2="93.98" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="7.62" x2="99.06" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="7.62" x2="104.14" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="7.62" x2="104.14" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="T4" gate="G1" pin="E"/>
+<wire x1="99.06" y1="7.62" x2="99.06" y2="12.7" width="0.1524" layer="91"/>
+<junction x="99.06" y="7.62"/>
+<pinref part="SUPPLY26" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="R21" gate="G$1" pin="1"/>
+<pinref part="Q1" gate="1" pin="D"/>
+<wire x1="45.72" y1="0" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R23" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="-2.54" x2="45.72" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-2.54" x2="45.72" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="45.72" y="-2.54"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="Q1" gate="1" pin="G"/>
+<wire x1="38.1" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-10.16" x2="35.56" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="R22" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-10.16" x2="35.56" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="35.56" y="-10.16"/>
+<pinref part="T7" gate="G1" pin="B"/>
+<wire x1="33.02" y1="-2.54" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="-10.16" x2="30.48" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="33.02" y="-10.16"/>
+</segment>
+</net>
+<net name="RAMP_UP" class="0">
+<segment>
+<wire x1="22.86" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<label x="20.32" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="Q2" gate="1" pin="D"/>
+<wire x1="86.36" y1="0" x2="86.36" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="-2.54" x2="86.36" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-2.54" x2="86.36" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="86.36" y="-2.54"/>
+</segment>
+</net>
+<net name="N$31" class="0">
+<segment>
+<pinref part="Q2" gate="1" pin="G"/>
+<wire x1="93.98" y1="-10.16" x2="96.52" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="-10.16" x2="96.52" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="96.52" y1="-10.16" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="96.52" y="-10.16"/>
+<pinref part="T4" gate="G1" pin="B"/>
+<wire x1="99.06" y1="-2.54" x2="99.06" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="99.06" y1="-10.16" x2="101.6" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="99.06" y="-10.16"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="R23" gate="G$1" pin="2"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="71.12" y1="-2.54" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="HIGH-FREQ" gate="G$1" pin="A"/>
+<wire x1="66.04" y1="-2.54" x2="60.96" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-5.08" x2="66.04" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="66.04" y="-2.54"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="HIGH-FREQ" gate="G$1" pin="S"/>
+<wire x1="71.12" y1="-12.7" x2="73.66" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-12.7" x2="73.66" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="CV_SUM_POINT" class="0">
+<segment>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="73.66" y1="-25.4" x2="73.66" y2="-38.1" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-38.1" x2="76.2" y2="-38.1" width="0.1524" layer="91"/>
+<label x="76.2" y="-38.1" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="RAMP_DOWN" class="0">
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-10.16" x2="111.76" y2="-10.16" width="0.1524" layer="91"/>
+<label x="111.76" y="-10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
