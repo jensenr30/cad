@@ -19310,8 +19310,8 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <description>Sine Output
 This part of the circuit processes the triangle wave nonlinearly to shape it into a fairly sineusoidal waveform.</description>
 <plain>
-<text x="-27.94" y="81.28" size="1.778" layer="97">Triangle to Sine converter is a modified
-version of Thomas Henry's design.</text>
+<text x="-30.48" y="81.28" size="1.778" layer="97">This triangle-to-sine converter is a
+modified version of Thomas Henry's design.</text>
 </plain>
 <instances>
 <instance part="R-SINE-ROUND" gate="G$1" x="0" y="45.72" smashed="yes" rot="R180">
