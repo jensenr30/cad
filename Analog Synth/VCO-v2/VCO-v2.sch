@@ -16135,6 +16135,8 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="SUPPLY46" library="supply2" deviceset="GND" device=""/>
 <part name="PWM" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
+<part name="ATTN-CV-PWM" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k lin"/>
+<part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17495,19 +17497,19 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <plain>
 </plain>
 <instances>
-<instance part="IC7" gate="B" x="7.62" y="53.34"/>
+<instance part="IC7" gate="B" x="5.08" y="73.66"/>
 <instance part="IC7" gate="A" x="45.72" y="35.56" rot="MR180"/>
 <instance part="IC2" gate="D" x="68.58" y="48.26"/>
 <instance part="R33" gate="G$1" x="27.94" y="38.1"/>
-<instance part="R34" gate="G$1" x="27.94" y="45.72"/>
+<instance part="R34" gate="G$1" x="27.94" y="55.88"/>
 <instance part="R35" gate="G$1" x="86.36" y="48.26"/>
 <instance part="R36" gate="G$1" x="93.98" y="40.64" rot="R90"/>
 <instance part="SUPPLY40" gate="GND" x="93.98" y="33.02"/>
-<instance part="R37" gate="G$1" x="-5.08" y="55.88"/>
-<instance part="CV-PWM" gate="J1" x="-20.32" y="53.34" smashed="yes">
-<attribute name="NAME" x="-36.576" y="53.34" size="1.778" layer="96"/>
+<instance part="R37" gate="G$1" x="-7.62" y="76.2"/>
+<instance part="CV-PWM" gate="J1" x="-22.86" y="73.66" smashed="yes">
+<attribute name="NAME" x="-39.116" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY41" gate="GND" x="-10.16" y="45.72"/>
+<instance part="SUPPLY41" gate="GND" x="-12.7" y="66.04"/>
 <instance part="R38" gate="G$1" x="45.72" y="45.72"/>
 <instance part="SUPPLY42" gate="+5V" x="0" y="15.24" rot="R180"/>
 <instance part="SUPPLY43" gate="-5V" x="0" y="35.56" rot="R180"/>
@@ -17520,6 +17522,11 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <attribute name="NAME" x="122.936" y="45.72" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY36" gate="GND" x="101.6" y="38.1"/>
+<instance part="ATTN-CV-PWM" gate="G$1" x="17.78" y="55.88" smashed="yes">
+<attribute name="NAME" x="12.7" y="46.99" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="15.24" y="50.8" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY39" gate="GND" x="17.78" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -17549,12 +17556,12 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 </segment>
 <segment>
 <pinref part="CV-PWM" gate="J1" pin="P3"/>
-<wire x1="-12.7" y1="53.34" x2="-10.16" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="53.34" x2="-10.16" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="73.66" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="73.66" x2="-12.7" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="CV-PWM" gate="J1" pin="P$1"/>
-<wire x1="-10.16" y1="50.8" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="50.8" x2="-10.16" y2="48.26" width="0.1524" layer="91"/>
-<junction x="-10.16" y="50.8"/>
+<wire x1="-12.7" y1="71.12" x2="-15.24" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="71.12" x2="-12.7" y2="68.58" width="0.1524" layer="91"/>
+<junction x="-12.7" y="71.12"/>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -17569,14 +17576,18 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <pinref part="PWM" gate="J1" pin="P$1"/>
 <wire x1="101.6" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="ATTN-CV-PWM" gate="G$1" pin="A"/>
+<pinref part="SUPPLY39" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="TRIANGLE" class="0">
 <segment>
 <pinref part="IC2" gate="D" pin="+IN"/>
 <wire x1="60.96" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="50.8" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<label x="53.34" y="55.88" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="55.88" y1="50.8" x2="55.88" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<label x="53.34" y="78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$39" class="0">
@@ -17588,21 +17599,21 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <net name="N$40" class="0">
 <segment>
 <pinref part="IC7" gate="B" pin="-IN"/>
-<wire x1="0" y1="50.8" x2="-2.54" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="50.8" x2="-2.54" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="45.72" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="71.12" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="71.12" x2="-5.08" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="66.04" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="66.04" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="B" pin="OUT"/>
-<wire x1="20.32" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R34" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
-<junction x="20.32" y="45.72"/>
+<wire x1="17.78" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="ATTN-CV-PWM" gate="G$1" pin="E"/>
+<wire x1="17.78" y1="63.5" x2="17.78" y2="66.04" width="0.1524" layer="91"/>
+<junction x="17.78" y="66.04"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
-<wire x1="-10.16" y1="55.88" x2="-12.7" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="76.2" x2="-15.24" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="CV-PWM" gate="J1" pin="P2"/>
 </segment>
 </net>
@@ -17612,7 +17623,8 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <wire x1="33.02" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="38.1" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R34" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="55.88" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <junction x="35.56" y="45.72"/>
 <pinref part="IC7" gate="A" pin="-IN"/>
 <wire x1="38.1" y1="38.1" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
@@ -17652,6 +17664,12 @@ This part of the circuit processes the PWM inputs, the triangle waveform, and ge
 <segment>
 <pinref part="SUPPLY43" gate="-5V" pin="-5V"/>
 <pinref part="PWM-MAN" gate="G$1" pin="E"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="R34" gate="G$1" pin="1"/>
+<pinref part="ATTN-CV-PWM" gate="G$1" pin="S"/>
 </segment>
 </net>
 </nets>

@@ -2946,6 +2946,7 @@ design rules under a new name.</description>
 <element name="R38" library="resistor" package="0204/7" value="100k" x="-82.55" y="-167.64"/>
 <element name="PWM-MAN" library="pot" package="B64Y" value="100k lin" x="-83.82" y="-172.72"/>
 <element name="PWM" library="!synth_sch" package="MONO_JACK" value="I/O" x="-82.55" y="-177.8"/>
+<element name="ATTN-CV-PWM" library="pot" package="B64Y" value="100k lin" x="-83.82" y="-184.15"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3013,9 +3014,11 @@ design rules under a new name.</description>
 <contactref element="CV-PWM" pad="P$1"/>
 <contactref element="IC7" pad="3"/>
 <contactref element="PWM" pad="P$1"/>
+<contactref element="ATTN-CV-PWM" pad="A"/>
 <wire x1="-82.55" y1="-162.56" x2="-85.09" y2="-162.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.36" y1="-154.94" x2="-85.09" y2="-162.56" width="0" layer="19" extent="1-1"/>
 <wire x1="-85.09" y1="-177.8" x2="-85.09" y2="-162.56" width="0" layer="19" extent="1-1"/>
+<wire x1="-81.28" y1="-184.15" x2="-85.09" y2="-177.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-78.74" y1="-138.43" x2="-86.36" y2="-154.94" width="0" layer="19" extent="1-1"/>
 <wire x1="-85.09" y1="-121.92" x2="-78.74" y2="-138.43" width="0" layer="19" extent="1-1"/>
 <wire x1="-86.36" y1="-114.3" x2="-85.09" y2="-121.92" width="0" layer="19" extent="1-1"/>
@@ -3492,9 +3495,9 @@ design rules under a new name.</description>
 <signal name="N$40">
 <contactref element="IC7" pad="6"/>
 <contactref element="IC7" pad="7"/>
-<contactref element="R34" pad="1"/>
-<wire x1="-71.12" y1="-138.43" x2="-86.36" y2="-147.32" width="0" layer="19" extent="1-1"/>
+<contactref element="ATTN-CV-PWM" pad="E"/>
 <wire x1="-68.58" y1="-138.43" x2="-71.12" y2="-138.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-86.36" y1="-184.15" x2="-71.12" y2="-138.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$41">
 <contactref element="R37" pad="1"/>
@@ -3521,6 +3524,11 @@ design rules under a new name.</description>
 <contactref element="PWM-MAN" pad="S"/>
 <contactref element="R33" pad="1"/>
 <wire x1="-83.82" y1="-172.72" x2="-86.36" y2="-143.51" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$42">
+<contactref element="R34" pad="1"/>
+<contactref element="ATTN-CV-PWM" pad="S"/>
+<wire x1="-83.82" y1="-184.15" x2="-86.36" y2="-147.32" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
