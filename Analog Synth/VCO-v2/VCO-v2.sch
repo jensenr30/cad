@@ -17550,6 +17550,73 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="transistor-pnp">
+<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TO92">
+<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
+<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
+<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
+<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
+<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
+<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PNP">
+<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="94"/>
+<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="94"/>
+<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
+<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
+<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="2N3906" prefix="Q">
+<description>&lt;b&gt;PNP Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17707,21 +17774,21 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY46" library="supply2" deviceset="GND" device=""/>
 <part name="PWM" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
-<part name="ATTN-CV-PWM" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k lin"/>
+<part name="ATTN-CV-PWM" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k log"/>
 <part name="SUPPLY39" library="supply2" deviceset="GND" device=""/>
-<part name="R-SINE-ROUND" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k lin"/>
-<part name="R39" library="resistor" deviceset="R-US_" device="0204/7" value="2.2 kΩ"/>
+<part name="R-SINE-ROUND" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k trim"/>
+<part name="R39" library="resistor" deviceset="R-US_" device="0204/7" value="2.2k"/>
 <part name="Q3" library="transistor-npn" deviceset="2N3904" device=""/>
 <part name="Q4" library="transistor-npn" deviceset="2N3904" device=""/>
-<part name="R40" library="resistor" deviceset="R-US_" device="0204/7" value="2.2 kΩ"/>
-<part name="R41" library="resistor" deviceset="R-US_" device="0204/7" value="390 Ω"/>
-<part name="R-SINE-SYMM" library="pot" deviceset="TRIM_US-" device="B64Y" value="10 kΩ"/>
-<part name="R42" library="resistor" deviceset="R-US_" device="0204/7" value="18 kΩ"/>
-<part name="R43" library="resistor" deviceset="R-US_" device="0204/7" value="10 kΩ"/>
-<part name="R44" library="resistor" deviceset="R-US_" device="0204/7" value="10 kΩ"/>
-<part name="R45" library="resistor" deviceset="R-US_" device="0204/7" value="10 kΩ"/>
-<part name="R46" library="resistor" deviceset="R-US_" device="0204/7" value="10 kΩ"/>
-<part name="R-SINE-AMPL" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k lin"/>
+<part name="R40" library="resistor" deviceset="R-US_" device="0204/7" value="2.2k"/>
+<part name="R41" library="resistor" deviceset="R-US_" device="0204/7" value="470"/>
+<part name="R-SINE-SYMM" library="pot" deviceset="TRIM_US-" device="B64Y" value="10k trim"/>
+<part name="R42" library="resistor" deviceset="R-US_" device="0204/7" value="100k"/>
+<part name="R43" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
+<part name="R44" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
+<part name="R45" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="R46" library="resistor" deviceset="R-US_" device="0204/7" value="10k"/>
+<part name="R-SINE-AMPL" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k trim"/>
 <part name="SUPPLY47" library="supply2" deviceset="-9V" device=""/>
 <part name="SUPPLY48" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY49" library="supply2" deviceset="GND" device=""/>
@@ -17739,14 +17806,25 @@ Source: www.kingbright.com</description>
 <part name="LED-TRIANGLE" library="led" deviceset="LED" device="3MM"/>
 <part name="LED-SINE" library="led" deviceset="LED" device="3MM"/>
 <part name="LED-PWM" library="led" deviceset="LED" device="3MM"/>
-<part name="R48" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R49" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R50" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R51" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R53" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R54" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="R56" library="resistor" deviceset="R-US_" device="0204/7" value="4.7 kΩ"/>
-<part name="SUPPLY55" library="supply2" deviceset="-5V" device=""/>
+<part name="R54" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R48" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R49" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R50" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R51" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R52" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="R53" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
+<part name="Q5" library="transistor-npn" deviceset="2N3904" device=""/>
+<part name="Q6" library="transistor-pnp" deviceset="2N3906" device=""/>
+<part name="R55" library="resistor" deviceset="R-US_" device="0204/7" value="33k"/>
+<part name="R56" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
+<part name="P+6" library="supply1" deviceset="+12V" device=""/>
+<part name="P-7" library="supply1" deviceset="-12V" device=""/>
+<part name="SUPPLY56" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY57" library="supply2" deviceset="GND" device=""/>
+<part name="P-8" library="supply1" deviceset="-12V" device=""/>
+<part name="R57" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
+<part name="R58" library="resistor" deviceset="R-US_" device="0204/7" value="33k"/>
+<part name="P+7" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19316,7 +19394,7 @@ modified version of Thomas Henry's design.</text>
 <instances>
 <instance part="R-SINE-ROUND" gate="G$1" x="0" y="45.72" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.08" y="55.88" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="2.54" y="48.26" size="1.778" layer="96" rot="R270"/>
+<attribute name="VALUE" x="2.54" y="50.8" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R39" gate="G$1" x="0" y="27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.4986" y="31.75" size="1.778" layer="95" rot="R270"/>
@@ -19340,7 +19418,7 @@ modified version of Thomas Henry's design.</text>
 </instance>
 <instance part="R-SINE-SYMM" gate="G$1" x="25.4" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="22.86" size="1.778" layer="95"/>
-<attribute name="VALUE" x="22.86" y="20.32" size="1.778" layer="96"/>
+<attribute name="VALUE" x="20.32" y="20.32" size="1.778" layer="96"/>
 </instance>
 <instance part="R42" gate="G$1" x="25.4" y="7.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="26.8986" y="11.43" size="1.778" layer="95" rot="R270"/>
@@ -19351,8 +19429,8 @@ modified version of Thomas Henry's design.</text>
 <instance part="R45" gate="G$1" x="55.88" y="35.56" rot="R90"/>
 <instance part="R46" gate="G$1" x="66.04" y="55.88"/>
 <instance part="R-SINE-AMPL" gate="G$1" x="88.9" y="55.88" smashed="yes" rot="R270">
-<attribute name="NAME" x="81.28" y="60.96" size="1.778" layer="95"/>
-<attribute name="VALUE" x="86.36" y="58.42" size="1.778" layer="96"/>
+<attribute name="NAME" x="80.772" y="60.96" size="1.778" layer="95"/>
+<attribute name="VALUE" x="82.55" y="58.42" size="1.778" layer="96"/>
 </instance>
 <instance part="IC7" gate="C" x="66.04" y="45.72" rot="MR180"/>
 <instance part="IC7" gate="D" x="99.06" y="43.18" rot="MR180"/>
@@ -19560,39 +19638,68 @@ This is just a bunch of LEDs that indicate the voltage levels of the control vol
 <instance part="LED-CV-A" gate="G$1" x="15.24" y="30.48"/>
 <instance part="LED-CV-B" gate="G$1" x="25.4" y="30.48"/>
 <instance part="LED_CV-C" gate="G$1" x="35.56" y="30.48"/>
-<instance part="LED-CV-PWM" gate="G$1" x="45.72" y="38.1" rot="R180"/>
-<instance part="LED-TRIANGLE" gate="G$1" x="55.88" y="30.48"/>
-<instance part="LED-SINE" gate="G$1" x="76.2" y="30.48"/>
-<instance part="LED-PWM" gate="G$1" x="66.04" y="30.48"/>
-<instance part="R48" gate="G$1" x="15.24" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="16.7386" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="19.558" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="LED-CV-PWM" gate="G$1" x="116.84" y="30.48"/>
+<instance part="LED-TRIANGLE" gate="G$1" x="45.72" y="30.48"/>
+<instance part="LED-SINE" gate="G$1" x="66.04" y="30.48"/>
+<instance part="LED-PWM" gate="G$1" x="55.88" y="30.48"/>
+<instance part="R54" gate="G$1" x="66.04" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="67.5386" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="70.358" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R49" gate="G$1" x="25.4" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.8986" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="29.718" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="R48" gate="G$1" x="55.88" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="57.3786" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="60.198" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R50" gate="G$1" x="35.56" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="37.0586" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="39.878" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="R49" gate="G$1" x="45.72" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="47.2186" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="50.038" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R51" gate="G$1" x="45.72" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="47.2186" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="50.038" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="R50" gate="G$1" x="35.56" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.0586" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="39.878" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R53" gate="G$1" x="66.04" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="67.5386" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="70.358" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="R51" gate="G$1" x="25.4" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="26.8986" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="29.718" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R54" gate="G$1" x="76.2" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="77.6986" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="80.518" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="R52" gate="G$1" x="15.24" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.7386" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="19.558" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R56" gate="G$1" x="55.88" y="17.78" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.3786" y="21.59" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="60.198" y="21.59" size="1.778" layer="96" rot="R270"/>
+<instance part="R53" gate="G$1" x="116.84" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="118.3386" y="24.13" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="121.158" y="24.13" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="SUPPLY55" gate="-5V" x="43.18" y="5.08"/>
+<instance part="Q5" gate="G1" x="114.3" y="50.8" smashed="yes">
+<attribute name="NAME" x="117.856" y="51.562" size="1.778" layer="95"/>
+<attribute name="VALUE" x="117.856" y="48.768" size="1.778" layer="96"/>
+</instance>
+<instance part="Q6" gate="G$1" x="38.1" y="-7.62" smashed="yes">
+<attribute name="NAME" x="41.656" y="-6.858" size="1.778" layer="95"/>
+<attribute name="VALUE" x="41.656" y="-9.652" size="1.778" layer="96"/>
+</instance>
+<instance part="R55" gate="G$1" x="30.48" y="-15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="31.9786" y="-11.43" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="34.798" y="-11.43" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R56" gate="G$1" x="30.48" y="0" smashed="yes" rot="R270">
+<attribute name="NAME" x="31.9786" y="3.81" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="34.798" y="3.81" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+6" gate="1" x="106.68" y="66.04"/>
+<instance part="P-7" gate="1" x="30.48" y="-22.86"/>
+<instance part="SUPPLY56" gate="GND" x="106.68" y="35.56"/>
+<instance part="SUPPLY57" gate="GND" x="30.48" y="7.62" rot="R180"/>
+<instance part="P-8" gate="1" x="40.64" y="-22.86"/>
+<instance part="R57" gate="G$1" x="106.68" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.1786" y="46.99" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="110.998" y="46.99" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="R58" gate="G$1" x="106.68" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="108.1786" y="59.69" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="110.998" y="59.69" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+7" gate="1" x="116.84" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -19600,29 +19707,25 @@ This is just a bunch of LEDs that indicate the voltage levels of the control vol
 <net name="N$53" class="0">
 <segment>
 <pinref part="LED-CV-A" gate="G$1" pin="C"/>
-<pinref part="R48" gate="G$1" pin="1"/>
-<wire x1="15.24" y1="22.86" x2="15.24" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R52" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
 <pinref part="LED-CV-B" gate="G$1" pin="C"/>
-<pinref part="R49" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="25.4" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R51" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$57" class="0">
 <segment>
 <pinref part="LED_CV-C" gate="G$1" pin="C"/>
 <pinref part="R50" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="25.4" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
 <segment>
 <pinref part="LED-SINE" gate="G$1" pin="C"/>
 <pinref part="R54" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="25.4" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CV-A" class="0">
@@ -19643,48 +19746,46 @@ This is just a bunch of LEDs that indicate the voltage levels of the control vol
 </net>
 <net name="CV-PWM" class="0">
 <segment>
-<wire x1="45.72" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
-<label x="10.16" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="LED-CV-PWM" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="53.34" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="12.7" x2="114.3" y2="12.7" width="0.1524" layer="91"/>
+<label x="114.3" y="12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="116.84" y1="12.7" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="R53" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="TRIANGLE" class="0">
 <segment>
-<wire x1="55.88" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="53.34" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="LED-TRIANGLE" gate="G$1" pin="A"/>
-<wire x1="55.88" y1="33.02" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<label x="10.16" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+<label x="10.16" y="53.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SINE" class="0">
 <segment>
 <pinref part="LED-SINE" gate="G$1" pin="A"/>
-<wire x1="76.2" y1="33.02" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="68.58" x2="10.16" y2="68.58" width="0.1524" layer="91"/>
-<label x="10.16" y="68.58" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="66.04" y1="33.02" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+<label x="10.16" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$59" class="0">
 <segment>
 <pinref part="LED-PWM" gate="G$1" pin="C"/>
-<pinref part="R53" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="25.4" x2="66.04" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R48" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
 <pinref part="LED-TRIANGLE" gate="G$1" pin="C"/>
-<pinref part="R56" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="25.4" x2="55.88" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="R49" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PWM" class="0">
 <segment>
-<wire x1="66.04" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="58.42" x2="10.16" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="LED-PWM" gate="G$1" pin="A"/>
-<wire x1="66.04" y1="63.5" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
-<label x="10.16" y="63.5" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="55.88" y1="58.42" x2="55.88" y2="33.02" width="0.1524" layer="91"/>
+<label x="10.16" y="58.42" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CV-C" class="0">
@@ -19695,44 +19796,100 @@ This is just a bunch of LEDs that indicate the voltage levels of the control vol
 <label x="10.16" y="48.26" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="-5V" class="0">
+<net name="GND" class="0">
 <segment>
-<pinref part="R48" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="10.16" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="10.16" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="10.16" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="10.16" x2="15.24" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="12.7" x2="25.4" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R50" gate="G$1" pin="2"/>
-<wire x1="35.56" y1="12.7" x2="35.56" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R51" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="12.7" x2="45.72" y2="10.16" width="0.1524" layer="91"/>
-<junction x="35.56" y="10.16"/>
-<junction x="25.4" y="10.16"/>
-<pinref part="R54" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="12.7" x2="76.2" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="10.16" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R53" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="12.7" x2="66.04" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="10.16" x2="55.88" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="R56" gate="G$1" pin="1"/>
+<pinref part="SUPPLY57" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R57" gate="G$1" pin="2"/>
+<pinref part="SUPPLY56" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
 <pinref part="R56" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="10.16" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
-<junction x="55.88" y="10.16"/>
-<junction x="45.72" y="10.16"/>
-<junction x="66.04" y="10.16"/>
-<pinref part="SUPPLY55" gate="-5V" pin="-5V"/>
-<wire x1="43.18" y1="7.62" x2="43.18" y2="10.16" width="0.1524" layer="91"/>
-<junction x="43.18" y="10.16"/>
+<pinref part="R55" gate="G$1" pin="1"/>
+<wire x1="30.48" y1="-5.08" x2="30.48" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-10.16" x2="30.48" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="Q6" gate="G$1" pin="B"/>
+<wire x1="30.48" y1="-7.62" x2="35.56" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="30.48" y="-7.62"/>
+</segment>
+</net>
+<net name="-12V" class="0">
+<segment>
+<pinref part="R55" gate="G$1" pin="2"/>
+<pinref part="P-7" gate="1" pin="-12V"/>
+</segment>
+<segment>
+<pinref part="Q6" gate="G$1" pin="C"/>
+<pinref part="P-8" gate="1" pin="-12V"/>
+<wire x1="40.64" y1="-12.7" x2="40.64" y2="-20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<wire x1="35.56" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="12.7" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="15.24" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="15.24" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
+<junction x="35.56" y="12.7"/>
+<junction x="25.4" y="12.7"/>
+<pinref part="R54" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="15.24" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="15.24" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="12.7" x2="45.72" y2="15.24" width="0.1524" layer="91"/>
+<junction x="45.72" y="12.7"/>
+<junction x="55.88" y="12.7"/>
+<pinref part="R48" gate="G$1" pin="2"/>
+<pinref part="R49" gate="G$1" pin="2"/>
+<pinref part="R50" gate="G$1" pin="2"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+<pinref part="R52" gate="G$1" pin="2"/>
+<pinref part="Q6" gate="G$1" pin="E"/>
+<wire x1="40.64" y1="-2.54" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
+<junction x="40.64" y="12.7"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R53" gate="G$1" pin="1"/>
+<pinref part="LED-CV-PWM" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="R58" gate="G$1" pin="1"/>
+<pinref part="P+6" gate="1" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="Q5" gate="G1" pin="C"/>
+<pinref part="P+7" gate="1" pin="+12V"/>
+<wire x1="116.84" y1="55.88" x2="116.84" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
+<pinref part="R57" gate="G$1" pin="1"/>
+<pinref part="R58" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="48.26" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="53.34" x2="106.68" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="Q5" gate="G1" pin="B"/>
+<wire x1="106.68" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<junction x="106.68" y="50.8"/>
+</segment>
+</net>
+<net name="N$58" class="0">
+<segment>
+<pinref part="Q5" gate="G1" pin="E"/>
 <pinref part="LED-CV-PWM" gate="G$1" pin="A"/>
-<pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="35.56" x2="45.72" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="45.72" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
