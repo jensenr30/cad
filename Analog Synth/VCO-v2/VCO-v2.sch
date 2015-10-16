@@ -17643,7 +17643,7 @@ Source: www.kingbright.com</description>
 <part name="R5" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
 <part name="R6" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
 <part name="VLT/OCT-A" library="pot" deviceset="TRIM_US-" device="B64Y" value="10k trim"/>
-<part name="FREQ-MAN" library="pot" deviceset="TRIM_US-" device="B64Y" value="10k lin"/>
+<part name="CV-A-MAN" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k lin"/>
 <part name="R11" library="resistor" deviceset="R-US_" device="0204/7" value="22k"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="0204/7" value="1k"/>
 <part name="SUPPLY6" library="supply2" deviceset="-5V" device=""/>
@@ -18161,7 +18161,7 @@ This part of the circuit processes the control voltages for the frequency of the
 <attribute name="NAME" x="12.7" y="76.2" size="1.778" layer="95"/>
 <attribute name="VALUE" x="12.7" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="FREQ-MAN" gate="G$1" x="-45.72" y="96.52" smashed="yes" rot="R180">
+<instance part="CV-A-MAN" gate="G$1" x="-45.72" y="96.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="-40.386" y="102.616" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-43.18" y="101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -18197,7 +18197,7 @@ This part of the circuit processes the control voltages for the frequency of the
 <wire x1="-55.88" y1="71.12" x2="-53.34" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="71.12" x2="-53.34" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="96.52" x2="-50.8" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="FREQ-MAN" gate="G$1" pin="S"/>
+<pinref part="CV-A-MAN" gate="G$1" pin="S"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -18362,13 +18362,13 @@ This part of the circuit processes the control voltages for the frequency of the
 <net name="+5V" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
-<pinref part="FREQ-MAN" gate="G$1" pin="A"/>
+<pinref part="CV-A-MAN" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="-5V" class="0">
 <segment>
 <pinref part="SUPPLY2" gate="-5V" pin="-5V"/>
-<pinref part="FREQ-MAN" gate="G$1" pin="E"/>
+<pinref part="CV-A-MAN" gate="G$1" pin="E"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="D" pin="+IN"/>
@@ -19401,20 +19401,20 @@ modified version of Thomas Henry's design.</text>
 <attribute name="VALUE" x="4.318" y="31.75" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="Q3" gate="G1" x="12.7" y="35.56" smashed="yes">
-<attribute name="NAME" x="15.748" y="40.386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="16.002" y="37.592" size="1.778" layer="96"/>
+<attribute name="NAME" x="16.256" y="40.132" size="1.778" layer="95"/>
+<attribute name="VALUE" x="16.002" y="37.084" size="1.778" layer="96"/>
 </instance>
 <instance part="Q4" gate="G1" x="38.1" y="35.56" smashed="yes" rot="MR0">
-<attribute name="NAME" x="34.544" y="40.132" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="34.544" y="37.592" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="42.672" y="39.37" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="48.768" y="36.322" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R40" gate="G$1" x="43.18" y="27.94" smashed="yes" rot="R270">
 <attribute name="NAME" x="44.6786" y="31.75" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="47.498" y="31.75" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R41" gate="G$1" x="25.4" y="27.94" smashed="yes">
-<attribute name="NAME" x="21.59" y="29.4386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.59" y="32.258" size="1.778" layer="96"/>
+<attribute name="NAME" x="23.114" y="29.6926" size="1.778" layer="95"/>
+<attribute name="VALUE" x="23.114" y="32.258" size="1.778" layer="96"/>
 </instance>
 <instance part="R-SINE-SYMM" gate="G$1" x="25.4" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.78" y="22.86" size="1.778" layer="95"/>
