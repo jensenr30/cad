@@ -3245,7 +3245,6 @@ design rules under a new name.</description>
 <signal name="-5V">
 <contactref element="CV-A-MAN" pad="E"/>
 <contactref element="IC1" pad="12"/>
-<contactref element="R14" pad="1"/>
 <contactref element="U1" pad="5"/>
 <contactref element="U1" pad="8"/>
 <contactref element="C1" pad="2"/>
@@ -3263,11 +3262,10 @@ design rules under a new name.</description>
 <contactref element="C16" pad="+"/>
 <contactref element="PWM-MAN" pad="E"/>
 <wire x1="87.63" y1="72.39" x2="88.9" y2="84.455" width="0" layer="19" extent="1-1"/>
-<wire x1="85.09" y1="71.12" x2="87.63" y2="72.39" width="0" layer="19" extent="1-1"/>
-<wire x1="68.58" y1="74.93" x2="85.09" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="74.93" x2="87.63" y2="72.39" width="0" layer="19" extent="1-1"/>
 <wire x1="67.31" y1="82.55" x2="68.58" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="71.12" y1="96.52" x2="67.31" y2="82.55" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="54.61" x2="85.09" y2="71.12" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="54.61" x2="68.58" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="74.93" y1="49.53" x2="74.93" y2="54.61" width="0" layer="19" extent="1-1"/>
 <wire x1="71.12" y1="44.45" x2="74.93" y2="49.53" width="0" layer="19" extent="1-1"/>
 <wire x1="73.66" y1="36.83" x2="71.12" y2="44.45" width="0" layer="19" extent="1-1"/>
@@ -3469,7 +3467,9 @@ design rules under a new name.</description>
 <contactref element="C13" pad="+"/>
 <contactref element="C20" pad="1"/>
 <contactref element="R42" pad="2"/>
+<contactref element="R14" pad="1"/>
 <wire x1="73.66" y1="78.74" x2="73.66" y2="82.55" width="0" layer="19" extent="1-1"/>
+<wire x1="85.09" y1="71.12" x2="73.66" y2="78.74" width="0" layer="19" extent="1-1"/>
 <wire x1="27.94" y1="52.07" x2="73.66" y2="78.74" width="0" layer="19" extent="1-1"/>
 <wire x1="16.002" y1="57.15" x2="27.94" y2="52.07" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="45.72" x2="16.002" y2="57.15" width="0" layer="19" extent="1-1"/>

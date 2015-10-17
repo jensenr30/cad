@@ -17649,7 +17649,6 @@ Source: www.kingbright.com</description>
 <part name="SUPPLY6" library="supply2" deviceset="-5V" device=""/>
 <part name="FREQ-OFST" library="pot" deviceset="TRIM_US-" device="B64Y" value="10k trim"/>
 <part name="R14" library="resistor" deviceset="R-US_" device="0204/7" value="4.7k"/>
-<part name="SUPPLY7" library="supply2" deviceset="-5V" device=""/>
 <part name="ATTN_CV_B" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k log"/>
 <part name="ATTN_CV_C" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k log"/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
@@ -17825,6 +17824,7 @@ Source: www.kingbright.com</description>
 <part name="R57" library="resistor" deviceset="R-US_" device="0204/7" value="47k"/>
 <part name="R58" library="resistor" deviceset="R-US_" device="0204/7" value="33k"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
+<part name="SUPPLY7" library="supply2" deviceset="-9V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18173,7 +18173,6 @@ This part of the circuit processes the control voltages for the frequency of the
 <attribute name="VALUE" x="33.02" y="20.32" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R14" gate="G$1" x="30.48" y="2.54" rot="R90"/>
-<instance part="SUPPLY7" gate="-5V" x="30.48" y="-5.08"/>
 <instance part="ATTN_CV_B" gate="G$1" x="-60.96" y="43.18" smashed="yes">
 <attribute name="NAME" x="-66.04" y="35.56" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-63.5" y="38.1" size="1.778" layer="96" rot="R90"/>
@@ -18187,6 +18186,7 @@ This part of the circuit processes the control voltages for the frequency of the
 <instance part="IC1" gate="P" x="58.42" y="17.78"/>
 <instance part="P+4" gate="1" x="58.42" y="27.94"/>
 <instance part="P-2" gate="1" x="58.42" y="7.62"/>
+<instance part="SUPPLY7" gate="G$1" x="30.48" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -18376,10 +18376,6 @@ This part of the circuit processes the control voltages for the frequency of the
 <pinref part="SUPPLY6" gate="-5V" pin="-5V"/>
 <wire x1="35.56" y1="40.64" x2="35.56" y2="38.1" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R14" gate="G$1" pin="1"/>
-<pinref part="SUPPLY7" gate="-5V" pin="-5V"/>
-</segment>
 </net>
 <net name="NPN_CV" class="0">
 <segment>
@@ -18455,6 +18451,12 @@ This part of the circuit processes the control voltages for the frequency of the
 <segment>
 <pinref part="IC1" gate="P" pin="V-"/>
 <pinref part="P-2" gate="1" pin="-12V"/>
+</segment>
+</net>
+<net name="-9V" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="SUPPLY7" gate="G$1" pin="-9V"/>
 </segment>
 </net>
 </nets>
