@@ -179,6 +179,24 @@
 <package name="KNBO_BOSS_SMALL">
 <circle x="0" y="0" radius="9.7234375" width="0.127" layer="101"/>
 </package>
+<package name="TOGGLE_SWITCH_TAYDA">
+<circle x="0" y="2.54" radius="1.25" width="0.127" layer="101"/>
+<wire x1="-1.27" y1="2.54" x2="-0.635" y2="0" width="0.127" layer="101"/>
+<wire x1="1.27" y1="2.54" x2="0.635" y2="0" width="0.127" layer="101"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.127" layer="101" curve="180"/>
+<wire x1="-1.19298125" y1="2.198203125" x2="1.195428125" y2="2.18661875" width="0.127" layer="101" curve="303"/>
+<wire x1="-1.05719375" y1="1.684578125" x2="1.05719375" y2="1.6811125" width="0.127" layer="101" curve="296"/>
+<wire x1="3.5" y1="6.5" x2="-3.5" y2="6.5" width="0.127" layer="101"/>
+<wire x1="3.5" y1="-6.5" x2="-3.5" y2="-6.5" width="0.127" layer="101"/>
+<wire x1="-3.5" y1="6.5" x2="-3.5" y2="-6.5" width="0.127" layer="101"/>
+<wire x1="3.5" y1="6.5" x2="3.5" y2="-6.5" width="0.127" layer="101"/>
+<wire x1="0.9236375" y1="1.17326875" x2="-0.93361875" y2="1.183253125" width="0.127" layer="101" curve="-284"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="44"/>
+<wire x1="0" y1="1.365" x2="0" y2="-1.365" width="0.127" layer="44"/>
+<wire x1="-1.365" y1="0" x2="1.365" y2="0" width="0.127" layer="44"/>
+<text x="1.27" y="2.54" size="1.27" layer="110">0.25"</text>
+<circle x="0" y="0" radius="6" width="0.127" layer="101"/>
+</package>
 </packages>
 </library>
 </libraries>
@@ -392,6 +410,7 @@ design rules under a new name.</description>
 <element name="E$8" library="!synth_panel" package="KNBO_BOSS_SMALL" value="" x="38.1" y="97.79"/>
 <element name="E$9" library="!synth_panel" package="KNBO_BOSS_SMALL" value="" x="38.1" y="127"/>
 <element name="E$11" library="!synth_panel" package="KNBO_BOSS_SMALL" value="PWM-MAN" x="38.1" y="156.21"/>
+<element name="E$12" library="!synth_panel" package="TOGGLE_SWITCH_TAYDA" value="" x="11.43" y="100.33" rot="R90"/>
 </elements>
 <signals>
 </signals>
