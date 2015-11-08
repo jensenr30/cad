@@ -3063,12 +3063,12 @@ design rules under a new name.</description>
 <element name="R56" library="resistor" package="0204/7" value="47k" x="55.88" y="39.37"/>
 <element name="R57" library="resistor" package="0204/7" value="47k" x="55.88" y="35.56"/>
 <element name="R58" library="resistor" package="0204/7" value="33k" x="55.88" y="31.75"/>
-<element name="R48" library="resistor" package="0204/7" value="4.7k" x="5.08" y="-3.81"/>
-<element name="R49" library="resistor" package="0204/7" value="4.7k" x="5.08" y="-7.62"/>
-<element name="R50" library="resistor" package="0204/7" value="4.7k" x="5.08" y="-11.43"/>
-<element name="R51" library="resistor" package="0204/7" value="8.2k" x="5.08" y="-15.24"/>
-<element name="R54" library="resistor" package="0204/7" value="4.7k" x="5.08" y="-19.05"/>
-<element name="R53" library="resistor" package="0204/7" value="4.7k" x="5.08" y="-22.86"/>
+<element name="R48" library="resistor" package="0204/7" value="4.7k" x="46.99" y="59.69"/>
+<element name="R49" library="resistor" package="0204/7" value="4.7k" x="46.99" y="55.88"/>
+<element name="R50" library="resistor" package="0204/7" value="4.7k" x="46.99" y="52.07"/>
+<element name="R51" library="resistor" package="0204/7" value="8.2k" x="46.99" y="48.26"/>
+<element name="R54" library="resistor" package="0204/7" value="4.7k" x="46.99" y="44.45"/>
+<element name="R53" library="resistor" package="0204/7" value="4.7k" x="46.99" y="40.64"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -3796,22 +3796,22 @@ design rules under a new name.</description>
 <signal name="N$61">
 <contactref element="LED_CV-C" pad="K"/>
 <contactref element="R49" pad="1"/>
-<wire x1="1.27" y1="-7.62" x2="46.99" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="55.88" x2="46.99" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$62">
 <contactref element="LED-TRIANGLE" pad="K"/>
 <contactref element="R50" pad="1"/>
-<wire x1="1.27" y1="-11.43" x2="36.83" y2="64.77" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="52.07" x2="36.83" y2="64.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$63">
 <contactref element="LED-PWM" pad="K"/>
 <contactref element="R51" pad="1"/>
-<wire x1="1.27" y1="-15.24" x2="39.37" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="48.26" x2="39.37" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$64">
 <contactref element="LED-SINE" pad="K"/>
 <contactref element="R54" pad="1"/>
-<wire x1="1.27" y1="-19.05" x2="46.99" y2="67.31" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="44.45" x2="46.99" y2="67.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$36">
 <contactref element="Q6" pad="3"/>
@@ -3821,27 +3821,27 @@ design rules under a new name.</description>
 <contactref element="R49" pad="2"/>
 <contactref element="R50" pad="2"/>
 <contactref element="R51" pad="2"/>
-<wire x1="53.34" y1="48.26" x2="59.69" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="-3.81" x2="53.34" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="-7.62" x2="8.89" y2="-3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="-11.43" x2="8.89" y2="-7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="-15.24" x2="8.89" y2="-11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="-19.05" x2="8.89" y2="-15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="59.69" x2="59.69" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="55.88" x2="50.8" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="52.07" x2="50.8" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="48.26" x2="50.8" y2="52.07" width="0" layer="19" extent="1-1"/>
+<wire x1="53.34" y1="48.26" x2="50.8" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="44.45" x2="50.8" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$56">
 <contactref element="R48" pad="1"/>
 <contactref element="LED-CV-B" pad="K"/>
-<wire x1="1.27" y1="-3.81" x2="40.64" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="40.64" y1="60.96" x2="43.18" y2="59.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R53" pad="1"/>
 <contactref element="LED-CV-PWM" pad="A"/>
-<wire x1="1.27" y1="-22.86" x2="34.29" y2="69.85" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="40.64" x2="34.29" y2="69.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R53" pad="2"/>
 <contactref element="Q5" pad="3"/>
-<wire x1="8.89" y1="-22.86" x2="53.34" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8" y1="40.64" x2="53.34" y2="53.34" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
