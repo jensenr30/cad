@@ -137,7 +137,7 @@
 <text x="97.64644375" y="112.14644375" size="2.54" layer="105" rot="R45">OUTPUTS</text>
 <text x="35" y="146" size="2.54" layer="104">FREQ-RANGE</text>
 <text x="163" y="125" size="2.54" layer="104">FLTR-RNG</text>
-<text x="115" y="125" size="2.54" layer="104">CLK</text>
+<text x="111" y="125" size="2.54" layer="104">GATE_OUT</text>
 <text x="21" y="136" size="2.54" layer="104">INT-OSC</text>
 <wire x1="2" y1="52.5" x2="243" y2="52.5" width="0.4064" layer="20"/>
 </plain>
