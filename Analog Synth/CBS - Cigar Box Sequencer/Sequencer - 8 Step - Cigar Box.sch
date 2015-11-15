@@ -20185,8 +20185,6 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 <part name="IC9" library="74xx-us" deviceset="74*86" device="N" technology="LS"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R25" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="R36" library="rcl" deviceset="R-US_" device="R0603" value="2.2k"/>
 <part name="SUPPLY25" library="supply2" deviceset="GND" device=""/>
@@ -21162,19 +21160,11 @@ Internal VCO, External Clock, Clock Combination</description>
 </instance>
 <instance part="SUPPLY13" gate="GND" x="91.44" y="58.42"/>
 <instance part="IC9" gate="A" x="83.82" y="38.1"/>
-<instance part="R23" gate="G$1" x="109.22" y="-10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="105.1814" y="-13.97" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="107.442" y="-13.97" size="1.778" layer="96" rot="R90"/>
+<instance part="R23" gate="G$1" x="114.3" y="-15.24" smashed="yes" rot="R90">
+<attribute name="NAME" x="110.2614" y="-19.05" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="112.522" y="-19.05" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R24" gate="G$1" x="119.38" y="-10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="115.3414" y="-13.97" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="117.602" y="-13.97" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R25" gate="G$1" x="129.54" y="-10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="125.5014" y="-13.97" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="127.762" y="-13.97" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="SUPPLY15" gate="GND" x="116.84" y="-22.86"/>
+<instance part="SUPPLY15" gate="GND" x="114.3" y="-22.86"/>
 <instance part="R36" gate="G$1" x="5.08" y="81.28" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.1186" y="85.09" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="6.858" y="85.09" size="1.778" layer="96" rot="R270"/>
@@ -21236,21 +21226,6 @@ Internal VCO, External Clock, Clock Combination</description>
 <wire x1="91.44" y1="63.5" x2="91.44" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="-15.24" x2="109.22" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="R25" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="-17.78" x2="116.84" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="-17.78" x2="119.38" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-15.24" x2="129.54" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-17.78" x2="119.38" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="R24" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="-17.78" x2="119.38" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="119.38" y="-17.78"/>
-<pinref part="SUPPLY15" gate="GND" pin="GND"/>
-<wire x1="116.84" y1="-20.32" x2="116.84" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="116.84" y="-17.78"/>
-</segment>
-<segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
 </segment>
@@ -21263,6 +21238,10 @@ Internal VCO, External Clock, Clock Combination</description>
 <junction x="35.56" y="15.24"/>
 <wire x1="35.56" y1="15.24" x2="35.56" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R23" gate="G$1" pin="1"/>
+<pinref part="SUPPLY15" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -21390,19 +21369,18 @@ Internal VCO, External Clock, Clock Combination</description>
 <net name="N$51" class="0">
 <segment>
 <pinref part="LED-INTERNAL" gate="G$1" pin="C"/>
-<pinref part="R23" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$52" class="0">
-<segment>
+<wire x1="109.22" y1="-7.62" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-7.62" x2="114.3" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="LED-INT+EXT" gate="G$1" pin="C"/>
-<pinref part="R24" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$53" class="0">
-<segment>
+<wire x1="114.3" y1="-7.62" x2="119.38" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-5.08" x2="119.38" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="-7.62" x2="129.54" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="LED-EXTERNAL" gate="G$1" pin="C"/>
-<pinref part="R25" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="-7.62" x2="129.54" y2="-5.08" width="0.1524" layer="91"/>
+<junction x="119.38" y="-7.62"/>
+<pinref part="R23" gate="G$1" pin="2"/>
+<wire x1="114.3" y1="-10.16" x2="114.3" y2="-7.62" width="0.1524" layer="91"/>
+<junction x="114.3" y="-7.62"/>
 </segment>
 </net>
 <net name="N$54" class="0">
