@@ -20383,7 +20383,7 @@ Cigar Box Sequencer</text>
 <text x="35.56" y="228.6" size="2.54" layer="97">A 3-to-8-step sequencer built into a cigar box</text>
 <text x="68.58" y="218.44" size="2.54" layer="97">Ryan Jensen</text>
 <text x="66.04" y="223.52" size="2.54" layer="97">2015-November</text>
-<text x="-25.4" y="182.88" size="1.778" layer="97">Eurorack Power Input</text>
+<text x="-30.48" y="170.18" size="1.778" layer="97">Eurorack Power Input</text>
 </plain>
 <instances>
 <instance part="U$10" gate="G$1" x="12.7" y="162.56"/>
