@@ -19392,6 +19392,17 @@ Based on the following sources:
 <pin name="I" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
 <pin name="O" x="10.16" y="0" visible="pad" length="middle" direction="out" function="dot" rot="R180"/>
 </symbol>
+<symbol name="7408">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.4064" layer="94" curve="-180"/>
+<wire x1="2.54" y1="5.08" x2="-7.62" y2="5.08" width="0.4064" layer="94"/>
+<text x="-7.62" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="I0" x="-12.7" y="2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="I1" x="-12.7" y="-2.54" visible="pad" length="middle" direction="in" swaplevel="1"/>
+<pin name="O" x="12.7" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="74*86" prefix="IC">
@@ -19554,6 +19565,90 @@ Based on the following sources:
 </connects>
 <technologies>
 <technology name=""/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74*08" prefix="IC">
+<description>Quad 2-input &lt;b&gt;AND&lt;/b&gt; gate</description>
+<gates>
+<gate name="A" symbol="7408" x="20.32" y="0" swaplevel="1"/>
+<gate name="B" symbol="7408" x="20.32" y="-12.7" swaplevel="1"/>
+<gate name="C" symbol="7408" x="50.8" y="0" swaplevel="1"/>
+<gate name="D" symbol="7408" x="50.8" y="-12.7" swaplevel="1"/>
+<gate name="P" symbol="PWRN" x="2.54" y="-7.62" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="4"/>
+<connect gate="B" pin="I1" pad="5"/>
+<connect gate="B" pin="O" pad="6"/>
+<connect gate="C" pin="I0" pad="9"/>
+<connect gate="C" pin="I1" pad="10"/>
+<connect gate="C" pin="O" pad="8"/>
+<connect gate="D" pin="I0" pad="12"/>
+<connect gate="D" pin="I1" pad="13"/>
+<connect gate="D" pin="O" pad="11"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="I0" pad="1"/>
+<connect gate="A" pin="I1" pad="2"/>
+<connect gate="A" pin="O" pad="3"/>
+<connect gate="B" pin="I0" pad="4"/>
+<connect gate="B" pin="I1" pad="5"/>
+<connect gate="B" pin="O" pad="6"/>
+<connect gate="C" pin="I0" pad="9"/>
+<connect gate="C" pin="I1" pad="10"/>
+<connect gate="C" pin="O" pad="8"/>
+<connect gate="D" pin="I0" pad="12"/>
+<connect gate="D" pin="I1" pad="13"/>
+<connect gate="D" pin="O" pad="11"/>
+<connect gate="P" pin="GND" pad="7"/>
+<connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
+<technology name="LS"/>
+<technology name="S"/>
+</technologies>
+</device>
+<device name="FK" package="LCC20">
+<connects>
+<connect gate="A" pin="I0" pad="2"/>
+<connect gate="A" pin="I1" pad="3"/>
+<connect gate="A" pin="O" pad="4"/>
+<connect gate="B" pin="I0" pad="6"/>
+<connect gate="B" pin="I1" pad="8"/>
+<connect gate="B" pin="O" pad="9"/>
+<connect gate="C" pin="I0" pad="13"/>
+<connect gate="C" pin="I1" pad="14"/>
+<connect gate="C" pin="O" pad="12"/>
+<connect gate="D" pin="I0" pad="18"/>
+<connect gate="D" pin="I1" pad="19"/>
+<connect gate="D" pin="O" pad="16"/>
+<connect gate="P" pin="GND" pad="10"/>
+<connect gate="P" pin="VCC" pad="20"/>
+</connects>
+<technologies>
+<technology name="ALS"/>
+<technology name="AS"/>
 <technology name="LS"/>
 <technology name="S"/>
 </technologies>
@@ -20269,6 +20364,8 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="U$19" library="!synth_sch" deviceset="DIODE-0204/5" device="" value=""/>
 <part name="R68" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
+<part name="IC17" library="74xx-us" deviceset="74*08" device="N" technology="ALS"/>
 </parts>
 <sheets>
 <sheet>
@@ -20281,6 +20378,12 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <text x="147.32" y="165.1" size="1.778" layer="97">Decoupling capacitors should be placed on
 the digital 5 V supply close to each digital
 logic chip.</text>
+<text x="30.48" y="236.22" size="6.4516" layer="97">       CBS
+Cigar Box Sequencer</text>
+<text x="35.56" y="228.6" size="2.54" layer="97">A 3-to-8-step sequencer built into a cigar box</text>
+<text x="68.58" y="218.44" size="2.54" layer="97">Ryan Jensen</text>
+<text x="66.04" y="223.52" size="2.54" layer="97">2015-November</text>
+<text x="-25.4" y="182.88" size="1.778" layer="97">Eurorack Power Input</text>
 </plain>
 <instances>
 <instance part="U$10" gate="G$1" x="12.7" y="162.56"/>
@@ -20612,6 +20715,10 @@ logic chip.</text>
 <text x="62.738" y="33.782" size="2.54" layer="97">7</text>
 <text x="80.772" y="33.782" size="2.54" layer="97">8</text>
 <wire x1="87.122" y1="33.782" x2="87.122" y2="34.036" width="0.1524" layer="95"/>
+<text x="66.04" y="73.66" size="1.778" layer="97">Number of Steps Indicator</text>
+<text x="58.42" y="-12.7" size="1.778" layer="97">This switch selects the number of steps in the
+sequence and displays it on the seven-
+segment LED display</text>
 </plain>
 <instances>
 <instance part="S10" gate="G$1" x="33.02" y="-7.62" rot="MR180"/>
@@ -20992,6 +21099,10 @@ Internal VCO, External Clock, Clock Combination</description>
 <text x="3.556" y="62.738" size="2.1844" layer="95">CV</text>
 <text x="16.256" y="62.738" size="2.1844" layer="95">CLK-OUT</text>
 <text x="16.764" y="56.388" size="2.1844" layer="95">CAP</text>
+<text x="116.84" y="50.8" size="1.778" layer="97">This switch selects between three clock sources:
+ - Internal VCO 
+ - Internal VCO XOR'd with the External Clock
+ - External Clock input</text>
 </plain>
 <instances>
 <instance part="FREQ-CV" gate="J1" x="-30.48" y="63.5" smashed="yes">
@@ -21334,7 +21445,7 @@ Internal VCO, External Clock, Clock Combination</description>
 <pinref part="IC9" gate="A" pin="O"/>
 </segment>
 </net>
-<net name="N$125" class="0">
+<net name="CLK" class="0">
 <segment>
 <wire x1="152.4" y1="22.86" x2="154.94" y2="22.86" width="0.1524" layer="91"/>
 <label x="154.94" y="22.86" size="1.27" layer="95" xref="yes"/>
@@ -21346,6 +21457,26 @@ Internal VCO, External Clock, Clock Combination</description>
 <description>Binary Counter
 This part of the circuit contains the binary counter, along with the binary inputs and outputs.</description>
 <plain>
+<text x="-187.96" y="-48.26" size="1.778" layer="97">The digital ICs and the analog circuits are
+powered with a seperate 5 V source</text>
+<text x="-185.42" y="53.34" size="1.778" layer="97">The binary counter counts the clock signal.
+When the reset (clear) input goes HIGH, the
+binary counter resets to 0.</text>
+<text x="-68.58" y="43.18" size="1.778" layer="97" rot="R180">The Q1, Q2, and Q3 outputs allow the user to
+see the state of the binary counter, as well as
+utilize the signals it outputs.</text>
+<text x="-81.28" y="-96.52" size="1.778" layer="97">The X1, X2, and X3 inputs allow the user to
+substitude the binary counter outputs with
+other digital signals. This allows the user to
+externally specify the step the sequencer is
+on. With a single digital input plugged into X1,
+X2, or X3, the user can control the sequencer
+to switch between two different 4-step
+sequences. Additionally, with two digital
+signals plugged into X1, X2, or X3, the user
+can control the sequencer to switch between
+four different 2-step sequences.
+</text>
 </plain>
 <instances>
 <instance part="X1" gate="J1" x="-38.1" y="-25.4" smashed="yes">
@@ -21403,8 +21534,8 @@ This part of the circuit contains the binary counter, along with the binary inpu
 </instance>
 <instance part="SUPPLY4" gate="GND" x="40.64" y="-76.2" rot="MR0"/>
 <instance part="IC7" gate="G$1" x="-53.34" y="10.16"/>
-<instance part="IC7" gate="P" x="-114.3" y="55.88"/>
-<instance part="SUPPLY5" gate="GND" x="-114.3" y="43.18"/>
+<instance part="IC7" gate="P" x="-154.94" y="-68.58"/>
+<instance part="SUPPLY5" gate="GND" x="-154.94" y="-81.28"/>
 <instance part="IC9" gate="B" x="-86.36" y="-17.78" rot="MR180"/>
 <instance part="IC9" gate="D" x="-116.84" y="5.08" rot="MR180"/>
 <instance part="SUPPLY16" gate="GND" x="-76.2" y="15.24"/>
@@ -21455,18 +21586,18 @@ This part of the circuit contains the binary counter, along with the binary inpu
 <attribute name="VALUE" x="-57.15" y="42.418" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY20" gate="GND" x="-60.96" y="35.56"/>
-<instance part="IC12" gate="P" x="-139.7" y="55.88"/>
-<instance part="SUPPLY21" gate="GND" x="-139.7" y="43.18"/>
+<instance part="IC12" gate="P" x="-180.34" y="-68.58"/>
+<instance part="SUPPLY21" gate="GND" x="-180.34" y="-81.28"/>
 <instance part="SUPPLY22" gate="GND" x="20.32" y="-76.2" rot="MR0"/>
 <instance part="SUPPLY23" gate="GND" x="-101.6" y="-50.8"/>
 <instance part="SUPPLY24" gate="GND" x="30.48" y="-76.2" rot="MR0"/>
 <instance part="SUPPLY26" gate="GND" x="-27.94" y="-58.42"/>
-<instance part="IC5" gate="P" x="-127" y="55.88"/>
-<instance part="SUPPLY28" gate="GND" x="-127" y="43.18"/>
-<instance part="IC4" gate="P" x="-104.14" y="55.88"/>
-<instance part="IC13" gate="P" x="-93.98" y="55.88"/>
-<instance part="SUPPLY14" gate="GND" x="-104.14" y="43.18"/>
-<instance part="SUPPLY42" gate="GND" x="-93.98" y="43.18"/>
+<instance part="IC5" gate="P" x="-167.64" y="-68.58"/>
+<instance part="SUPPLY28" gate="GND" x="-167.64" y="-81.28"/>
+<instance part="IC4" gate="P" x="-144.78" y="-68.58"/>
+<instance part="IC13" gate="P" x="-134.62" y="-68.58"/>
+<instance part="SUPPLY14" gate="GND" x="-144.78" y="-81.28"/>
+<instance part="SUPPLY42" gate="GND" x="-134.62" y="-81.28"/>
 <instance part="C7" gate="G$1" x="-152.4" y="0" rot="R180"/>
 <instance part="R49" gate="G$1" x="-167.64" y="7.62" smashed="yes" rot="R180">
 <attribute name="NAME" x="-169.1386" y="9.144" size="1.778" layer="95" rot="R90"/>
@@ -21543,7 +21674,7 @@ This part of the circuit contains the binary counter, along with the binary inpu
 <segment>
 <pinref part="IC7" gate="P" pin="VSS"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="-114.3" y1="45.72" x2="-114.3" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="-78.74" x2="-154.94" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="D"/>
@@ -21595,7 +21726,7 @@ This part of the circuit contains the binary counter, along with the binary inpu
 <segment>
 <pinref part="IC12" gate="P" pin="GND"/>
 <pinref part="SUPPLY21" gate="GND" pin="GND"/>
-<wire x1="-139.7" y1="45.72" x2="-139.7" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-78.74" x2="-180.34" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
@@ -21630,7 +21761,7 @@ This part of the circuit contains the binary counter, along with the binary inpu
 <segment>
 <pinref part="IC5" gate="P" pin="VSS"/>
 <pinref part="SUPPLY28" gate="GND" pin="GND"/>
-<wire x1="-127" y1="45.72" x2="-127" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="-78.74" x2="-167.64" y2="-76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="P" pin="GND"/>
@@ -21860,26 +21991,26 @@ This part of the circuit contains the binary counter, along with the binary inpu
 </net>
 <net name="5V_D" class="0">
 <segment>
-<label x="-142.24" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="-182.88" y="-55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="IC12" gate="P" pin="VCC"/>
-<wire x1="-139.7" y1="63.5" x2="-139.7" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="68.58" x2="-139.7" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-60.96" x2="-180.34" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-182.88" y1="-55.88" x2="-180.34" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="P" pin="VDD"/>
-<wire x1="-127" y1="63.5" x2="-127" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-139.7" y1="68.58" x2="-127" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-139.7" y="68.58"/>
-<junction x="-127" y="68.58"/>
+<wire x1="-167.64" y1="-60.96" x2="-167.64" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-180.34" y1="-55.88" x2="-167.64" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-180.34" y="-55.88"/>
+<junction x="-167.64" y="-55.88"/>
 <pinref part="IC7" gate="P" pin="VDD"/>
-<wire x1="-114.3" y1="63.5" x2="-114.3" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-127" y1="68.58" x2="-114.3" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="-60.96" x2="-154.94" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="-55.88" x2="-154.94" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="P" pin="VCC"/>
-<wire x1="-104.14" y1="66.04" x2="-104.14" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="68.58" x2="-114.3" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-114.3" y="68.58"/>
+<wire x1="-144.78" y1="-58.42" x2="-144.78" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="-55.88" x2="-154.94" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-154.94" y="-55.88"/>
 <pinref part="IC13" gate="P" pin="VCC"/>
-<wire x1="-93.98" y1="66.04" x2="-93.98" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="68.58" x2="-104.14" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-104.14" y="68.58"/>
+<wire x1="-134.62" y1="-58.42" x2="-134.62" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="-55.88" x2="-144.78" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="-144.78" y="-55.88"/>
 </segment>
 <segment>
 <pinref part="IC7" gate="G$1" pin="DOWN"/>
@@ -21915,6 +22046,15 @@ This part of the circuit contains the binary counter, along with the binary inpu
 <description>Demultiplexer
 This converts the three binary lines into eight steps.</description>
 <plain>
+<text x="-35.56" y="96.52" size="1.778" layer="97">The demultiplexer converts the three digital
+binary lines (where all each of the three lines
+can be either HIGH or LOW) into eight digital
+output lines (where only a single output is
+"SELECTED"). This circuit converts the binary
+encoding into a selection of a single step of
+the sequencer.
+</text>
+<text x="-38.1" y="10.16" size="1.778" layer="97">Unused inverters</text>
 </plain>
 <instances>
 <instance part="IC14" gate="A" x="-5.08" y="40.64"/>
@@ -21927,8 +22067,8 @@ This converts the three binary lines into eight steps.</description>
 <instance part="IC15" gate="F" x="30.48" y="20.32"/>
 <instance part="IC16" gate="A" x="30.48" y="7.62"/>
 <instance part="IC16" gate="B" x="30.48" y="-5.08"/>
-<instance part="IC16" gate="C" x="-20.32" y="2.54"/>
-<instance part="IC16" gate="D" x="-20.32" y="-10.16"/>
+<instance part="IC16" gate="C" x="-27.94" y="2.54"/>
+<instance part="IC16" gate="D" x="-27.94" y="-10.16"/>
 <instance part="LED-S1" gate="G$1" x="73.66" y="-15.24"/>
 <instance part="LED-S2" gate="G$1" x="83.82" y="-15.24"/>
 <instance part="LED-S3" gate="G$1" x="93.98" y="-15.24"/>
@@ -21982,6 +22122,8 @@ This converts the three binary lines into eight steps.</description>
 <attribute name="NAME" x="158.75" y="4.0386" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="158.75" y="1.778" size="1.778" layer="96" rot="MR0"/>
 </instance>
+<instance part="IC16" gate="E" x="-27.94" y="-22.86"/>
+<instance part="IC16" gate="F" x="-27.94" y="-35.56"/>
 </instances>
 <busses>
 </busses>
@@ -22368,6 +22510,14 @@ This converts the three binary lines into eight steps.</description>
 <sheet>
 <description>Manual Step Advance</description>
 <plain>
+<text x="-12.7" y="99.06" size="1.778" layer="97">This switch allows the user to manually
+advance through the steps of the sequencer.
+The circuitry around the switch debounces
+the signal to prevent the rapid addition of
+counts that occurs when a noisy switch is fed
+into a digital logic device.
+</text>
+<text x="76.2" y="40.64" size="1.778" layer="97">Unused op amp</text>
 </plain>
 <instances>
 <instance part="S9" gate="G$1" x="2.54" y="76.2" smashed="yes" rot="R90">
@@ -22376,7 +22526,7 @@ This converts the three binary lines into eight steps.</description>
 </instance>
 <instance part="IC11" gate="A" x="55.88" y="63.5"/>
 <instance part="IC11" gate="P" x="55.88" y="63.5"/>
-<instance part="IC11" gate="B" x="86.36" y="22.86" rot="MR180"/>
+<instance part="IC11" gate="B" x="86.36" y="30.48" rot="MR180"/>
 <instance part="C6" gate="G$1" x="2.54" y="58.42" rot="R180"/>
 <instance part="SUPPLY43" gate="GND" x="55.88" y="53.34"/>
 <instance part="SUPPLY46" gate="GND" x="2.54" y="53.34"/>
@@ -22398,7 +22548,7 @@ This converts the three binary lines into eight steps.</description>
 </instance>
 <instance part="SUPPLY47" gate="GND" x="30.48" y="17.78"/>
 <instance part="SUPPLY48" gate="GND" x="17.78" y="17.78"/>
-<instance part="SUPPLY38" gate="GND" x="76.2" y="15.24"/>
+<instance part="SUPPLY38" gate="GND" x="76.2" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -22422,8 +22572,8 @@ This converts the three binary lines into eight steps.</description>
 </segment>
 <segment>
 <pinref part="IC11" gate="B" pin="+IN"/>
-<wire x1="78.74" y1="20.32" x2="76.2" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="20.32" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="27.94" x2="76.2" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="27.94" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="SUPPLY38" gate="GND" pin="GND"/>
 </segment>
 </net>
@@ -22450,8 +22600,8 @@ This converts the three binary lines into eight steps.</description>
 </segment>
 <segment>
 <pinref part="IC11" gate="B" pin="-IN"/>
-<wire x1="78.74" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
-<label x="76.2" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="78.74" y1="33.02" x2="76.2" y2="33.02" width="0.1524" layer="91"/>
+<label x="76.2" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$47" class="0">
@@ -22511,6 +22661,12 @@ This converts the three binary lines into eight steps.</description>
 <description>Voltage Selector
 This part of the circuit inputs the 8 demux lines and selects the corresponding potentiometer voltage to buffer.</description>
 <plain>
+<text x="-43.18" y="106.68" size="1.778" layer="97">This circuit is a collection of eight analog
+switches. They connect or disconnect the
+wiper of each pot to a common point called
+"CV_UNBUF". Only one of these switches will
+be activated at a time because they are
+controlled by the demultiplexer.</text>
 </plain>
 <instances>
 <instance part="U$1" gate="D1" x="35.56" y="58.42" smashed="yes" rot="R180">
@@ -23218,11 +23374,16 @@ This part of the circuit inputs the 8 demux lines and selects the corresponding 
 <description>CV-OUT &amp; Filtering
 This part of the circuit filters the output CV</description>
 <plain>
+<text x="-30.48" y="63.5" size="1.778" layer="97">This circuit buffers the CV signal from the
+eight potentiometers. It also acts as an RC
+lowpass filter with a variable cutoff frequency
+(variable time constant).</text>
+<text x="-25.4" y="7.62" size="1.778" layer="97">Unused op amps</text>
 </plain>
 <instances>
 <instance part="IC1" gate="B" x="48.26" y="38.1"/>
-<instance part="IC1" gate="C" x="73.66" y="-7.62"/>
-<instance part="IC1" gate="D" x="73.66" y="-20.32"/>
+<instance part="IC1" gate="C" x="-15.24" y="-5.08"/>
+<instance part="IC1" gate="D" x="-15.24" y="-17.78"/>
 <instance part="IC1" gate="A" x="0" y="40.64"/>
 <instance part="LOW-PASS" gate="G$1" x="25.4" y="40.64" rot="R270"/>
 <instance part="LED-CV-OUT" gate="G$1" x="71.12" y="27.94" smashed="yes">
@@ -23359,48 +23520,55 @@ This part of the circuit filters the output CV</description>
 </sheet>
 <sheet>
 <plain>
+<text x="-86.36" y="73.66" size="1.778" layer="97">This circuit uses eight switches to generate
+GATE signals on the specified steps. It is useful
+for turning notes "ON" or "OFF" with the aid of
+external modules. The signals from the eight
+switches are combined with the clock source
+to achieve this.</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="97">Unused AND gates</text>
 </plain>
 <instances>
-<instance part="GATE_OUT" gate="J1" x="129.54" y="10.16" smashed="yes" rot="MR0">
-<attribute name="NAME" x="148.59" y="9.398" size="1.778" layer="96" rot="MR0"/>
+<instance part="GATE_OUT" gate="J1" x="127" y="7.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="146.05" y="6.858" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="LED_GATE_OUT" gate="G$1" x="106.68" y="5.08" smashed="yes">
-<attribute name="NAME" x="101.854" y="1.778" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="112.395" y="0.508" size="1.778" layer="96" rot="R90"/>
+<instance part="LED_GATE_OUT" gate="G$1" x="104.14" y="2.54" smashed="yes">
+<attribute name="NAME" x="99.314" y="-0.762" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="109.855" y="-2.032" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R31" gate="G$1" x="106.68" y="-5.08" smashed="yes" rot="R90">
-<attribute name="NAME" x="100.33" y="-5.1054" size="1.778" layer="95"/>
-<attribute name="VALUE" x="100.33" y="-7.366" size="1.778" layer="96"/>
+<instance part="R31" gate="G$1" x="104.14" y="-7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="97.79" y="-7.6454" size="1.778" layer="95"/>
+<attribute name="VALUE" x="97.79" y="-9.906" size="1.778" layer="96"/>
 </instance>
-<instance part="R32" gate="G$1" x="114.3" y="12.7" smashed="yes">
-<attribute name="NAME" x="113.03" y="16.7386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="113.03" y="14.478" size="1.778" layer="96"/>
+<instance part="R32" gate="G$1" x="111.76" y="10.16" smashed="yes">
+<attribute name="NAME" x="110.49" y="14.1986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="110.49" y="11.938" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY18" gate="GND" x="119.38" y="2.54"/>
-<instance part="SUPPLY19" gate="GND" x="106.68" y="-12.7"/>
-<instance part="G1" gate="1" x="-81.28" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="-87.249" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="SUPPLY18" gate="GND" x="116.84" y="0"/>
+<instance part="SUPPLY19" gate="GND" x="104.14" y="-15.24"/>
+<instance part="G1" gate="1" x="-83.82" y="27.94" smashed="yes">
+<attribute name="NAME" x="-77.851" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G2" gate="1" x="-63.5" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="-69.469" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G2" gate="1" x="-66.04" y="27.94" smashed="yes">
+<attribute name="NAME" x="-60.071" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G3" gate="1" x="-45.72" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="-51.689" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G3" gate="1" x="-48.26" y="27.94" smashed="yes">
+<attribute name="NAME" x="-42.291" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G4" gate="1" x="-27.94" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="-33.909" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G4" gate="1" x="-30.48" y="27.94" smashed="yes">
+<attribute name="NAME" x="-24.511" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G5" gate="1" x="-10.16" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="-16.129" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G5" gate="1" x="-12.7" y="27.94" smashed="yes">
+<attribute name="NAME" x="-6.731" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G6" gate="1" x="7.62" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="1.651" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G6" gate="1" x="5.08" y="27.94" smashed="yes">
+<attribute name="NAME" x="11.049" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G7" gate="1" x="25.4" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.431" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G7" gate="1" x="22.86" y="27.94" smashed="yes">
+<attribute name="NAME" x="28.829" y="26.67" size="1.778" layer="95"/>
 </instance>
-<instance part="G8" gate="1" x="43.18" y="27.94" smashed="yes" rot="R180">
-<attribute name="NAME" x="37.211" y="29.21" size="1.778" layer="95" rot="R180"/>
+<instance part="G8" gate="1" x="40.64" y="27.94" smashed="yes">
+<attribute name="NAME" x="46.609" y="26.67" size="1.778" layer="95"/>
 </instance>
 <instance part="U$11" gate="D1" x="-81.28" y="17.78" smashed="yes" rot="R270">
 <attribute name="VALUE" x="-78.74" y="20.32" size="0.9906" layer="96" rot="R270"/>
@@ -23430,9 +23598,12 @@ This part of the circuit filters the output CV</description>
 <attribute name="NAME" x="-80.01" y="5.0546" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-80.01" y="2.794" size="1.778" layer="96"/>
 </instance>
-<instance part="IC16" gate="E" x="55.88" y="12.7"/>
-<instance part="IC16" gate="F" x="78.74" y="12.7"/>
 <instance part="SUPPLY41" gate="GND" x="-73.66" y="-2.54"/>
+<instance part="SUPPLY50" gate="GND" x="53.34" y="30.48"/>
+<instance part="IC17" gate="A" x="68.58" y="10.16"/>
+<instance part="IC17" gate="B" x="-7.62" y="-25.4"/>
+<instance part="IC17" gate="C" x="22.86" y="-25.4"/>
+<instance part="IC17" gate="D" x="7.62" y="-43.18"/>
 </instances>
 <busses>
 </busses>
@@ -23440,9 +23611,9 @@ This part of the circuit filters the output CV</description>
 <net name="GND" class="0">
 <segment>
 <pinref part="GATE_OUT" gate="J1" pin="P$1"/>
-<wire x1="119.38" y1="7.62" x2="121.92" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="5.08" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
-<wire x1="119.38" y1="7.62" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="5.08" x2="116.84" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
@@ -23452,23 +23623,57 @@ This part of the circuit filters the output CV</description>
 <pinref part="R68" gate="G$1" pin="1"/>
 <pinref part="SUPPLY41" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="G1" gate="1" pin="S"/>
+<wire x1="-78.74" y1="33.02" x2="-78.74" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="G8" gate="1" pin="S"/>
+<wire x1="-78.74" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="35.56" x2="-43.18" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="35.56" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="35.56" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="35.56" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="35.56" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="35.56" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="33.02" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="35.56" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="35.56" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
+<junction x="45.72" y="35.56"/>
+<pinref part="G7" gate="1" pin="S"/>
+<wire x1="27.94" y1="33.02" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
+<junction x="27.94" y="35.56"/>
+<pinref part="G6" gate="1" pin="S"/>
+<wire x1="10.16" y1="33.02" x2="10.16" y2="35.56" width="0.1524" layer="91"/>
+<junction x="10.16" y="35.56"/>
+<pinref part="G5" gate="1" pin="S"/>
+<wire x1="-7.62" y1="33.02" x2="-7.62" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-7.62" y="35.56"/>
+<pinref part="G4" gate="1" pin="S"/>
+<wire x1="-25.4" y1="33.02" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-25.4" y="35.56"/>
+<pinref part="G3" gate="1" pin="S"/>
+<wire x1="-43.18" y1="33.02" x2="-43.18" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-43.18" y="35.56"/>
+<pinref part="G2" gate="1" pin="S"/>
+<wire x1="-60.96" y1="33.02" x2="-60.96" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-60.96" y="35.56"/>
+<pinref part="SUPPLY50" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="COMBINED-GATE-SIGNAL-AFAEVIRO" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="109.22" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
-<junction x="106.68" y="12.7"/>
-<wire x1="106.68" y1="12.7" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
+<junction x="104.14" y="10.16"/>
+<wire x1="104.14" y1="10.16" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="LED_GATE_OUT" gate="G$1" pin="A"/>
-<pinref part="IC16" gate="F" pin="O"/>
-<wire x1="88.9" y1="12.7" x2="106.68" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="10.16" x2="104.14" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
 <pinref part="GATE_OUT" gate="J1" pin="P2"/>
 <pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="12.7" x2="119.38" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="10.16" x2="116.84" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -23479,122 +23684,66 @@ This part of the circuit filters the output CV</description>
 </net>
 <net name="S1" class="0">
 <segment>
-<pinref part="G1" gate="1" pin="P"/>
-<wire x1="-83.82" y1="33.02" x2="-83.82" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-83.82" y1="35.56" x2="-86.36" y2="35.56" width="0.1524" layer="91"/>
-<label x="-86.36" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-83.82" y1="43.18" x2="-86.36" y2="43.18" width="0.1524" layer="91"/>
+<label x="-86.36" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G1" gate="1" pin="O"/>
+<wire x1="-83.82" y1="33.02" x2="-83.82" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S2" class="0">
 <segment>
-<pinref part="G2" gate="1" pin="P"/>
-<wire x1="-66.04" y1="33.02" x2="-66.04" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="38.1" x2="-86.36" y2="38.1" width="0.1524" layer="91"/>
-<label x="-86.36" y="38.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-66.04" y1="45.72" x2="-86.36" y2="45.72" width="0.1524" layer="91"/>
+<label x="-86.36" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G2" gate="1" pin="O"/>
+<wire x1="-66.04" y1="33.02" x2="-66.04" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S3" class="0">
 <segment>
-<pinref part="G3" gate="1" pin="P"/>
-<wire x1="-48.26" y1="33.02" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="40.64" x2="-86.36" y2="40.64" width="0.1524" layer="91"/>
-<label x="-86.36" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-48.26" y1="48.26" x2="-86.36" y2="48.26" width="0.1524" layer="91"/>
+<label x="-86.36" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G3" gate="1" pin="O"/>
+<wire x1="-48.26" y1="33.02" x2="-48.26" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S4" class="0">
 <segment>
-<pinref part="G4" gate="1" pin="P"/>
-<wire x1="-30.48" y1="33.02" x2="-30.48" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="43.18" x2="-86.36" y2="43.18" width="0.1524" layer="91"/>
-<label x="-86.36" y="43.18" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-30.48" y1="50.8" x2="-86.36" y2="50.8" width="0.1524" layer="91"/>
+<label x="-86.36" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G4" gate="1" pin="O"/>
+<wire x1="-30.48" y1="33.02" x2="-30.48" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S5" class="0">
 <segment>
-<pinref part="G5" gate="1" pin="P"/>
-<wire x1="-12.7" y1="33.02" x2="-12.7" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="45.72" x2="-86.36" y2="45.72" width="0.1524" layer="91"/>
-<label x="-86.36" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="-12.7" y1="53.34" x2="-86.36" y2="53.34" width="0.1524" layer="91"/>
+<label x="-86.36" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G5" gate="1" pin="O"/>
+<wire x1="-12.7" y1="33.02" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S6" class="0">
 <segment>
-<pinref part="G6" gate="1" pin="P"/>
-<wire x1="5.08" y1="33.02" x2="5.08" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="48.26" x2="-86.36" y2="48.26" width="0.1524" layer="91"/>
-<label x="-86.36" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="5.08" y1="55.88" x2="-86.36" y2="55.88" width="0.1524" layer="91"/>
+<label x="-86.36" y="55.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G6" gate="1" pin="O"/>
+<wire x1="5.08" y1="55.88" x2="5.08" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S7" class="0">
 <segment>
-<pinref part="G7" gate="1" pin="P"/>
-<wire x1="22.86" y1="33.02" x2="22.86" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="50.8" x2="-86.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="-86.36" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="22.86" y1="58.42" x2="-86.36" y2="58.42" width="0.1524" layer="91"/>
+<label x="-86.36" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="G7" gate="1" pin="O"/>
+<wire x1="22.86" y1="33.02" x2="22.86" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="S8" class="0">
 <segment>
-<pinref part="G8" gate="1" pin="P"/>
-<wire x1="40.64" y1="33.02" x2="40.64" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="53.34" x2="-86.36" y2="53.34" width="0.1524" layer="91"/>
-<label x="-86.36" y="53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$133" class="0">
-<segment>
-<pinref part="U$11" gate="D1" pin="ANODE"/>
-<pinref part="G1" gate="1" pin="O"/>
-<wire x1="-81.28" y1="20.32" x2="-81.28" y2="22.86" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$134" class="0">
-<segment>
-<pinref part="U$12" gate="D1" pin="ANODE"/>
-<wire x1="-63.5" y1="20.32" x2="-63.5" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="G2" gate="1" pin="O"/>
-</segment>
-</net>
-<net name="N$135" class="0">
-<segment>
-<pinref part="U$14" gate="D1" pin="ANODE"/>
-<wire x1="-45.72" y1="20.32" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="G3" gate="1" pin="O"/>
-</segment>
-</net>
-<net name="N$136" class="0">
-<segment>
-<pinref part="U$15" gate="D1" pin="ANODE"/>
-<wire x1="-27.94" y1="20.32" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="G4" gate="1" pin="O"/>
-</segment>
-</net>
-<net name="N$137" class="0">
-<segment>
-<pinref part="U$16" gate="D1" pin="ANODE"/>
-<wire x1="-10.16" y1="20.32" x2="-10.16" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="G5" gate="1" pin="O"/>
-</segment>
-</net>
-<net name="N$138" class="0">
-<segment>
-<pinref part="U$17" gate="D1" pin="ANODE"/>
-<wire x1="7.62" y1="20.32" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="G6" gate="1" pin="O"/>
-</segment>
-</net>
-<net name="N$139" class="0">
-<segment>
-<pinref part="U$18" gate="D1" pin="ANODE"/>
-<wire x1="25.4" y1="20.32" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="G7" gate="1" pin="O"/>
-</segment>
-</net>
-<net name="N$140" class="0">
-<segment>
-<pinref part="U$19" gate="D1" pin="ANODE"/>
-<wire x1="43.18" y1="20.32" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="60.96" x2="-86.36" y2="60.96" width="0.1524" layer="91"/>
+<label x="-86.36" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="G8" gate="1" pin="O"/>
+<wire x1="40.64" y1="60.96" x2="40.64" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$141" class="0">
@@ -23632,16 +23781,72 @@ This part of the circuit filters the output CV</description>
 <pinref part="R68" gate="G$1" pin="2"/>
 <wire x1="-73.66" y1="10.16" x2="-73.66" y2="12.7" width="0.1524" layer="91"/>
 <junction x="-73.66" y="12.7"/>
-<pinref part="IC16" gate="E" pin="I"/>
-<wire x1="43.18" y1="12.7" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="12.7" x2="55.88" y2="12.7" width="0.1524" layer="91"/>
 <junction x="43.18" y="12.7"/>
+<pinref part="IC17" gate="A" pin="I0"/>
 </segment>
 </net>
-<net name="N$124" class="0">
+<net name="N$126" class="0">
 <segment>
-<pinref part="IC16" gate="E" pin="O"/>
-<pinref part="IC16" gate="F" pin="I"/>
-<wire x1="68.58" y1="12.7" x2="66.04" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$19" gate="D1" pin="ANODE"/>
+<pinref part="G8" gate="1" pin="P"/>
+<wire x1="43.18" y1="20.32" x2="43.18" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$127" class="0">
+<segment>
+<pinref part="U$18" gate="D1" pin="ANODE"/>
+<pinref part="G7" gate="1" pin="P"/>
+<wire x1="25.4" y1="20.32" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$128" class="0">
+<segment>
+<pinref part="U$17" gate="D1" pin="ANODE"/>
+<pinref part="G6" gate="1" pin="P"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$129" class="0">
+<segment>
+<pinref part="U$16" gate="D1" pin="ANODE"/>
+<pinref part="G5" gate="1" pin="P"/>
+<wire x1="-10.16" y1="20.32" x2="-10.16" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$130" class="0">
+<segment>
+<pinref part="U$15" gate="D1" pin="ANODE"/>
+<pinref part="G4" gate="1" pin="P"/>
+<wire x1="-27.94" y1="20.32" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$131" class="0">
+<segment>
+<pinref part="U$14" gate="D1" pin="ANODE"/>
+<pinref part="G3" gate="1" pin="P"/>
+<wire x1="-45.72" y1="20.32" x2="-45.72" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$132" class="0">
+<segment>
+<pinref part="G2" gate="1" pin="P"/>
+<pinref part="U$12" gate="D1" pin="ANODE"/>
+<wire x1="-63.5" y1="22.86" x2="-63.5" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$133" class="0">
+<segment>
+<pinref part="U$11" gate="D1" pin="ANODE"/>
+<pinref part="G1" gate="1" pin="P"/>
+<wire x1="-81.28" y1="20.32" x2="-81.28" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CLK" class="0">
+<segment>
+<pinref part="IC17" gate="A" pin="I1"/>
+<wire x1="55.88" y1="7.62" x2="53.34" y2="7.62" width="0.1524" layer="91"/>
+<label x="53.34" y="7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
