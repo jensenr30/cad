@@ -20366,6 +20366,7 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
 <part name="IC17" library="74xx-us" deviceset="74*08" device="N" technology="ALS"/>
+<part name="R69" library="rcl" deviceset="R-US_" device="R0603" value="2.2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -23406,6 +23407,10 @@ lowpass filter with a variable cutoff frequency
 <instance part="CV-OUT" gate="J1" x="93.98" y="35.56" rot="MR0"/>
 <instance part="SUPPLY39" gate="-5V" x="35.56" y="-5.08"/>
 <instance part="SUPPLY40" gate="GND" x="83.82" y="27.94"/>
+<instance part="R69" gate="G$1" x="78.74" y="38.1" smashed="yes">
+<attribute name="NAME" x="78.5114" y="40.132" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="80.772" y="40.132" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -23459,9 +23464,9 @@ lowpass filter with a variable cutoff frequency
 <pinref part="LED-CV-OUT" gate="G$1" pin="A"/>
 <wire x1="71.12" y1="38.1" x2="71.12" y2="30.48" width="0.1524" layer="91"/>
 <junction x="60.96" y="38.1"/>
+<pinref part="R69" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="38.1" x2="71.12" y2="38.1" width="0.1524" layer="91"/>
 <junction x="71.12" y="38.1"/>
-<pinref part="CV-OUT" gate="J1" pin="P2"/>
-<wire x1="71.12" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$110" class="0">
@@ -23514,6 +23519,13 @@ lowpass filter with a variable cutoff frequency
 <wire x1="86.36" y1="33.02" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
 <wire x1="83.82" y1="33.02" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$124" class="0">
+<segment>
+<pinref part="R69" gate="G$1" pin="2"/>
+<pinref part="CV-OUT" gate="J1" pin="P2"/>
+<wire x1="83.82" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
