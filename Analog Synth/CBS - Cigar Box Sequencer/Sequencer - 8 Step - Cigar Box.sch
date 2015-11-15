@@ -20364,7 +20364,7 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY50" library="supply2" deviceset="GND" device=""/>
 <part name="IC17" library="74xx-us" deviceset="74*08" device="N" technology="ALS"/>
-<part name="R69" library="rcl" deviceset="R-US_" device="R0603" value="2.2k"/>
+<part name="R69" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -23389,8 +23389,8 @@ lowpass filter with a variable cutoff frequency
 <instance part="SUPPLY39" gate="-5V" x="35.56" y="-5.08"/>
 <instance part="SUPPLY40" gate="GND" x="83.82" y="27.94"/>
 <instance part="R69" gate="G$1" x="78.74" y="38.1" smashed="yes">
-<attribute name="NAME" x="78.5114" y="40.132" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="80.772" y="40.132" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="76.708" y="42.6466" size="1.778" layer="95"/>
+<attribute name="VALUE" x="76.708" y="40.386" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
