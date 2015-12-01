@@ -20298,7 +20298,7 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="R64" library="resistor" deviceset="R-US_" device="0204/7" value="1M"/>
 <part name="SUPPLY36" library="supply2" deviceset="GND" device=""/>
 <part name="IC1" library="linear" deviceset="TL084" device="P"/>
-<part name="LOW-PASS" library="pot" deviceset="TRIM_US-" device="B64Y"/>
+<part name="LOW-PASS" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k log"/>
 <part name="LED-CV-OUT" library="led" deviceset="TLLG4400" device="" value=""/>
 <part name="FILTER-RANGE" library="switch" deviceset="320-916" device="" value="ON-OFF-ON"/>
 <part name="C8" library="rcl" deviceset="CPOL-US" device="E3.5-10" value="10u"/>
