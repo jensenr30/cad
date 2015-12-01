@@ -174,11 +174,11 @@
 <pad name="P$8" x="1.27" y="-2.54" drill="0.8"/>
 <pad name="P$9" x="-1.27" y="-5.08" drill="0.8"/>
 <pad name="P$10" x="1.27" y="-5.08" drill="0.8"/>
-<text x="-1.905" y="-7.62" size="1.27" layer="21">-12V</text>
-<text x="1.27" y="-7.62" size="1.27" layer="22" rot="MR0">-12V</text>
+<text x="-1.905" y="-7.62" size="1.27" layer="21" rot="SR0">-12V</text>
+<text x="1.905" y="-7.62" size="1.27" layer="22" rot="MR0">-12V</text>
 <text x="-1.905" y="1.905" size="1.27" layer="22" rot="MR270">GND</text>
 <text x="-1.905" y="-1.905" size="1.27" layer="21" rot="R90">GND</text>
-<text x="-1.905" y="6.35" size="1.27" layer="21">+12V</text>
+<text x="-1.905" y="6.35" size="1.27" layer="21" rot="SR0">+12V</text>
 <text x="1.905" y="6.35" size="1.27" layer="22" rot="MR0">+12V</text>
 </package>
 </packages>
@@ -15426,8 +15426,8 @@ type 0204, grid 7.5 mm</description>
 <wire x1="2.286" y1="1.016" x2="1.905" y2="1.016" width="0.1524" layer="21"/>
 <wire x1="2.286" y1="-1.016" x2="1.905" y2="-1.016" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-0.762" x2="2.54" y2="0.762" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="0.79375" diameter="1.5875"/>
-<pad name="2" x="3.81" y="0" drill="0.79375" diameter="1.5875"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" shape="octagon"/>
 <text x="-2.54" y="1.2954" size="0.9906" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.6256" y="-0.4826" size="0.9906" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="2.54" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
@@ -20366,6 +20366,7 @@ Source: http://www.fairchildsemi.com/pf/J3/J310.html</description>
 <part name="IC17" library="74xx-us" deviceset="74*08" device="N" technology="ALS"/>
 <part name="R69" library="rcl" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="SUPPLY51" library="supply2" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20716,9 +20717,9 @@ Cigar Box Sequencer</text>
 <text x="80.772" y="33.782" size="2.54" layer="97">8</text>
 <wire x1="87.122" y1="33.782" x2="87.122" y2="34.036" width="0.1524" layer="95"/>
 <text x="66.04" y="73.66" size="1.778" layer="97">Number of Steps Indicator</text>
-<text x="58.42" y="-12.7" size="1.778" layer="97">This switch selects the number of steps in the
-sequence and displays it on the seven-
-segment LED display</text>
+<text x="58.42" y="-12.7" size="1.778" layer="97">This 2-pole 6-throw switch selects the number
+of steps in the sequence and displays it on
+the seven-segment LED display</text>
 </plain>
 <instances>
 <instance part="S10" gate="G$1" x="33.02" y="-7.62" rot="MR180"/>
@@ -20989,13 +20990,6 @@ segment LED display</text>
 <wire x1="81.28" y1="30.48" x2="82.55" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="30.48" x2="82.55" y2="31.75" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="30.48" x2="80.01" y2="29.21" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="DP"/>
-<wire x1="109.22" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<label x="111.76" y="48.26" size="2.54" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -22655,6 +22649,8 @@ wiper of each pot to a common point called
 "CV_UNBUF". Only one of these switches will
 be activated at a time because they are
 controlled by the demultiplexer.</text>
+<text x="-43.18" y="81.28" size="1.778" layer="97">The two TL084 chips are powered by +12 V
+and -12 V.</text>
 </plain>
 <instances>
 <instance part="U$1" gate="D1" x="35.56" y="58.42" smashed="yes" rot="R180">
@@ -22828,6 +22824,7 @@ controlled by the demultiplexer.</text>
 <attribute name="VALUE" x="150.622" y="-24.892" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY36" gate="GND" x="-20.32" y="-45.72"/>
+<instance part="P+6" gate="1" x="-20.32" y="-17.78"/>
 </instances>
 <busses>
 </busses>
@@ -23342,18 +23339,17 @@ controlled by the demultiplexer.</text>
 <junction x="-20.32" y="-35.56"/>
 </segment>
 </net>
-<net name="5V_D" class="0">
-<segment>
-<pinref part="R45" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="-20.32" x2="-22.86" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-22.86" y="-20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
 <pinref part="U$9" gate="D1" pin="CATHODE"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="R45" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="P+6" gate="1" pin="+12V"/>
 </segment>
 </net>
 </nets>
