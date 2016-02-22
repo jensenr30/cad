@@ -15406,10 +15406,10 @@ Source: www.kingbright.com</description>
 </classes>
 <parts>
 <part name="IC1" library="linear" deviceset="TL084" device="D"/>
-<part name="CV" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
+<part name="CV" library="!synth_sch" deviceset="MONO_JACK" device="" value="CV"/>
 <part name="Q1" library="transistor-small-signal" deviceset="BC847BS" device=""/>
-<part name="T1" library="transistor" deviceset="2N3904" device=""/>
-<part name="T2" library="transistor" deviceset="2N3904" device=""/>
+<part name="Q3" library="transistor" deviceset="2N3904" device=""/>
+<part name="Q4" library="transistor" deviceset="2N3904" device=""/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="47k"/>
 <part name="FREQ" library="pot" deviceset="TRIM_US-" device="B64Y" value="100k lin"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
@@ -15422,9 +15422,9 @@ Source: www.kingbright.com</description>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="1.8k"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="180k"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100p"/>
@@ -15441,10 +15441,10 @@ Source: www.kingbright.com</description>
 <part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="4.7"/>
 <part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="4.7"/>
 <part name="JP2" library="pinhead" deviceset="PINHD-2X5" device=""/>
-<part name="U$2" library="!synth_sch" deviceset="2N7000" device=""/>
+<part name="Q5" library="!synth_sch" deviceset="2N7000" device=""/>
 <part name="SQUARE" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="27k"/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
@@ -15702,8 +15702,8 @@ OR populate both 2N3904 transistors.</text>
 <attribute name="NAME" x="116.84" y="93.98" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="116.84" y="91.44" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="T1" gate="G1" x="81.28" y="86.36"/>
-<instance part="T2" gate="G1" x="121.92" y="86.36" rot="MR0"/>
+<instance part="Q3" gate="G1" x="81.28" y="86.36"/>
+<instance part="Q4" gate="G1" x="121.92" y="86.36" rot="MR0"/>
 <instance part="R1" gate="G$1" x="35.56" y="88.9"/>
 <instance part="FREQ" gate="G$1" x="12.7" y="55.88" smashed="yes">
 <attribute name="NAME" x="7.62" y="53.34" size="1.778" layer="95" rot="R90"/>
@@ -15750,7 +15750,7 @@ OR populate both 2N3904 transistors.</text>
 <segment>
 <pinref part="Q1" gate="A" pin="C"/>
 <wire x1="99.06" y1="91.44" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="T1" gate="G1" pin="C"/>
+<pinref part="Q3" gate="G1" pin="C"/>
 <wire x1="99.06" y1="96.52" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="96.52" x2="83.82" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="96.52" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
@@ -15764,12 +15764,12 @@ OR populate both 2N3904 transistors.</text>
 <pinref part="Q1" gate="A" pin="E"/>
 <wire x1="99.06" y1="81.28" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="78.74" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="T1" gate="G1" pin="E"/>
+<pinref part="Q3" gate="G1" pin="E"/>
 <wire x1="83.82" y1="78.74" x2="83.82" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="B" pin="E"/>
 <wire x1="104.14" y1="81.28" x2="104.14" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="78.74" x2="119.38" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G1" pin="E"/>
+<pinref part="Q4" gate="G1" pin="E"/>
 <wire x1="119.38" y1="78.74" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
 <junction x="104.14" y="78.74"/>
 <junction x="99.06" y="78.74"/>
@@ -15784,7 +15784,7 @@ OR populate both 2N3904 transistors.</text>
 <segment>
 <pinref part="Q1" gate="A" pin="B"/>
 <wire x1="93.98" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="T1" gate="G1" pin="B"/>
+<pinref part="Q3" gate="G1" pin="B"/>
 <wire x1="76.2" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
 <junction x="78.74" y="86.36"/>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -15821,7 +15821,7 @@ OR populate both 2N3904 transistors.</text>
 <segment>
 <pinref part="Q1" gate="B" pin="B"/>
 <wire x1="109.22" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G1" pin="B"/>
+<pinref part="Q4" gate="G1" pin="B"/>
 <wire x1="127" y1="86.36" x2="124.46" y2="86.36" width="0.1524" layer="91"/>
 <junction x="124.46" y="86.36"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
@@ -15937,7 +15937,7 @@ OR populate both 2N3904 transistors.</text>
 <wire x1="127" y1="106.68" x2="127" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="B" pin="C"/>
 <wire x1="104.14" y1="91.44" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G1" pin="C"/>
+<pinref part="Q4" gate="G1" pin="C"/>
 <wire x1="104.14" y1="96.52" x2="119.38" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="96.52" x2="119.38" y2="91.44" width="0.1524" layer="91"/>
 <junction x="119.38" y="96.52"/>
@@ -16037,7 +16037,7 @@ again.</text>
 <instances>
 <instance part="IC1" gate="C" x="50.8" y="58.42"/>
 <instance part="IC1" gate="D" x="33.02" y="5.08"/>
-<instance part="U$2" gate="G$1" x="30.48" y="88.9" rot="MR0"/>
+<instance part="Q5" gate="G$1" x="30.48" y="88.9" rot="MR0"/>
 <instance part="SQUARE" gate="J1" x="88.9" y="2.54" rot="MR0"/>
 <instance part="R4" gate="G$1" x="40.64" y="76.2" rot="R90"/>
 <instance part="C5" gate="G$1" x="22.86" y="-2.54"/>
@@ -16105,7 +16105,7 @@ again.</text>
 <pinref part="P+7" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="D"/>
+<pinref part="Q5" gate="G$1" pin="D"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 <wire x1="25.4" y1="91.44" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
 </segment>
@@ -16145,7 +16145,7 @@ again.</text>
 <wire x1="25.4" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="53.34" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
 <junction x="27.94" y="55.88"/>
-<pinref part="U$2" gate="G$1" pin="S"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
 <wire x1="25.4" y1="86.36" x2="25.4" y2="55.88" width="0.1524" layer="91"/>
 <junction x="25.4" y="55.88"/>
 <pinref part="IC1" gate="D" pin="+IN"/>
@@ -16172,7 +16172,7 @@ again.</text>
 <wire x1="60.96" y1="58.42" x2="58.42" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="68.58" x2="60.96" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="G"/>
+<pinref part="Q5" gate="G$1" pin="G"/>
 <junction x="60.96" y="68.58"/>
 </segment>
 </net>
