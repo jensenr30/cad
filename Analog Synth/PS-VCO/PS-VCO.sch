@@ -15445,7 +15445,7 @@ Source: www.kingbright.com</description>
 <part name="SQUARE" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="27k"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="120k"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
@@ -15488,7 +15488,7 @@ Source: www.kingbright.com</description>
 <text x="-22.86" y="83.82" size="10.16" layer="98">PS-VCO</text>
 <text x="-9.144" y="100.838" size="2.54" layer="98">Ryan Jensen</text>
 <text x="-10.668" y="96.52" size="2.54" layer="98">2015-November</text>
-<text x="-36.83" y="78.74" size="2.54" layer="98">An attempt at creasing minimalistic VCO.</text>
+<text x="-36.83" y="78.74" size="2.54" layer="98">An attempt at creating a minimalistic VCO.</text>
 </plain>
 <instances>
 <instance part="U$3" gate="G$1" x="-17.78" y="30.48"/>
@@ -16033,6 +16033,10 @@ some voltage range. When the voltage is
 at the bottom of its range, it quickly jumps
 back up to the the range and starts decreasing
 again.</text>
+<text x="-76.2" y="-2.54" size="1.778" layer="98">This op amp (configured as a comparator) is set up to
+output a square wave at approximately 50% duty cycle.
+The amplitude of the output square wave should be
+just slightly less than 50% of the power rail voltage.</text>
 </plain>
 <instances>
 <instance part="IC1" gate="C" x="50.8" y="58.42"/>
