@@ -8197,13 +8197,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 </packages>
 <symbols>
-<symbol name="+18V">
-<wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
-<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+18V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -8213,19 +8206,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="+18V" prefix="SUPPLY">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="+18V" symbol="+18V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -10116,12 +10096,12 @@ general purpose rectifier, 1 A</description>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="R56" library="rcl" deviceset="R-US_" device="0204/7" value="2.2k"/>
 <part name="R57" library="rcl" deviceset="R-US_" device="0204/7" value="2.2k"/>
-<part name="SUPPLY4" library="supply2" deviceset="+18V" device=""/>
 <part name="R58" library="rcl" deviceset="R-US_" device="0204/7" value="10k"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-US" device="025-050X050" value="10u"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="025-024X044" value="1n"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="supply1" deviceset="+24V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10441,12 +10421,12 @@ Supply must be able to source 1 A continuously.</text>
 <instance part="SUPPLY3" gate="GND" x="48.26" y="10.16"/>
 <instance part="R56" gate="G$1" x="30.48" y="45.72" rot="R90"/>
 <instance part="R57" gate="G$1" x="48.26" y="45.72" rot="R90"/>
-<instance part="SUPPLY4" gate="+18V" x="30.48" y="63.5"/>
 <instance part="R58" gate="G$1" x="2.54" y="30.48"/>
 <instance part="SUPPLY5" gate="GND" x="0" y="10.16"/>
 <instance part="C1" gate="G$1" x="38.1" y="132.08"/>
 <instance part="C2" gate="G$1" x="20.32" y="22.86"/>
 <instance part="SUPPLY6" gate="GND" x="38.1" y="124.46"/>
+<instance part="SUPPLY7" gate="1" x="30.48" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -12458,16 +12438,6 @@ Supply must be able to source 1 A continuously.</text>
 <wire x1="53.34" y1="167.64" x2="53.34" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="165.1" x2="57.15" y2="165.1" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R56" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="50.8" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R57" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="50.8" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="+18V" pin="+18V"/>
-<wire x1="30.48" y1="58.42" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
-<junction x="30.48" y="58.42"/>
-</segment>
 </net>
 <net name="N$235" class="0">
 <segment>
@@ -12559,6 +12529,18 @@ Supply must be able to source 1 A continuously.</text>
 <pinref part="R58" gate="G$1" pin="1"/>
 <wire x1="-2.54" y1="30.48" x2="-7.62" y2="30.48" width="0.1524" layer="91"/>
 <label x="-7.62" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="+24V" class="0">
+<segment>
+<pinref part="R56" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="50.8" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="R57" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="50.8" x2="48.26" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="58.42" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<junction x="30.48" y="58.42"/>
+<pinref part="SUPPLY7" gate="1" pin="+24V"/>
 </segment>
 </net>
 </nets>
