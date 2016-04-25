@@ -9473,6 +9473,9 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <text x="-15.24" y="152.4" size="2.54" layer="98" align="center">2016-April</text>
 <text x="-15.24" y="134.62" size="2.54" layer="98" align="center">A frequency counter designed around the ATtiny84</text>
 <text x="111.76" y="71.12" size="1.778" layer="98">USB connector</text>
+<text x="45.72" y="114.3" size="1.778" layer="98">USB-&gt;Serial UART (RS232) chip
+This is optional. Populate this chip if you want to be able
+to automatically record measurements using a computer</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="-5.08" y="86.36"/>
@@ -9761,6 +9764,15 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <wire x1="99.06" y1="106.68" x2="99.06" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="76.2" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
 <junction x="109.22" y="76.2"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="IC7" gate="1" pin="RXD"/>
+<wire x1="60.96" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="104.14" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="P$12"/>
+<wire x1="30.48" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
