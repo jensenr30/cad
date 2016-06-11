@@ -301,6 +301,27 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <text x="-1.905" y="6.35" size="1.27" layer="21" rot="SR0">+12V</text>
 <text x="1.905" y="6.35" size="1.27" layer="22" rot="MR0">+12V</text>
 </package>
+<package name="SOT363">
+<wire x1="-1" y1="0.55" x2="1" y2="0.55" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.55" x2="1" y2="-0.55" width="0.2032" layer="21"/>
+<wire x1="1" y1="-0.55" x2="-1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-0.55" x2="-1" y2="0.55" width="0.2032" layer="21"/>
+<circle x="-0.7" y="-0.25" radius="0.15" width="0" layer="21"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="4" x="0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="5" x="0" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="6" x="-0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<text x="-1.1" y="1.45" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.7" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MONO_JACK">
@@ -371,6 +392,24 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pin name="P$9" x="-2.54" y="-10.16" visible="off" length="point" rot="R180"/>
 <pin name="P$10" x="0" y="-10.16" visible="off" length="point"/>
 </symbol>
+<symbol name="NPN_BJT">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MONO_JACK">
@@ -409,6 +448,27 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <connect gate="G$1" pin="P$7" pad="P$7"/>
 <connect gate="G$1" pin="P$8" pad="P$8"/>
 <connect gate="G$1" pin="P$9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMMT3904W">
+<gates>
+<gate name="A" symbol="NPN_BJT" x="-10.16" y="0"/>
+<gate name="B" symbol="NPN_BJT" x="10.16" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT363">
+<connects>
+<connect gate="A" pin="B" pad="1"/>
+<connect gate="A" pin="C" pad="6"/>
+<connect gate="A" pin="E" pad="5"/>
+<connect gate="B" pin="B" pad="2"/>
+<connect gate="B" pin="C" pad="3"/>
+<connect gate="B" pin="E" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10348,7 +10408,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
 <part name="C6" library="capacitor-wima" deviceset="C" device="2.5/2" value="0.01µ"/>
 <part name="C7" library="capacitor-wima" deviceset="C" device="2.5/2" value="0.01µ"/>
-<part name="CV" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
+<part name="CV-IN" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
 <part name="AUDIO-IN" library="!synth_sch" deviceset="MONO_JACK" device="" value="I/O"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
@@ -10386,8 +10446,6 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="R13" library="resistor" deviceset="R-US_" device="R0603" value="100k"/>
-<part name="T1" library="transistor-neu-to92" deviceset="2N3904" device=""/>
-<part name="T2" library="transistor-neu-to92" deviceset="2N3904" device=""/>
 <part name="R14" library="resistor" deviceset="R-US_" device="R0603" value="2.2K"/>
 <part name="R15" library="resistor" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0603" value="1K"/>
@@ -10406,6 +10464,7 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <part name="LED-AUDIO-OUT" library="led" deviceset="TLLG4400" device=""/>
 <part name="R24" library="resistor" deviceset="R-US_" device="R0603" value="3.3k"/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="Q1_" library="!synth_sch" deviceset="DMMT3904W" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10574,20 +10633,22 @@ the sound coming out of the AUDIO-OUT jack. You will probably hear your input
 signal leaking through. Tune the BALANCE trim pot until your signal at the CV input
 can no longer be heard at the output (tune for minimum volume). This ensures that
 when your carrier is at 0 V, your modulation signal has no effect on the output audio.</text>
-<text x="33.02" y="121.92" size="1.778" layer="97" rot="MR180">Note: T1 and T2 should be kept at the same temperature.
-Use a monolithically matched pair for best stability.
-However, discrete parts will work fine.</text>
+<text x="38.1" y="121.92" size="1.778" layer="97" rot="MR180">Note: Q1_A and Q1_B should be kept at the same
+temperature. Use a monolithically matched pair for
+best stability. However, discrete parts will work fine.</text>
+<text x="-30.48" y="91.44" size="1.778" layer="97">AUDIO-IN is -5 V to +5 V</text>
+<text x="-25.908" y="81.534" size="1.778" layer="97">CV-IN is -5 V to +5 V</text>
 </plain>
 <instances>
-<instance part="IC2" gate="A" x="25.4" y="68.58" smashed="yes">
+<instance part="IC2" gate="D" x="25.4" y="68.58" smashed="yes">
 <attribute name="NAME" x="27.94" y="64.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="28.194" y="71.628" size="1.778" layer="96"/>
 </instance>
-<instance part="IC2" gate="B" x="99.06" y="48.26" rot="MR180"/>
-<instance part="IC2" gate="D" x="25.4" y="104.14"/>
-<instance part="IC2" gate="C" x="157.48" y="104.14" rot="MR180"/>
-<instance part="CV" gate="J1" x="-2.54" y="68.58" smashed="yes">
-<attribute name="NAME" x="-12.446" y="67.818" size="1.778" layer="96"/>
+<instance part="IC2" gate="C" x="99.06" y="48.26" rot="MR180"/>
+<instance part="IC2" gate="A" x="25.4" y="104.14"/>
+<instance part="IC2" gate="B" x="157.48" y="104.14" rot="MR180"/>
+<instance part="CV-IN" gate="J1" x="-2.54" y="68.58" smashed="yes">
+<attribute name="NAME" x="-14.986" y="67.818" size="1.778" layer="96"/>
 </instance>
 <instance part="AUDIO-IN" gate="J1" x="-2.54" y="104.14" smashed="yes">
 <attribute name="NAME" x="-20.32" y="103.632" size="1.778" layer="96"/>
@@ -10688,14 +10749,6 @@ However, discrete parts will work fine.</text>
 <attribute name="NAME" x="95.25" y="62.4586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="95.25" y="60.198" size="1.778" layer="96"/>
 </instance>
-<instance part="T1" gate="G1" x="101.6" y="93.98" smashed="yes">
-<attribute name="NAME" x="97.282" y="98.806" size="1.778" layer="95"/>
-<attribute name="VALUE" x="91.44" y="96.52" size="1.778" layer="96"/>
-</instance>
-<instance part="T2" gate="G1" x="121.92" y="93.98" smashed="yes" rot="MR0">
-<attribute name="NAME" x="124.46" y="99.06" size="1.778" layer="95"/>
-<attribute name="VALUE" x="124.46" y="96.52" size="1.778" layer="96"/>
-</instance>
 <instance part="R14" gate="G$1" x="119.38" y="48.26" smashed="yes">
 <attribute name="NAME" x="116.586" y="53.5686" size="1.778" layer="95"/>
 <attribute name="VALUE" x="116.586" y="51.054" size="1.778" layer="96"/>
@@ -10729,22 +10782,29 @@ However, discrete parts will work fine.</text>
 </instance>
 <instance part="P+7" gate="1" x="152.4" y="71.12"/>
 <instance part="SUPPLY12" gate="GND" x="152.4" y="40.64"/>
-<instance part="LED-AUDIO-IN" gate="G$1" x="45.72" y="99.06" smashed="yes">
-<attribute name="NAME" x="46.482" y="99.822" size="1.778" layer="95"/>
+<instance part="LED-AUDIO-IN" gate="G$1" x="45.72" y="91.44" smashed="yes">
+<attribute name="NAME" x="26.162" y="87.122" size="1.778" layer="95"/>
 </instance>
-<instance part="R20" gate="G$1" x="45.72" y="88.9" smashed="yes" rot="MR90">
-<attribute name="NAME" x="43.434" y="89.1286" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="43.434" y="86.614" size="1.778" layer="96" rot="MR0"/>
+<instance part="R20" gate="G$1" x="45.72" y="99.06" smashed="yes" rot="MR90">
+<attribute name="NAME" x="43.434" y="99.2886" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="43.434" y="96.774" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY16" gate="GND" x="45.72" y="81.28"/>
-<instance part="LED-AUDIO-OUT" gate="G$1" x="177.8" y="99.06" smashed="yes">
-<attribute name="NAME" x="175.514" y="94.742" size="1.778" layer="95" rot="R180"/>
+<instance part="LED-AUDIO-OUT" gate="G$1" x="177.8" y="88.9" smashed="yes">
+<attribute name="NAME" x="175.514" y="84.582" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="R24" gate="G$1" x="177.8" y="88.9" smashed="yes" rot="MR90">
-<attribute name="NAME" x="175.514" y="89.1286" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="175.514" y="86.614" size="1.778" layer="96" rot="MR0"/>
+<instance part="R24" gate="G$1" x="177.8" y="96.52" smashed="yes" rot="MR90">
+<attribute name="NAME" x="175.514" y="96.7486" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="175.514" y="94.234" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY17" gate="GND" x="177.8" y="81.28"/>
+<instance part="Q1_" gate="A" x="101.6" y="93.98" smashed="yes">
+<attribute name="NAME" x="95.504" y="97.536" size="1.778" layer="95"/>
+</instance>
+<instance part="Q1_" gate="B" x="121.92" y="93.98" smashed="yes" rot="MR0">
+<attribute name="NAME" x="128.27" y="97.536" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="119.38" y="93.218" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10761,11 +10821,11 @@ However, discrete parts will work fine.</text>
 <junction x="7.62" y="101.6"/>
 </segment>
 <segment>
-<pinref part="CV" gate="J1" pin="P$1"/>
+<pinref part="CV-IN" gate="J1" pin="P$1"/>
 <wire x1="5.08" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <wire x1="7.62" y1="66.04" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="CV" gate="J1" pin="P3"/>
+<pinref part="CV-IN" gate="J1" pin="P3"/>
 <wire x1="5.08" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="68.58" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
 <junction x="7.62" y="66.04"/>
@@ -10798,7 +10858,7 @@ However, discrete parts will work fine.</text>
 <wire x1="43.18" y1="22.86" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="B" pin="+IN"/>
+<pinref part="IC2" gate="C" pin="+IN"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="91.44" y1="45.72" x2="88.9" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="45.72" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
@@ -10816,21 +10876,22 @@ However, discrete parts will work fine.</text>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
+<pinref part="LED-AUDIO-IN" gate="G$1" pin="C"/>
+<wire x1="45.72" y1="86.36" x2="45.72" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
+<pinref part="LED-AUDIO-OUT" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="IC2" gate="A" pin="-IN"/>
+<pinref part="IC2" gate="D" pin="-IN"/>
 <wire x1="17.78" y1="66.04" x2="17.78" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="60.96" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="A" pin="OUT"/>
+<pinref part="IC2" gate="D" pin="OUT"/>
 <wire x1="35.56" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="CV-LVL" gate="G$1" pin="E"/>
 <wire x1="63.5" y1="66.04" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
@@ -10853,7 +10914,7 @@ However, discrete parts will work fine.</text>
 <wire x1="104.14" y1="99.06" x2="104.14" y2="111.76" width="0.1524" layer="91"/>
 <junction x="104.14" y="111.76"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="T1" gate="G1" pin="C"/>
+<pinref part="Q1_" gate="A" pin="C"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -10864,7 +10925,7 @@ However, discrete parts will work fine.</text>
 <wire x1="119.38" y1="99.06" x2="119.38" y2="101.6" width="0.1524" layer="91"/>
 <junction x="119.38" y="101.6"/>
 <pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="T2" gate="G1" pin="C"/>
+<pinref part="Q1_" gate="B" pin="C"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -10912,7 +10973,7 @@ However, discrete parts will work fine.</text>
 <wire x1="147.32" y1="101.6" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
 <junction x="147.32" y="101.6"/>
-<pinref part="IC2" gate="C" pin="+IN"/>
+<pinref part="IC2" gate="B" pin="+IN"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -10925,7 +10986,7 @@ However, discrete parts will work fine.</text>
 <wire x1="147.32" y1="111.76" x2="152.4" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="1"/>
 <wire x1="149.86" y1="106.68" x2="147.32" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="C" pin="-IN"/>
+<pinref part="IC2" gate="B" pin="-IN"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -10935,24 +10996,19 @@ However, discrete parts will work fine.</text>
 <wire x1="170.18" y1="111.76" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="180.34" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
 <junction x="170.18" y="104.14"/>
-<pinref part="IC2" gate="C" pin="OUT"/>
-<pinref part="LED-AUDIO-OUT" gate="G$1" pin="A"/>
+<pinref part="IC2" gate="B" pin="OUT"/>
+<wire x1="180.34" y1="104.14" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R24" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="104.14" x2="170.18" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="101.6" x2="177.8" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="104.14" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
 <junction x="177.8" y="104.14"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
 <pinref part="AUDIO-OUT" gate="J1" pin="P2"/>
-<wire x1="195.58" y1="104.14" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="AUDIO-OUT" gate="J1" pin="P3"/>
-<wire x1="193.04" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="101.6" x2="193.04" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="101.6" x2="193.04" y2="104.14" width="0.1524" layer="91"/>
-<junction x="193.04" y="104.14"/>
+<wire x1="195.58" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -10973,13 +11029,13 @@ However, discrete parts will work fine.</text>
 <net name="N$3" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="A" pin="+IN"/>
+<pinref part="IC2" gate="D" pin="+IN"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="CV" gate="J1" pin="P2"/>
+<pinref part="CV-IN" gate="J1" pin="P2"/>
 <wire x1="7.62" y1="71.12" x2="5.08" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10997,16 +11053,15 @@ However, discrete parts will work fine.</text>
 <pinref part="AUDIO-LVL" gate="G$1" pin="E"/>
 <wire x1="68.58" y1="101.6" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="LED-AUDIO-IN" gate="G$1" pin="A"/>
 <wire x1="45.72" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="101.6" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
-<junction x="45.72" y="104.14"/>
 <wire x1="15.24" y1="96.52" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="D" pin="-IN"/>
+<pinref part="IC2" gate="A" pin="-IN"/>
 <wire x1="15.24" y1="101.6" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="D" pin="OUT"/>
+<pinref part="IC2" gate="A" pin="OUT"/>
 <wire x1="33.02" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 <junction x="35.56" y="104.14"/>
+<pinref part="R20" gate="G$1" pin="2"/>
+<junction x="45.72" y="104.14"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -11038,7 +11093,7 @@ However, discrete parts will work fine.</text>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="104.14" y1="58.42" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="58.42" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="B" pin="OUT"/>
+<pinref part="IC2" gate="C" pin="OUT"/>
 <wire x1="111.76" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="73.66" x2="111.76" y2="58.42" width="0.1524" layer="91"/>
@@ -11050,15 +11105,15 @@ However, discrete parts will work fine.</text>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="T1" gate="G1" pin="E"/>
 <wire x1="104.14" y1="88.9" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="T2" gate="G1" pin="E"/>
 <wire x1="104.14" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="86.36" x2="119.38" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="83.82" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
 <junction x="111.76" y="86.36"/>
+<pinref part="Q1_" gate="A" pin="E"/>
+<pinref part="Q1_" gate="B" pin="E"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -11072,20 +11127,20 @@ However, discrete parts will work fine.</text>
 <wire x1="81.28" y1="58.42" x2="78.74" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
 <junction x="81.28" y="58.42"/>
-<pinref part="IC2" gate="B" pin="-IN"/>
+<pinref part="IC2" gate="C" pin="-IN"/>
 <wire x1="91.44" y1="50.8" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
 <junction x="81.28" y="50.8"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="T1" gate="G1" pin="B"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="99.06" y1="93.98" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="96.52" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="91.44" x2="96.52" y2="93.98" width="0.1524" layer="91"/>
 <junction x="96.52" y="93.98"/>
+<pinref part="Q1_" gate="A" pin="B"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -11097,10 +11152,10 @@ However, discrete parts will work fine.</text>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="T2" gate="G1" pin="B"/>
 <wire x1="124.46" y1="93.98" x2="127" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="127" y1="93.98" x2="127" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="Q1_" gate="B" pin="B"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -11121,27 +11176,31 @@ However, discrete parts will work fine.</text>
 <junction x="152.4" y="55.88"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="LED-AUDIO-IN" gate="G$1" pin="C"/>
-<pinref part="R20" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="LED-AUDIO-OUT" gate="G$1" pin="C"/>
-<pinref part="R24" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="IC2" gate="D" pin="+IN"/>
+<pinref part="IC2" gate="A" pin="+IN"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="LED-AUDIO-IN" gate="G$1" pin="A"/>
+<pinref part="R20" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="R24" gate="G$1" pin="1"/>
+<pinref part="LED-AUDIO-OUT" gate="G$1" pin="A"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,2,213.36,48.26,IC2P,V+,+12V,,,"/>
+<approved hash="104,2,213.36,33.02,IC2P,V-,-12V,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
