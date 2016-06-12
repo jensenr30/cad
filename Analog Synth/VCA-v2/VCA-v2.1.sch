@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -11612,8 +11612,8 @@ when your carrier is at 0 V, your modulation signal has no effect on the output 
 <text x="38.1" y="121.92" size="1.778" layer="97" rot="MR180">Note: T1A and T1B should be kept at the same
 temperature. Use a monolithically matched pair for
 best stability. However, discrete parts will work fine.</text>
-<text x="-30.48" y="91.44" size="1.778" layer="97">AUDIO-IN is -5 V to +5 V</text>
-<text x="-25.908" y="81.534" size="1.778" layer="97">CV-IN is -5 V to +5 V</text>
+<text x="-20.32" y="88.9" size="1.778" layer="97">AUDIO-IN is -5 V to +5 V</text>
+<text x="-20.828" y="78.994" size="1.778" layer="97">CV-IN is -5 V to +5 V</text>
 </plain>
 <instances>
 <instance part="IC2" gate="D" x="25.4" y="68.58" smashed="yes">
