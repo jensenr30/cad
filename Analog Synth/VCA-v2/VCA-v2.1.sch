@@ -11440,7 +11440,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R24" library="resistor" deviceset="R-US_" device="R0603" value="3.3k"/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="T1" library="!synth_sch" deviceset="DMMT3904W" device=""/>
-<part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2222ALT1" value="MMBT2222ALT1"/>
+<part name="T2" library="transistor" deviceset="*-NPN-" device="SOT23-BEC" technology="MMBT2222ALT1" value="DSC2001"/>
 </parts>
 <sheets>
 <sheet>
