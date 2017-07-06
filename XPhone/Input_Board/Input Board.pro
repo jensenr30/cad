@@ -1,4 +1,4 @@
-update=6/10/2017 7:12:15 PM
+update=7/5/2017 9:42:29 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=A:/Engineering/kicad/library
@@ -58,3 +56,5 @@ LibName26=atmel
 LibName27=contrib
 LibName28=valves
 LibName29=A:/Engineering/kicad/library/power_RPJ
+[general]
+version=1
