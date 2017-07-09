@@ -1,4 +1,4 @@
-update=7/5/2017 9:42:29 PM
+update=7/6/2017 9:46:00 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=A:/Engineering/kicad/library
@@ -34,27 +36,7 @@ LibName4=linear
 LibName5=regul
 LibName6=74xx
 LibName7=cmos4000
-LibName8=adc-dac
-LibName9=memory
-LibName10=xilinx
-LibName11=microcontrollers
-LibName12=dsp
-LibName13=microchip
-LibName14=analog_switches
-LibName15=motorola
-LibName16=texas
-LibName17=intel
-LibName18=audio
-LibName19=interface
-LibName20=digital-audio
-LibName21=philips
-LibName22=display
-LibName23=cypress
-LibName24=siliconi
-LibName25=opto
-LibName26=atmel
-LibName27=contrib
-LibName28=valves
-LibName29=A:/Engineering/kicad/library/power_RPJ
-[general]
-version=1
+LibName8=interface
+LibName9=siliconi
+LibName10=contrib
+LibName11=A:/Engineering/kicad/library/power_RPJ
