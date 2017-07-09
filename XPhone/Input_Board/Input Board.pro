@@ -1,4 +1,4 @@
-update=7/6/2017 9:46:00 PM
+update=7/8/2017 9:26:37 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=A:/Engineering/kicad/library
@@ -40,3 +38,5 @@ LibName8=interface
 LibName9=siliconi
 LibName10=contrib
 LibName11=A:/Engineering/kicad/library/power_RPJ
+[general]
+version=1
