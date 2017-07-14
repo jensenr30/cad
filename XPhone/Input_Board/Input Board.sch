@@ -18,9 +18,9 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
 Title "Xylophone Automatic - Input Amplification"
-Date "2017-07-06"
-Rev "1"
-Comp ""
+Date "2017-07-13"
+Rev "1.0"
+Comp "Ryan Jensen"
 Comment1 ""
 Comment2 ""
 Comment3 ""
