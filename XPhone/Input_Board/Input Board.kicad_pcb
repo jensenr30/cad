@@ -66,7 +66,7 @@
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFF7FF)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x00000_00000001)
       (usegerberextensions false)
@@ -221,7 +221,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670054)
-    (at 121.285 100.965)
+    (at 2.54 93.345)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5960E627)
@@ -257,7 +257,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 5967005A)
-    (at 123.19 86.36)
+    (at 6.985 93.345)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5960E62D)
@@ -293,7 +293,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670060)
-    (at 70.993 33.528)
+    (at 12.573 32.258)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /593C8C44)
@@ -329,7 +329,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670066)
-    (at 118.745 76.2)
+    (at 13.97 60.96)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F20F1)
@@ -365,7 +365,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 5967006C)
-    (at 110.195001 85.49)
+    (at 11.43 93.345)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5960E633)
@@ -401,7 +401,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670072)
-    (at 114.295001 79.64)
+    (at 15.875 93.345)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5960E639)
@@ -437,7 +437,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670078)
-    (at 71.247 39.497)
+    (at 12.827 38.227)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /593C8FC2)
@@ -473,7 +473,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 5967007E)
-    (at 110.755001 75.135)
+    (at 26.035 64.77)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F20F7)
@@ -509,7 +509,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670084)
-    (at 116.205 100.965)
+    (at 20.32 93.345)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5960E64D)
@@ -545,7 +545,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 5967008A)
-    (at 110.222381 79.64)
+    (at 2.54 98.425)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /5960E653)
@@ -581,7 +581,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670090)
-    (at 123.825 76.835)
+    (at 6.985 98.425)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /593CE812)
@@ -617,7 +617,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 59670096)
-    (at 112.057381 94.535)
+    (at 11.43 98.425)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F95F5)
@@ -653,7 +653,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 5967009C)
-    (at 76.962 26.416)
+    (at 18.542 25.146)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /593CA10D)
@@ -689,7 +689,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700A2)
-    (at 118.745 81.28)
+    (at 9.525 66.04)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F2134)
@@ -725,7 +725,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700A8)
-    (at 80.391 23.368)
+    (at 21.971 22.098)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /593CA537)
@@ -761,7 +761,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700AE)
-    (at 116.157381 94.535)
+    (at 3.175 67.945)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F2140)
@@ -797,7 +797,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700B4)
-    (at 123.19 81.915)
+    (at 15.875 98.425)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F675C)
@@ -833,7 +833,7 @@
   )
 
   (module Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Wave (layer F.Cu) (tedit 58CC8C08) (tstamp 596700BA)
-    (at 84.045001 126.595)
+    (at 21.59 97.79)
     (descr "Tantalum capacitor, Case B, EIA 3528-21, 3.5x2.8x1.9mm, Wave soldering footprint")
     (tags "capacitor tantalum smd")
     (path /595F7369)
@@ -872,7 +872,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700C0)
-    (at 111.76 99.695)
+    (at 85.09 41.91)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F1A5B)
@@ -908,7 +908,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700C6)
-    (at 121.132381 95.635)
+    (at 75.565 68.58)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F3A33)
@@ -944,7 +944,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700CC)
-    (at 106.68 100.965)
+    (at 83.185 36.83)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F1A61)
@@ -980,7 +980,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700D2)
-    (at 107.957381 94.535)
+    (at 83.82 64.135)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F3A39)
@@ -1016,7 +1016,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700D8)
-    (at 114.832381 75.135)
+    (at 82.55 31.75)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F1A9E)
@@ -1052,7 +1052,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700DE)
-    (at 118.745 86.36)
+    (at 86.995 73.025)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F3A76)
@@ -1088,7 +1088,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700E4)
-    (at 121.92 91.44)
+    (at 86.995 31.75)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F1AAA)
@@ -1124,7 +1124,7 @@
   )
 
   (module Capacitors_SMD:C_0603 (layer F.Cu) (tedit 58AA844E) (tstamp 596700EA)
-    (at 114.272381 85.49)
+    (at 81.28 76.2)
     (descr "Capacitor SMD 0603, reflow soldering, AVX (see smccp.pdf)")
     (tags "capacitor 0603")
     (path /595F3A82)
@@ -1160,7 +1160,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 596700EF)
-    (at 69.088 26.289)
+    (at 10.668 25.019)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /593CBF86)
@@ -1197,7 +1197,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 596700F4)
-    (at 133.35 55.245)
+    (at 6.985 60.325)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F21A5)
@@ -1234,7 +1234,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 596700F9)
-    (at 129.020001 59.915)
+    (at 12.7 15.24)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /593CC2F3)
@@ -1271,7 +1271,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 596700FE)
-    (at 117.425001 52.64)
+    (at 23.495 73.66)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F21B2)
@@ -1308,7 +1308,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670103)
-    (at 123.642143 59.915)
+    (at 19.05 6.35)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /593CC6F7)
@@ -1345,7 +1345,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670108)
-    (at 128.27 54.61)
+    (at 18.415 84.455)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F21B8)
@@ -1382,7 +1382,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 5967010D)
-    (at 106.574285 52.03)
+    (at 91.44 26.67)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F1B0F)
@@ -1419,7 +1419,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670112)
-    (at 112.194285 52.03)
+    (at 83.82 59.055)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F3AE7)
@@ -1456,7 +1456,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670117)
-    (at 106.185001 59.54)
+    (at 76.2 31.115)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F1B1C)
@@ -1493,7 +1493,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 5967011C)
-    (at 122.555 53.975)
+    (at 88.265 67.31)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F3AF4)
@@ -1530,7 +1530,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670121)
-    (at 117.475 60.325)
+    (at 85.725 9.525)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F1B22)
@@ -1567,7 +1567,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670126)
-    (at 111.567143 59.54)
+    (at 81.28 69.215)
     (descr "Through hole straight pin header, 1x01, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x01 2.54mm single row")
     (path /595F3AFA)
@@ -1604,7 +1604,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 5967012C)
-    (at 77.978 37.592)
+    (at 19.558 36.322)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /593C96E8)
@@ -1643,7 +1643,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670132)
-    (at 79.883 58.547)
+    (at 23.495 57.15)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /595F210F)
@@ -1682,7 +1682,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 59670138)
-    (at 27.545 79.855)
+    (at 78.105 37.465)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /595F1A79)
@@ -1721,7 +1721,7 @@
   )
 
   (module Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm (layer F.Cu) (tedit 58CD4EC1) (tstamp 5967013E)
-    (at 31.863 56.36)
+    (at 76.2 58.42)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /595F3A51)
@@ -1760,7 +1760,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-23 (layer F.Cu) (tedit 58CE4E7E) (tstamp 59670145)
-    (at 81.788 32.639)
+    (at 23.368 31.369)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /593C7DD5)
@@ -1801,7 +1801,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70 (layer F.Cu) (tedit 58CE4E7E) (tstamp 5967014C)
-    (at 75.565 57.023)
+    (at 17.78 56.515)
     (descr "SOT-323, SC-70")
     (tags "SOT-323 SC-70")
     (path /595F20EB)
@@ -1842,7 +1842,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670152)
-    (at 76.327 32.131)
+    (at 17.907 30.861)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593C94A2)
@@ -1878,7 +1878,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670158)
-    (at 143.800953 48.140374)
+    (at 10.795 55.245)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F2103)
@@ -1914,7 +1914,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 5967015E)
-    (at 72.517 28.829)
+    (at 14.097 27.559)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593CC107)
@@ -1950,7 +1950,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670164)
-    (at 143.883095 36.326916)
+    (at 27.305 69.215)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F21AB)
@@ -1986,7 +1986,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 5967016A)
-    (at 81.915 27.178)
+    (at 23.495 25.908)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593C930A)
@@ -2022,7 +2022,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670170)
-    (at 144.049761 18.606729)
+    (at 22.86 79.375)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F20FD)
@@ -2058,7 +2058,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670176)
-    (at 143.800953 119.021122)
+    (at 27.305 97.79)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595FC853)
@@ -2094,7 +2094,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 5967017C)
-    (at 86.233 23.876)
+    (at 27.813 22.606)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593CA5BF)
@@ -2130,7 +2130,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670182)
-    (at 143.800953 24.513458)
+    (at 9.525 71.755)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F2146)
@@ -2166,7 +2166,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670188)
-    (at 90.297 24.257)
+    (at 31.877 22.987)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593CA779)
@@ -2202,7 +2202,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 5967018E)
-    (at 86.36 29.21)
+    (at 27.94 27.94)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593CA670)
@@ -2238,7 +2238,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670194)
-    (at 144.049761 89.487477)
+    (at 18.415 75.565)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F2158)
@@ -2274,7 +2274,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 5967019A)
-    (at 143.978333 142.648038)
+    (at 24.13 84.455)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F214C)
@@ -2310,7 +2310,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701A0)
-    (at 144.359285 101.300935)
+    (at 26.67 17.78)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593CA7ED)
@@ -2346,7 +2346,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701A6)
-    (at 144.359285 95.394206)
+    (at 13.97 75.565)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F215E)
@@ -2382,7 +2382,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701AC)
-    (at 144.359285 12.7)
+    (at 31.75 19.05)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /593CB19A)
@@ -2418,7 +2418,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701B2)
-    (at 144.359285 42.233645)
+    (at 12.065 81.28)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F2196)
@@ -2454,7 +2454,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701B8)
-    (at 143.978333 54.047103)
+    (at 74.93 24.765)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1A6D)
@@ -2490,7 +2490,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701BE)
-    (at 143.978333 113.114393)
+    (at 93.345 79.375)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3A45)
@@ -2526,7 +2526,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701C4)
-    (at 143.978333 107.207664)
+    (at 85.725 26.67)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1B15)
@@ -2562,7 +2562,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701CA)
-    (at 143.978333 30.420187)
+    (at 71.12 74.295)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3AED)
@@ -2598,7 +2598,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701D0)
-    (at 144.049761 148.554767)
+    (at 80.645 26.67)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1A67)
@@ -2634,7 +2634,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701D6)
-    (at 144.049761 59.953832)
+    (at 73.025 80.645)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3A3F)
@@ -2670,7 +2670,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701DC)
-    (at 143.978333 154.461496)
+    (at 81.915 21.59)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1AB0)
@@ -2706,7 +2706,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701E2)
-    (at 143.978333 130.83458)
+    (at 75.565 74.295)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3A88)
@@ -2742,7 +2742,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701E8)
-    (at 144.049761 65.860561)
+    (at 78.105 18.415)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1AC2)
@@ -2778,7 +2778,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701EE)
-    (at 143.978333 136.741309)
+    (at 87.63 17.145)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1AB6)
@@ -2814,7 +2814,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701F4)
-    (at 144.049761 77.674019)
+    (at 69.85 67.945)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3A9A)
@@ -2850,7 +2850,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 596701FA)
-    (at 143.978333 71.76729)
+    (at 86.995 76.835)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3A8E)
@@ -2886,7 +2886,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670200)
-    (at 144.359285 160.368225)
+    (at 83.82 16.51)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1AC8)
@@ -2922,7 +2922,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670206)
-    (at 144.359285 124.927851)
+    (at 92.075 73.025)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3AA0)
@@ -2958,7 +2958,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 5967020C)
-    (at 144.359285 83.580748)
+    (at 86.36 21.59)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F1B00)
@@ -2994,7 +2994,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer F.Cu) (tedit 58E0A804) (tstamp 59670212)
-    (at 144.359285 166.274954)
+    (at 81.915 81.28)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /595F3AD8)
@@ -3030,14 +3030,14 @@
   )
 
   (module Potentiometers:Potentiometer_Trimmer_Bourns_3296W (layer F.Cu) (tedit 58826ECB) (tstamp 59670219)
-    (at 64.77 36.322)
+    (at 6.35 33.655 90)
     (descr "Spindle Trimmer Potentiometer, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
     (tags "Spindle Trimmer Potentiometer   Bourns 3296W")
     (path /593C956D)
-    (fp_text reference RV1 (at -2.54 -3.66) (layer F.SilkS)
+    (fp_text reference RV1 (at -2.54 -3.66 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 10k (at -2.54 3.67) (layer F.Fab)
+    (fp_text value 10k (at -2.54 3.67 90) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_arc (start 0.955 1.15) (end 0.955 2.305) (angle -182) (layer F.SilkS) (width 0.12))
@@ -3059,11 +3059,11 @@
     (fp_line (start -7.6 2.7) (end 2.5 2.7) (layer F.CrtYd) (width 0.05))
     (fp_line (start 2.5 2.7) (end 2.5 -2.7) (layer F.CrtYd) (width 0.05))
     (fp_line (start 2.5 -2.7) (end -7.6 -2.7) (layer F.CrtYd) (width 0.05))
-    (pad 1 thru_hole circle (at 0 0) (size 1.44 1.44) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at 0 0 90) (size 1.44 1.44) (drill 0.8) (layers *.Cu *.Mask)
       (net 6 "Net-(C7-Pad2)"))
-    (pad 2 thru_hole circle (at -2.54 0) (size 1.44 1.44) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole circle (at -2.54 0 90) (size 1.44 1.44) (drill 0.8) (layers *.Cu *.Mask)
       (net 5 "Net-(C7-Pad1)"))
-    (pad 3 thru_hole circle (at -5.08 0) (size 1.44 1.44) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 3 thru_hole circle (at -5.08 0 90) (size 1.44 1.44) (drill 0.8) (layers *.Cu *.Mask)
       (net 5 "Net-(C7-Pad1)"))
     (model Potentiometers.3dshapes/Potentiometer_Trimmer_Bourns_3296W.wrl
       (at (xyz 0 0 0))
@@ -3073,7 +3073,7 @@
   )
 
   (module Potentiometers:Potentiometer_Trimmer_Bourns_3296W (layer F.Cu) (tedit 58826ECB) (tstamp 59670220)
-    (at 109.22 42.545)
+    (at 20.32 67.31)
     (descr "Spindle Trimmer Potentiometer, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
     (tags "Spindle Trimmer Potentiometer   Bourns 3296W")
     (path /595F212D)
@@ -3116,7 +3116,7 @@
   )
 
   (module Potentiometers:Potentiometer_Trimmer_Bourns_3296W (layer F.Cu) (tedit 58826ECB) (tstamp 59670227)
-    (at 108.585 34.29)
+    (at 95.25 37.465)
     (descr "Spindle Trimmer Potentiometer, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
     (tags "Spindle Trimmer Potentiometer   Bourns 3296W")
     (path /595F1A97)
@@ -3159,7 +3159,7 @@
   )
 
   (module Potentiometers:Potentiometer_Trimmer_Bourns_3296W (layer F.Cu) (tedit 58826ECB) (tstamp 5967022E)
-    (at 109.855 26.67)
+    (at 69.215 59.69)
     (descr "Spindle Trimmer Potentiometer, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf")
     (tags "Spindle Trimmer Potentiometer   Bourns 3296W")
     (path /595F3A6F)
@@ -3202,7 +3202,7 @@
   )
 
   (module Housings_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 58CC8E33) (tstamp 5967023A)
-    (at 77.851 45.847 270)
+    (at 19.431 44.577 270)
     (descr "8-lead dip package, row spacing 7.62 mm (300 mils)")
     (tags "DIL DIP PDIP 2.54mm 7.62mm 300mil")
     (path /593C797A)
@@ -3254,7 +3254,7 @@
   )
 
   (module Housings_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 58CC8E2C) (tstamp 5967024C)
-    (at 3.175 3.81)
+    (at 46.99 13.97)
     (descr "14-lead dip package, row spacing 7.62 mm (300 mils)")
     (tags "DIL DIP PDIP 2.54mm 7.62mm 300mil")
     (path /593CCBBC)
@@ -3318,7 +3318,7 @@
   )
 
   (module Housings_DIP:DIP-14_W7.62mm (layer F.Cu) (tedit 58CC8E2C) (tstamp 5967025E)
-    (at 3.175 24.765)
+    (at 46.99 34.925)
     (descr "14-lead dip package, row spacing 7.62 mm (300 mils)")
     (tags "DIL DIP PDIP 2.54mm 7.62mm 300mil")
     (path /593CBADD)
@@ -3382,17 +3382,17 @@
   )
 
   (module Housings_DIP:DIP-8_W7.62mm (layer F.Cu) (tedit 58CC8E33) (tstamp 5967026A)
-    (at 23.608 73.759 90)
+    (at 82.55 45.085 270)
     (descr "8-lead dip package, row spacing 7.62 mm (300 mils)")
     (tags "DIL DIP PDIP 2.54mm 7.62mm 300mil")
     (path /595F1A4F)
-    (fp_text reference U5 (at 3.81 -2.39 90) (layer F.SilkS)
+    (fp_text reference U5 (at 3.81 -2.39 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value LM833 (at 3.81 10.01 90) (layer F.Fab)
+    (fp_text value LM833 (at 3.81 10.01 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 3.81 3.81 90) (layer F.Fab)
+    (fp_text user %R (at 3.81 3.81 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.635 -1.27) (end 6.985 -1.27) (layer F.Fab) (width 0.1))
@@ -3410,21 +3410,21 @@
     (fp_line (start 8.7 9.2) (end 8.7 -1.6) (layer F.CrtYd) (width 0.05))
     (fp_line (start 8.7 -1.6) (end -1.1 -1.6) (layer F.CrtYd) (width 0.05))
     (fp_arc (start 3.81 -1.39) (end 2.81 -1.39) (angle -180) (layer F.SilkS) (width 0.12))
-    (pad 1 thru_hole rect (at 0 0 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 1 thru_hole rect (at 0 0 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 17 "Net-(C21-Pad1)"))
-    (pad 5 thru_hole oval (at 7.62 7.62 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 5 thru_hole oval (at 7.62 7.62 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 16 "Net-(C20-Pad1)"))
-    (pad 2 thru_hole oval (at 0 2.54 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 2 thru_hole oval (at 0 2.54 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 18 "Net-(C21-Pad2)"))
-    (pad 6 thru_hole oval (at 7.62 5.08 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 6 thru_hole oval (at 7.62 5.08 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 20 "Net-(C22-Pad2)"))
-    (pad 3 thru_hole oval (at 0 5.08 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 3 thru_hole oval (at 0 5.08 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 15 "Net-(C19-Pad1)"))
-    (pad 7 thru_hole oval (at 7.62 2.54 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 7 thru_hole oval (at 7.62 2.54 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 19 "Net-(C22-Pad1)"))
-    (pad 4 thru_hole oval (at 0 7.62 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 4 thru_hole oval (at 0 7.62 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 1 +12V))
-    (pad 8 thru_hole oval (at 7.62 0 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
+    (pad 8 thru_hole oval (at 7.62 0 270) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 1 +12V))
     (model ${KISYS3DMOD}/Housings_DIP.3dshapes/DIP-8_W7.62mm.wrl
       (at (xyz 0 0 0))
@@ -3434,7 +3434,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering (layer F.Cu) (tedit 58CE4E7F) (tstamp 59670865)
-    (at 91.87 125.445)
+    (at 24.13 12.7)
     (descr "SOT-323, SC-70 Handsoldering")
     (tags "SOT-323 SC-70 Handsoldering")
     (path /593CA6EF)
@@ -3475,7 +3475,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering (layer F.Cu) (tedit 58CE4E7F) (tstamp 5967086C)
-    (at 84.42 134.595)
+    (at 5.08 74.93)
     (descr "SOT-323, SC-70 Handsoldering")
     (tags "SOT-323 SC-70 Handsoldering")
     (path /595F2152)
@@ -3516,7 +3516,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering (layer F.Cu) (tedit 58CE4E7F) (tstamp 59670873)
-    (at 100.33 132.08)
+    (at 92.71 19.685)
     (descr "SOT-323, SC-70 Handsoldering")
     (tags "SOT-323 SC-70 Handsoldering")
     (path /595F1A55)
@@ -3557,7 +3557,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering (layer F.Cu) (tedit 58CE4E7F) (tstamp 5967087A)
-    (at 100.07 125.445)
+    (at 91.44 57.785)
     (descr "SOT-323, SC-70 Handsoldering")
     (tags "SOT-323 SC-70 Handsoldering")
     (path /595F3A2D)
@@ -3598,7 +3598,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering (layer F.Cu) (tedit 58CE4E7F) (tstamp 59670881)
-    (at 92.51 131.05)
+    (at 96.52 26.67)
     (descr "SOT-323, SC-70 Handsoldering")
     (tags "SOT-323 SC-70 Handsoldering")
     (path /595F1ABC)
@@ -3639,7 +3639,7 @@
   )
 
   (module TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering (layer F.Cu) (tedit 58CE4E7F) (tstamp 59670888)
-    (at 75.565 126.365)
+    (at 93.98 63.5)
     (descr "SOT-323, SC-70 Handsoldering")
     (tags "SOT-323 SC-70 Handsoldering")
     (path /595F3A94)
@@ -3680,7 +3680,7 @@
   )
 
   (module TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval (layer F.Cu) (tedit 58CE52AF) (tstamp 5967108B)
-    (at 5.715 48.895)
+    (at 49.53 59.055)
     (descr "TO-92 leads in-line, narrow, oval pads, drill 0.6mm (see NXP sot054_po.pdf)")
     (tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
     (path /59620FB2)
