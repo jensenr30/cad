@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "A:/Engineering/kicad/XPhone/Input_Board/Input Board.sch")
-    (date "7/8/2017 9:16:30 PM")
+    (date "7/13/2017 7:49:16 PM")
     (tool "Eeschema 4.0.6")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -564,7 +564,7 @@
     (comp (ref U2)
       (value 78L05)
       (footprint TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval)
-      (libsource (lib regul) (part 78L05))
+      (libsource (lib "Input Board-rescue") (part 78L05-RESCUE-Input_Board))
       (sheetpath (names /) (tstamps /))
       (tstamp 59620FB2)))
   (libparts
@@ -592,16 +592,10 @@
         (pin (num 12) (name ~) (type output))
         (pin (num 13) (name ~) (type input))
         (pin (num 14) (name VCC) (type power_in))))
-    (libpart (lib regul) (part 7805)
-      (aliases
-        (alias LM7805)
-        (alias LM7812)
-        (alias 78L05))
-      (description "Linear Regulator +5V")
-      (docs regulator\lm78xx.pdf)
+    (libpart (lib "Input Board-rescue") (part 78L05-RESCUE-Input_Board)
       (fields
         (field (name Reference) U)
-        (field (name Value) 7805))
+        (field (name Value) 78L05-RESCUE-Input_Board))
       (pins
         (pin (num 1) (name VO) (type power_out))
         (pin (num 2) (name GND) (type input))
@@ -757,18 +751,18 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
+    (library (logical conn)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
     (library (logical transistors)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\transistors.lib"))
-    (library (logical regul)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\regul.lib"))
+    (library (logical "Input Board-rescue")
+      (uri "A:\\Engineering\\kicad\\XPhone\\Input_Board\\Input Board-rescue.lib"))
+    (library (logical device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib"))
     (library (logical 74xx)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\74xx.lib"))
     (library (logical linear)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\linear.lib"))
-    (library (logical conn)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\conn.lib"))
-    (library (logical device)
-      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\device.lib")))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library\\linear.lib")))
   (nets
     (net (code 1) (name V_ENV_BIAS)
       (node (ref R6) (pin 2))

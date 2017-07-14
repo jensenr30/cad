@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Input Board-rescue
 LIBS:device
 LIBS:transistors
 LIBS:conn
@@ -2107,7 +2108,7 @@ F 3 "" H 9900 6000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 78L05 U2
+L 78L05-RESCUE-Input_Board U2
 U 1 1 59620FB2
 P 2650 6450
 F 0 "U2" H 2800 6254 50  0000 C CNN
