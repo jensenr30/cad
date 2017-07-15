@@ -1,4 +1,12 @@
-Cmp-Mod V01 Created by PcbNew   date = 7/15/2017 11:20:01 AM
+Cmp-Mod V01 Created by PcbNew   date = 7/15/2017 11:45:00 AM
+
+BeginCmp
+TimeStamp = 5967025E
+Path = /593CBADD
+Reference = U4;
+ValeurCmp = 74HC14;
+IdModule  = Housings_DIP:DIP-14_W7.62mm;
+EndCmp
 
 BeginCmp
 TimeStamp = 596700BA
@@ -174,22 +182,6 @@ Path = /593C797A
 Reference = U1;
 ValeurCmp = LM833;
 IdModule  = Housings_DIP:DIP-8_W7.62mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5967024C
-Path = /593CCBBC
-Reference = U3;
-ValeurCmp = TL084;
-IdModule  = Housings_DIP:DIP-14_W7.62mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 5967025E
-Path = /593CBADD
-Reference = U4;
-ValeurCmp = 74HC14;
-IdModule  = Housings_DIP:DIP-14_W7.62mm;
 EndCmp
 
 BeginCmp
@@ -750,6 +742,14 @@ Path = /5960E627
 Reference = C1;
 ValeurCmp = 10n;
 IdModule  = Capacitors_SMD:C_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5967024C
+Path = /593CCBBC
+Reference = U3;
+ValeurCmp = TL084;
+IdModule  = SMD_Packages:SOIC-14_N;
 EndCmp
 
 EndListe
