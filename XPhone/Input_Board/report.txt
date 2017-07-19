@@ -1,0 +1,216 @@
+Info: Reading netlist file "A:\Engineering\kicad\XPhone\Input_Board\Input Board.net".
+
+Info: Using references to match components and footprints.
+
+Info: Checking netlist component footprint "C1:/5960E627:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C1:/5960E627" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C2:/5960E62D:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C2:/5960E62D" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C3:/593C8C44:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C4:/595F20F1:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C5:/5960E633:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C5:/5960E633" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C6:/5960E639:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C6:/5960E639" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C7:/593C8FC2:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C8:/595F20F7:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C9:/5960E64D:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C9:/5960E64D" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C10:/5960E653:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C10:/5960E653" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C11:/593CE812:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C12:/595F95F5:Capacitors_SMD:C_0603_HandSoldering".
+
+Changing component "C12:/595F95F5" pin "2" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "C13:/593CA10D:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C14:/595F2134:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C15:/593CA537:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C16:/595F2140:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C17:/595F675C:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C18:/595F7369:Capacitors_Tantalum_SMD:CP_Tantalum_Case-B_EIA-3528-21_Wave".
+
+Info: Checking netlist component footprint "C19:/595F1A5B:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C20:/595F3A33:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C21:/595F1A61:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C22:/595F3A39:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C23:/595F1A9E:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C24:/595F3A76:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C25:/595F1AAA:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "C26:/595F3A82:Capacitors_SMD:C_0603_HandSoldering".
+
+Info: Checking netlist component footprint "J1:/593CBF86:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J2:/595F21A5:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J3:/593CC2F3:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J4:/595F21B2:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J5:/593CC6F7:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J6:/595F21B8:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J7:/595F1B0F:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J8:/595F3AE7:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J9:/595F1B1C:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J10:/595F3AF4:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J11:/595F1B22:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J12:/595F3AFA:Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm".
+
+Info: Checking netlist component footprint "J13:/5969566C:Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm".
+
+Changing component "J13:/5969566C" pin "3" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "J14:/59698210:Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm".
+
+Changing component "J14:/59698210" pin "3" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "L1:/593C96E8:Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm".
+
+Info: Checking netlist component footprint "L2:/595F210F:Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm".
+
+Info: Checking netlist component footprint "L3:/595F1A79:Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm".
+
+Info: Checking netlist component footprint "L4:/595F3A51:Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm".
+
+Info: Checking netlist component footprint "Q1:/593C7DD5:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q2:/595F20EB:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q3:/593CA6EF:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q4:/595F2152:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q5:/595F1A55:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q6:/595F3A2D:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q7:/595F1ABC:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "Q8:/595F3A94:TO_SOT_Packages_SMD:SOT-323_SC-70_Handsoldering".
+
+Info: Checking netlist component footprint "R1:/593C94A2:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R2:/595F2103:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R3:/593CC107:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R4:/595F21AB:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R5:/593C930A:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R6:/595F20FD:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R7:/595FC853:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R8:/593CA5BF:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R9:/595F2146:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R10:/593CA779:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R11:/593CA670:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R12:/595F2158:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R13:/595F214C:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R14:/593CA7ED:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R15:/595F215E:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R16:/593CB19A:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R17:/595F2196:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R18:/595F1A6D:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R19:/595F3A45:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R20:/595F1B15:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R21:/595F3AED:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R22:/595F1A67:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R23:/595F3A3F:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R24:/595F1AB0:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R25:/595F3A88:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R26:/595F1AC2:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R27:/595F1AB6:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R28:/595F3A9A:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R29:/595F3A8E:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R30:/595F1AC8:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R31:/595F3AA0:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R32:/595F1B00:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "R33:/595F3AD8:Resistors_SMD:R_0603_HandSoldering".
+
+Info: Checking netlist component footprint "RV1:/593C956D:Potentiometers:Potentiometer_Trimmer_Bourns_3296W".
+
+Info: Checking netlist component footprint "RV2:/595F212D:Potentiometers:Potentiometer_Trimmer_Bourns_3296W".
+
+Info: Checking netlist component footprint "RV3:/595F1A97:Potentiometers:Potentiometer_Trimmer_Bourns_3296W".
+
+Info: Checking netlist component footprint "RV4:/595F3A6F:Potentiometers:Potentiometer_Trimmer_Bourns_3296W".
+
+Info: Checking netlist component footprint "U1:/593C797A:Housings_DIP:DIP-8_W7.62mm".
+
+Changing component "U1:/593C797A" pin "4" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "U2:/59620FB2:TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval".
+
+Info: Checking netlist component footprint "U3:/593CCBBC:SMD_Packages:SOIC-14_N".
+
+Changing component "U3:/593CCBBC" pin "11" net name from "+12V" to "-12V".
+
+Info: Checking netlist component footprint "U4:/593CBADD:Housings_DIP:DIP-14_W7.62mm".
+
+Info: Checking netlist component footprint "U5:/595F1A4F:Housings_DIP:DIP-8_W7.62mm".
+
+Changing component "U5:/595F1A4F" pin "4" net name from "+12V" to "-12V".
+
