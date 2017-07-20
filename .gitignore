@@ -6,3 +6,4 @@ Thumbs.db
 *.bak
 *.kicad_pcb-bak
 *_autosave-*
+modules/*
