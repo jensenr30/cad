@@ -1,5 +1,6 @@
-Add V_ENV_BIAS circuit.
-
+//------------------------------------------------------------------------------
+// TODO
+//------------------------------------------------------------------------------
 Add Text to indicate what the headers are.
 Provide better numbers.
 Maybe do this on the reverse side?
@@ -13,8 +14,13 @@ Polish the F.Fab.
 
 Print the circuit on paper to make sure all looks right.
 
-Copy circuit 4 times.
+label power connector
 
-generate BOM.
+Copy circuit 4 times; generate BOM; order protopack from dirtypcbs;
 
-order protopack from dirtypcbs.
+
+//------------------------------------------------------------------------------
+// DONE
+//------------------------------------------------------------------------------
+Add V_ENV_BIAS circuit.
+

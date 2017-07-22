@@ -2219,4 +2219,12 @@ Wire Wire Line
 Connection ~ 4550 6650
 Text GLabel 5000 6650 2    60   Input ~ 0
 V_ENV_BIAS
+Text Notes 550  1000 0    394  ~ 79
+A
+Text Notes 550  3700 0    394  ~ 79
+B
+Text Notes 5500 3700 0    394  ~ 79
+D
+Text Notes 5500 1000 0    394  ~ 79
+C
 $EndSCHEMATC
