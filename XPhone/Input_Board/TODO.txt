@@ -10,8 +10,6 @@ Adding mounting holes would be a good idea.
 
 Polish the silkscreen.
 
-Polish the F.Fab.
-
 Print the circuit on paper to make sure all looks right.
 
 label power connector
@@ -24,3 +22,4 @@ Copy circuit 4 times; generate BOM; order protopack from dirtypcbs;
 //------------------------------------------------------------------------------
 Add V_ENV_BIAS circuit.
 
+Polish the F.Fab.
