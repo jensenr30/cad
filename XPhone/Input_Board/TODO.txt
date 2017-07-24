@@ -1,18 +1,8 @@
 //------------------------------------------------------------------------------
 // TODO
 //------------------------------------------------------------------------------
-Add Text to indicate what the headers are.
-Provide better numbers.
-Maybe do this on the reverse side?
-
-Think about how you are going to mount these in the XPhone case.
-Adding mounting holes would be a good idea.
-
-Polish the silkscreen.
 
 Print the circuit on paper to make sure all looks right.
-
-label power connector
 
 Copy circuit 4 times; generate BOM; order protopack from dirtypcbs;
 
@@ -23,3 +13,14 @@ Copy circuit 4 times; generate BOM; order protopack from dirtypcbs;
 Add V_ENV_BIAS circuit.
 
 Polish the F.Fab.
+
+Add Text to indicate what the headers are.
+Provide better numbers.
+Maybe do this on the reverse side?
+
+label power connector
+
+Polish the silkscreen.
+
+Think about how you are going to mount these in the XPhone case.
+Adding mounting holes would be a good idea.
