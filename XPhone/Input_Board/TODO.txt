@@ -2,6 +2,8 @@
 // TODO
 //------------------------------------------------------------------------------
 
+Put the L1, L2, L3, L4 references inside their boxes.
+
 Print the circuit on paper to make sure all looks right.
 
 Copy circuit 4 times; generate BOM; order protopack from dirtypcbs;
