@@ -1,6 +1,6 @@
 (page_layout
   (setup (textsize 1.5 1.5)(linewidth 0.15)(textlinewidth 0.15)
   (left_margin 10)(right_margin 10)(top_margin 10)(bottom_margin 10))
-  (line (name segm1:Line) (start 287.0022 199.0072) (end 287.0022 201.0072))
-  (line (name segm2:Line) (start 286.0022 200.0072) (end 288.0022 200.0072))
+  (line (name segm1:Line) (start 244 192.2) (end 244 194.2))
+  (line (name segm2:Line) (start 243 193.2) (end 245 193.2))
 )
