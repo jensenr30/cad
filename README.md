@@ -1,4 +1,4 @@
-# Ryan's Schematics and PCBs
+# Ryan's CAD Files (Schematics, PCBs, Simulations)
 
 ## kicad5
 I started using KiCad 5.1.2 to draw schematics and lay out PCBs in May 2019.
