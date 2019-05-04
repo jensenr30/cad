@@ -1,5 +1,5 @@
 # Jensen's KiCAD Projects
-I Use [KiCad](http://kicad-pcb.org/) to view/edit my schematics, pcbs, symbols, and footprints.
+I Use KiCad 4 to view/edit my schematics, pcbs, symbols, and footprints.
 
 I Use [gerbv](http://gerbv.geda-project.org/) to view the gerber files.
 

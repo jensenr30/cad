@@ -3792,10 +3792,10 @@
 
   (gr_line (start 27.86 85.82) (end 127.86 85.82) (angle 90) (layer F.SilkS) (width 0.2) (tstamp 5976E9D0))
   (gr_line (start 77.86 35.82) (end 77.86 135.82) (angle 90) (layer F.SilkS) (width 0.2) (tstamp 5976E9CA))
-  (gr_text "Audio Out\n" (at 41.322 79.292) (layer F.SilkS)
+  (gr_text "Audio Out\n" (at 28.5 79.3) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
-  (gr_text "Env. Out" (at 28.368 79.292) (layer F.SilkS)
+  (gr_text "Env. Out" (at 41.1 79.3) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "Ryan Jensen    2017 July" (at 76.86 84.32) (layer B.SilkS)
