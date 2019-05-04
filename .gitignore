@@ -7,4 +7,3 @@ Thumbs.db
 *.kicad_pcb-bak
 *_autosave-*
 modules/*
-kicad-footprint-generator/*
