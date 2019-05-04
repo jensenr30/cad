@@ -1,0 +1,23 @@
+ 44	Drills
+ 
+100	FrontPanel
+		This is an outline that shows how large the panel will be
+		
+101	PartProfile
+		This is the layer that shows the size of the components behind the panel.
+		It helps to see how close components can be packed together without hitting each other.
+		
+102	PanelSupportRails
+		(the boards that the front panels connect to )
+		
+103	MiscProfile
+		
+
+104 PanelText
+		this has all of the text that will show up on the finished front panel
+
+105 Artwork
+		This is the layer that contains all panel artwork
+
+110 hole_size
+		This layer contains a bunch of text that indicates what diameter the holes are.

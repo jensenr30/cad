@@ -1,0 +1,1 @@
+I did not create this schematic, nor do I own this schematic.
