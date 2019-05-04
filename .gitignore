@@ -1,15 +1,13 @@
-*.orig
-Thumbs.db
-*/Thumbs.db
-*/_SYNCAPP
 
-*.s#*
-*.l#*
-*.b#*
 
-_EAGLE-6.6.0/ulp/*
-_EAGLE-6.6.0/bin/*
-_EAGLE-6.6.0/doc/*
-_EAGLE-6.6.0/misc/*
-_EAGLE-6.6.0/projects/*
-_EAGLE-6.6.0/scr/*
+#===============================================================================
+# Eagle 6
+#===============================================================================
+eagle6/_EAGLE-6.6.0/ulp/*
+eagle6/_EAGLE-6.6.0/bin/*
+eagle6/_EAGLE-6.6.0/doc/*
+eagle6/_EAGLE-6.6.0/misc/*
+eagle6/_EAGLE-6.6.0/projects/*
+eagle6/_EAGLE-6.6.0/scr/*
+
+
