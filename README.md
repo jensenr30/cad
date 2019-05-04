@@ -1,4 +1,4 @@
-# JensenR30's Schematics and PCBs (printed circuit boards)
+# Ryan's Schematics and PCBs
 
 ## kicad5
 I started using KiCad 5.1.2 to draw schematics and lay out PCBs in May 2019.
