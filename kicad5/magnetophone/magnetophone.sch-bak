@@ -1,0 +1,119 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 5E405C14
+P 3300 1350
+F 0 "U?" H 3350 1600 50  0000 L CNN
+F 1 "LM386" H 3350 1500 50  0000 L CNN
+F 2 "" H 3400 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 3500 1550 50  0001 C CNN
+	1    3300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5E40715A
+P 2500 1400
+F 0 "J?" H 2250 1450 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 2350 1650 50  0000 C CNN
+F 2 "" H 2500 1400 50  0001 C CNN
+F 3 "~" H 2500 1400 50  0001 C CNN
+	1    2500 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E408D64
+P 3200 1650
+F 0 "#PWR?" H 3200 1400 50  0001 C CNN
+F 1 "GND" H 3205 1477 50  0000 C CNN
+F 2 "" H 3200 1650 50  0001 C CNN
+F 3 "" H 3200 1650 50  0001 C CNN
+	1    3200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5E409729
+P 3200 1050
+F 0 "#PWR?" H 3200 900 50  0001 C CNN
+F 1 "VCC" H 3217 1223 50  0000 C CNN
+F 2 "" H 3200 1050 50  0001 C CNN
+F 3 "" H 3200 1050 50  0001 C CNN
+	1    3200 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1300 2850 1300
+Wire Wire Line
+	2850 1300 2850 1250
+Wire Wire Line
+	2850 1250 3000 1250
+Wire Wire Line
+	3000 1450 2850 1450
+Wire Wire Line
+	2850 1450 2850 1400
+Wire Wire Line
+	2850 1400 2700 1400
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5E40C95B
+P 3300 2200
+F 0 "RV?" V 3187 2200 50  0000 C CNN
+F 1 "R_POT_US" V 3096 2200 50  0000 C CNN
+F 2 "" H 3300 2200 50  0001 C CNN
+F 3 "~" H 3300 2200 50  0001 C CNN
+	1    3300 2200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 1650 3300 2050
+NoConn ~ 3150 2200
+NoConn ~ 3300 1050
+$Comp
+L Device:CP C?
+U 1 1 5E410692
+P 4350 1350
+F 0 "C?" V 4605 1350 50  0000 C CNN
+F 1 "CP" V 4514 1350 50  0000 C CNN
+F 2 "" H 4388 1200 50  0001 C CNN
+F 3 "~" H 4350 1350 50  0001 C CNN
+	1    4350 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 1650 3400 1950
+Wire Wire Line
+	3400 1950 3600 1950
+Wire Wire Line
+	3600 1950 3600 2200
+Wire Wire Line
+	3600 2200 3450 2200
+Wire Wire Line
+	3600 1350 4200 1350
+$Comp
+L Device:Speaker LS?
+U 1 1 5E4141D8
+P 5050 1850
+F 0 "LS?" H 5220 1846 50  0000 L CNN
+F 1 "Speaker" H 5220 1755 50  0000 L CNN
+F 2 "" H 5050 1650 50  0001 C CNN
+F 3 "~" H 5040 1800 50  0001 C CNN
+	1    5050 1850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
