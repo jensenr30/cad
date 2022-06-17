@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html class=" ilarbp idc0_340" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<script src="CNC%20G%20Codes_files/sdk_002.js" async="" crossorigin="anonymous"></script><script type="text/javascript" async="" src="CNC%20G%20Codes_files/pinit_main.js"></script><script type="text/javascript" async="" src="CNC%20G%20Codes_files/analytics.js"></script><script async="" src="CNC%20G%20Codes_files/fbevents.js"></script><script id="facebook-jssdk" src="CNC%20G%20Codes_files/sdk.js"></script><script async="" src="CNC%20G%20Codes_files/f7fc62c2169af41e666b64056.js"></script><script async="" src="CNC%20G%20Codes_files/gtm.js"></script><script async="" src="CNC%20G%20Codes_files/js" type="text/javascript"></script>
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116399909-1');
+</script>
+
+<script type="text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K9NZ76M');</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="I explore a large list of CNC G Codes and look at both their function and uses on both CNC lathes and CNC milling machines">
+<meta name="keywords" content="CNC G Codes">
+<meta name="author" content="Marc">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>CNC G Codes</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="https://gcodetutor.com/favicon.ico">
+
+<link href="CNC%20G%20Codes_files/bootstrap.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/fontawesome-all.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/style_002.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/themify-icons.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/owl.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/magnific-popup.css" rel="stylesheet">
+
+
+<link href="CNC%20G%20Codes_files/header.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/style.css" rel="stylesheet">
+<link href="CNC%20G%20Codes_files/default.css" rel="stylesheet" id="color_theme">
+
+
+
+<meta itemprop="name" content="CNC G Codes">
+<meta itemprop="description" content="I explore a large list of CNC G Codes and look at both their function and uses on both CNC lathes and CNC milling machines">
+<meta itemprop="image" content="https://gcodetutor.com/cnc-machine-training/img/cnc-g-codes.jpg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@gcodetutor">
+<meta name="twitter:title" content="CNC G Codes">
+<meta name="twitter:description" content="I explore a large list of CNC G Codes and look at both their function and uses on both CNC lathes and CNC milling machines">
+<meta name="twitter:creator" content="@gcodetutor">
+
+<meta name="twitter:image:src" content="https://gcodetutor.com/cnc-machine-training/img/cnc-g-codes.jpg">
+
+<meta property="og:title" content="CNC G Codes">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://gcodetutor.com/cnc-machine-training/cnc-g-codes.html">
+<meta property="og:image" content="https://gcodetutor.com/cnc-machine-training/img/cnc-g-codes.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta property="og:description" content="I explore a large list of CNC G Codes and look at both their function and uses on both CNC lathes and CNC milling machines">
+<meta property="og:site_name" content="GCodeTutor">
+<meta property="article:section" content="CNC G Codes">
+<meta property="article:tag" content="CNC G Codes">
+<meta property="fb:app_id" content="701804743511445">
+
+
+<link rel="stylesheet" type="text/css" href="CNC%20G%20Codes_files/cookieconsent.css">
+<script src="CNC%20G%20Codes_files/cookieconsent.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#385471"
+    },
+    "button": {
+      "background": "#7796B6"
+    }
+  }
+})});
+</script>
+
+<script id="mcjs" type="text/javascript">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a1a2918dec1e8fa3908d10122/f7fc62c2169af41e666b64056.js");</script>
+
+
+<style type="text/css"> span.PIN_1655428680137_embed_grid { 
+  width: 100%;
+  max-width: 257px;
+  min-width: 140px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 16px;
+  overflow: hidden;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: rgb(54, 54, 54);
+  box-sizing: border-box;
+  background: #fff;
+  cursor: pointer;
+  -moz-font-smoothing: antialiased;
+}
+ span.PIN_1655428680137_embed_grid * { 
+  display: block;
+  position: relative;
+  font: inherit;
+  cursor: inherit;
+  color: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_hd { 
+  height: 55px;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_hd .PIN_1655428680137_img { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  background: transparent url () 0 0 no-repeat;
+  background-size: cover;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_hd .PIN_1655428680137_pinner { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+  position: absolute;
+  top: 20px;
+  left: 56px;
+  font-size: 14px;
+  font-weight: bold;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_bd { 
+  padding: 0 10px;
+  -moz-scrollbars: none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_bd .PIN_1655428680137_ct { 
+  width: 100%;
+  height: auto;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  display: inline-block;
+  width: 100%;
+  padding: 1px;
+  vertical-align: top;
+  min-width: 60px;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col .PIN_1655428680137_img { 
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft { 
+  padding: 10px;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button { 
+  border-radius: 16px;
+  text-align: center;
+  background-color: #efefef;
+  border: 1px solid #efefef;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  width: 100%;
+  min-width: 70px;
+  padding: 0 3px;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button .PIN_1655428680137_label { 
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button .PIN_1655428680137_label.PIN_1655428680137_top { 
+  top: 0;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button .PIN_1655428680137_label.PIN_1655428680137_bottom { 
+  bottom: 0;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button .PIN_1655428680137_label .PIN_1655428680137_string { 
+  white-space: pre;
+  color: #746d6a;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: top;
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button .PIN_1655428680137_label .PIN_1655428680137_logo { 
+  display: inline-block;
+  vertical-align: bottom;
+  height: 32px;
+  width: 80px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTJweCIgd2lkdGg9IjUwcHgiIHZpZXdCb3g9IjAgMCA1MCAxMiI+PGc+PHBhdGggZD0iTTE5LjY5LDkuMjggTDE5LjY5LDQuMjggTDIxLjI3LDQuMjggTDIxLjI3LDkuMjggTDE5LjY5LDkuMjggWiBNNS45NywwLjAwIEM5LjI3LDAuMDAgMTEuOTUsMi42OSAxMS45NSw2LjAwIEMxMS45NSw5LjMxIDkuMjcsMTIuMDAgNS45NywxMi4wMCBDNS4zOCwxMi4wMCA0LjgwLDExLjkxIDQuMjYsMTEuNzUgQzQuMjYsMTEuNzUgNC4yNiwxMS43NSA0LjI2LDExLjc1IEM0LjI1LDExLjc1IDQuMjQsMTEuNzQgNC4yMywxMS43NCBMNC4yMSwxMS43MyBDNC4yMSwxMS43MyA0LjIxLDExLjczIDQuMjEsMTEuNzMgQzQuNDUsMTEuMzMgNC44MSwxMC42OCA0Ljk1LDEwLjE2IEM1LjAyLDkuODggNS4zMiw4LjczIDUuMzIsOC43MyBDNS41Miw5LjExIDYuMDgsOS40MiA2LjY5LDkuNDIgQzguNDksOS40MiA5Ljc5LDcuNzYgOS43OSw1LjY5IEM5Ljc5LDMuNzEgOC4xOCwyLjIzIDYuMTEsMi4yMyBDMy41MywyLjIzIDIuMTYsMy45NiAyLjE2LDUuODYgQzIuMTYsNi43NCAyLjYzLDcuODMgMy4zNyw4LjE4IEMzLjQ5LDguMjMgMy41NSw4LjIxIDMuNTcsOC4xMCBDMy41OSw4LjAyIDMuNjksNy42MSAzLjc0LDcuNDIgQzMuNzUsNy4zNiAzLjc1LDcuMzEgMy43MCw3LjI1IEMzLjQ1LDYuOTUgMy4yNSw2LjM5IDMuMjUsNS44OCBDMy4yNSw0LjU1IDQuMjUsMy4yNyA1Ljk1LDMuMjcgQzcuNDIsMy4yNyA4LjQ1LDQuMjggOC40NSw1LjcxIEM4LjQ1LDcuMzQgNy42Myw4LjQ2IDYuNTcsOC40NiBDNS45OCw4LjQ2IDUuNTQsNy45OCA1LjY4LDcuMzggQzUuODUsNi42NyA2LjE4LDUuOTAgNi4xOCw1LjM4IEM2LjE4LDQuOTIgNS45Myw0LjU0IDUuNDIsNC41NCBDNC44Miw0LjU0IDQuMzQsNS4xNiA0LjM0LDUuOTkgQzQuMzQsNi41MiA0LjUyLDYuODggNC41Miw2Ljg4IEM0LjUyLDYuODggMy45Myw5LjQwIDMuODIsOS44NyBDMy43MCwxMC4zOCAzLjc1LDExLjExIDMuODAsMTEuNTkgTDMuODAsMTEuNTkgQzMuNzksMTEuNTkgMy43OCwxMS41OCAzLjc4LDExLjU4IEMzLjc3LDExLjU4IDMuNzYsMTEuNTggMy43NiwxMS41NyBDMy43NiwxMS41NyAzLjc2LDExLjU3IDMuNzYsMTEuNTcgQzEuNTYsMTAuNjkgMC4wMCw4LjUzIDAuMDAsNi4wMCBDMC4wMCwyLjY5IDIuNjcsMC4wMCA1Ljk3LDAuMDAgWiBNMTYuODcsMi4zMSBDMTcuNzEsMi4zMSAxOC4zNCwyLjU0IDE4Ljc2LDIuOTUgQzE5LjIxLDMuMzcgMTkuNDYsMy45NiAxOS40Niw0LjY2IEMxOS40Niw2LjAwIDE4LjU0LDYuOTUgMTcuMTEsNi45NSBMMTUuNzIsNi45NSBMMTUuNzIsOS4yOCBMMTQuMTIsOS4yOCBMMTQuMTIsMi4zMSBMMTYuODcsMi4zMSBaIE0xNi45NCw1LjU4IEMxNy41Niw1LjU4IDE3LjkxLDUuMjEgMTcuOTEsNC42NSBDMTcuOTEsNC4xMCAxNy41NSwzLjc2IDE2Ljk0LDMuNzYgTDE1LjcyLDMuNzYgTDE1LjcyLDUuNTggTDE2Ljk0LDUuNTggWiBNNTAuMDAsNS4yOCBMNDkuMTksNS4yOCBMNDkuMTksNy42MiBDNDkuMTksOC4wMSA0OS40MCw4LjExIDQ5Ljc0LDguMTEgQzQ5LjgzLDguMTEgNDkuOTMsOC4xMCA1MC4wMCw4LjEwIEw1MC4wMCw5LjI4IEM0OS44NCw5LjMxIDQ5LjU4LDkuMzMgNDkuMjIsOS4zMyBDNDguMzAsOS4zMyA0Ny42NCw5LjAzIDQ3LjY0LDcuOTYgTDQ3LjY0LDUuMjggTDQ3LjE2LDUuMjggTDQ3LjE2LDQuMjggTDQ3LjY0LDQuMjggTDQ3LjY0LDIuNzAgTDQ5LjE5LDIuNzAgTDQ5LjE5LDQuMjggTDUwLjAwLDQuMjggTDUwLjAwLDUuMjggWiBNNDUuMzEsNi4xMyBDNDYuMTgsNi4yNyA0Ny4yMSw2LjUwIDQ3LjIxLDcuNzcgQzQ3LjIxLDguODcgNDYuMjUsOS40MyA0NC45NSw5LjQzIEM0My41NSw5LjQzIDQyLjY1LDguODEgNDIuNTQsNy43OCBMNDQuMDUsNy43OCBDNDQuMTUsOC4yMCA0NC40Niw4LjQwIDQ0Ljk0LDguNDAgQzQ1LjQyLDguNDAgNDUuNzIsOC4yMiA0NS43Miw3LjkwIEM0NS43Miw3LjQ1IDQ1LjEyLDcuNDAgNDQuNDYsNy4yOSBDNDMuNTksNy4xNCA0Mi42Nyw2LjkxIDQyLjY3LDUuNzQgQzQyLjY3LDQuNjggNDMuNjQsNC4xNCA0NC44Miw0LjE0IEM0Ni4yMiw0LjE0IDQ2Ljk4LDQuNzUgNDcuMDYsNS43NCBMNDUuNjAsNS43NCBDNDUuNTQsNS4yOSA0NS4yNCw1LjE1IDQ0LjgwLDUuMTUgQzQ0LjQyLDUuMTUgNDQuMTIsNS4zMCA0NC4xMiw1LjYxIEM0NC4xMiw1Ljk2IDQ0LjY4LDYuMDEgNDUuMzEsNi4xMyBaIE0yMC40OCwyLjAwIEMyMS4wMCwyLjAwIDIxLjQzLDIuNDIgMjEuNDMsMi45NSBDMjEuNDMsMy40OCAyMS4wMCwzLjkwIDIwLjQ4LDMuOTAgQzE5Ljk1LDMuOTAgMTkuNTMsMy40OCAxOS41MywyLjk1IEMxOS41MywyLjQyIDE5Ljk1LDIuMDAgMjAuNDgsMi4wMCBaIE0yOC40OCw3LjYyIEMyOC40OCw4LjAxIDI4LjcwLDguMTEgMjkuMDQsOC4xMSBDMjkuMTAsOC4xMSAyOS4xOCw4LjEwIDI5LjI0LDguMTAgTDI5LjI0LDkuMjkgQzI5LjA4LDkuMzEgMjguODMsOS4zMyAyOC41Miw5LjMzIEMyNy42MCw5LjMzIDI2Ljk0LDkuMDMgMjYuOTQsNy45NiBMMjYuOTQsNS4yOCBMMjYuNDIsNS4yOCBMMjYuNDIsNC4yOCBMMjYuOTQsNC4yOCBMMjYuOTQsMi43MCBMMjguNDgsMi43MCBMMjguNDgsNC4yOCBMMjkuMjQsNC4yOCBMMjkuMjQsNS4yOCBMMjguNDgsNS4yOCBMMjguNDgsNy42MiBaIE0yNC42OSw0LjE0IEMyNS43Nyw0LjE0IDI2LjQxLDQuOTIgMjYuNDEsNi4wMyBMMjYuNDEsOS4yOCBMMjQuODMsOS4yOCBMMjQuODMsNi4zNSBDMjQuODMsNS44MiAyNC41Nyw1LjQ2IDI0LjA1LDUuNDYgQzIzLjUzLDUuNDYgMjMuMTgsNS45MCAyMy4xOCw2LjUyIEwyMy4xOCw5LjI4IEwyMS42MCw5LjI4IEwyMS42MCw0LjI4IEwyMy4xMiw0LjI4IEwyMy4xMiw0Ljk3IEwyMy4xNSw0Ljk3IEMyMy41Miw0LjQzIDI0LjAwLDQuMTQgMjQuNjksNC4xNCBaIE0zMy40Miw0Ljc2IEMzMi45OSw0LjM3IDMyLjQzLDQuMTQgMzEuNzIsNC4xNCBDMzAuMjAsNC4xNCAyOS4xNiw1LjI4IDI5LjE2LDYuNzcgQzI5LjE2LDguMjggMzAuMTcsOS40MiAzMS44MSw5LjQyIEMzMi40NCw5LjQyIDMyLjk1LDkuMjYgMzMuMzcsOC45NiBDMzMuODAsOC42NiAzNC4xMCw4LjIzIDM0LjIwLDcuNzggTDMyLjY2LDcuNzggQzMyLjUyLDguMTAgMzIuMjUsOC4yOCAzMS44Myw4LjI4IEMzMS4xOCw4LjI4IDMwLjgxLDcuODYgMzAuNzIsNy4xOSBMMzQuMjksNy4xOSBDMzQuMzAsNi4xOCAzNC4wMSw1LjMxIDMzLjQyLDQuNzYgTDMzLjQyLDQuNzYgWiBNNDEuNjYsNC43NiBDNDIuMjYsNS4zMSA0Mi41NSw2LjE4IDQyLjU0LDcuMTkgTDM4Ljk3LDcuMTkgQzM5LjA2LDcuODYgMzkuNDMsOC4yOCA0MC4wOCw4LjI4IEM0MC41MCw4LjI4IDQwLjc3LDguMTAgNDAuOTEsNy43OCBMNDIuNDUsNy43OCBDNDIuMzQsOC4yMyA0Mi4wNSw4LjY2IDQxLjYyLDguOTYgQzQxLjIwLDkuMjYgNDAuNjksOS40MiA0MC4wNiw5LjQyIEMzOC40Miw5LjQyIDM3LjQxLDguMjggMzcuNDEsNi43NyBDMzcuNDEsNS4yOCAzOC40NSw0LjE0IDM5Ljk3LDQuMTQgQzQwLjY3LDQuMTQgNDEuMjQsNC4zNyA0MS42Niw0Ljc2IFogTTMwLjczLDYuMjQgQzMwLjgzLDUuNjUgMzEuMTQsNS4yNyAzMS43NSw1LjI3IEMzMi4yNiw1LjI3IDMyLjYzLDUuNjUgMzIuNjksNi4yNCBMMzAuNzMsNi4yNCBaIE0zOC45OCw2LjI0IEw0MC45NCw2LjI0IEM0MC44OCw1LjY1IDQwLjUxLDUuMjcgNDAuMDAsNS4yNyBDMzkuMzksNS4yNyAzOS4wOCw1LjY1IDM4Ljk4LDYuMjQgWiBNMzcuNTQsNC4yMSBMMzcuNTQsNS42MCBDMzYuNjQsNS41MSAzNi4wNyw1Ljk5IDM2LjA3LDcuMDMgTDM2LjA3LDkuMjggTDM0LjQ4LDkuMjggTDM0LjQ4LDQuMjggTDM2LjAwLDQuMjggTDM2LjAwLDUuMDYgTDM2LjAzLDUuMDYgQzM2LjM4LDQuNDcgMzYuNzgsNC4yMSAzNy4zOSw0LjIxIEMzNy40NSw0LjIxIDM3LjUwLDQuMjEgMzcuNTQsNC4yMSBaIiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+  background-size: contain;
+}
+ span.PIN_1655428680137_embed_grid .PIN_1655428680137_ft .PIN_1655428680137_button:hover { 
+  border: 1px solid rgba(0,0,0,.1);
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_noscroll .PIN_1655428680137_bd { 
+  overflow: hidden;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_board .PIN_1655428680137_hd .PIN_1655428680137_pinner { 
+  top: 10px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_board .PIN_1655428680137_hd .PIN_1655428680137_board { 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+  position: absolute;
+  bottom: 10px;
+  left: 56px;
+  color: #363636;
+  font-size: 12px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c2 { 
+  max-width: 494px;
+  min-width: 140px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c2 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 50%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c3 { 
+  max-width: 731px;
+  min-width: 200px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c3 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 33.33%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c4 { 
+  max-width: 968px;
+  min-width: 260px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c4 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 25%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c5 { 
+  max-width: 1205px;
+  min-width: 320px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c5 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 20%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c6 { 
+  max-width: 1442px;
+  min-width: 380px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c6 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 16.66%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c7 { 
+  max-width: 1679px;
+  min-width: 440px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c7 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 14.28%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c8 { 
+  max-width: 1916px;
+  min-width: 500px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c8 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 12.5%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c9 { 
+  max-width: 2153px;
+  min-width: 560px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c9 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 11.11%;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c10 { 
+  max-width: 2390px;
+  min-width: 620px;
+}
+ span.PIN_1655428680137_embed_grid.PIN_1655428680137_c10 .PIN_1655428680137_bd .PIN_1655428680137_ct .PIN_1655428680137_col { 
+  width: 10%;
+}
+ span.PIN_1655428680137_embed_pin { 
+  min-width: 160px;
+  max-width: 236px;
+  width: 100%;
+  border-radius: 16px;
+  font: 12px "SF Pro", "Helvetica Neue", Helvetica, arial, sans-serif;
+  display: inline-block;
+  background: rgba(0,0,0,.1);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,.1);
+  box-sizing: border-box;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ span.PIN_1655428680137_embed_pin * { 
+  display: block;
+  position: relative;
+  font: inherit;
+  cursor: inherit;
+  color: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages { 
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page { 
+  position: absolute;
+  left: 0;
+  transition-property: left;
+  transition-duration: .25s;
+  transition-timing-function: ease-in;
+  height: inherit;
+  width: inherit;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page.PIN_1655428680137_past { 
+  left: -100%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page.PIN_1655428680137_future { 
+  left: 100%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks { 
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflowX: hidden;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container { 
+  position: absolute;
+  width: 100%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_top { 
+  top: 0;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_middle { 
+  top: 50%;
+  transform: translateY(-50%);
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_bottom { 
+  bottom: 0;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_left { 
+  text-align: left;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_center { 
+  text-align: center;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_right { 
+  text-align: right;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container .PIN_1655428680137_paragraph { 
+  text-align: inherit;
+  display: inline;
+  word-break: break-word;
+  font-size: 16px;
+  line-height: 1.24em;
+  border-radius: 3px;
+  padding: 0.1em 0.2em;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container _video { 
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container.PIN_1655428680137_video { 
+  height: 100%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_image { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_image.PIN_1655428680137_containMe { 
+  background-size: contain;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_image.PIN_1655428680137_coverMe { 
+  background-size: cover;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block video { 
+  position: absolute;
+  height: 100%;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block video.PIN_1655428680137_isNative { 
+  width: 100%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay { 
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: .001;
+  background: rgba(0,0,0,.03);
+  cursor: pointer;
+  user-select: none;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_repin { 
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 40px;
+  color: #fff;
+  background: #e60023 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 10px 50% no-repeat;
+  background-size: 18px 18px;
+  text-indent: 36px;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 12px 0 0;
+  width: auto;
+  z-index: 2;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_price { 
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 40px;
+  background: rgba(255,255,255,.9);
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 0 12px;
+  width: auto;
+  z-index: 2;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_controls { 
+  position: absolute;
+  height: 64px;
+  width: 64px;
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -32px;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_controls .PIN_1655428680137_play { 
+  background: rgba(0,0,0,.8) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTIyLjYyIDkuNDhMOC42My40OEEzIDMgMCAwIDAgNCAzdjE4YTMgMyAwIDAgMCA0LjYzIDIuNTJsMTQtOWEzIDMgMCAwIDAgMC01LjA0IiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_controls .PIN_1655428680137_pause { 
+  background: rgba(0,0,0,.8) url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTcgMGMxLjY1IDAgMyAxLjM1IDMgM3YxOGMwIDEuNjUtMS4zNSAzLTMgM3MtMy0xLjM1LTMtM1YzYzAtMS42NSAxLjM1LTMgMy0zem0xMCAwYzEuNjUgMCAzIDEuMzUgMyAzdjE4YzAgMS42NS0xLjM1IDMtMyAzcy0zLTEuMzUtMy0zVjNjMC0xLjY1IDEuMzUtMyAzLTN6IiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_controls .PIN_1655428680137_pause,  span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_controls .PIN_1655428680137_play { 
+  position: absolute;
+  display: block;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav { 
+  user-select: none;
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: 24px 24px;
+  z-index: 1;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav.PIN_1655428680137_forward,  span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav.PIN_1655428680137_forward_noop { 
+  right: 0;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav.PIN_1655428680137_backward,  span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav.PIN_1655428680137_backward_noop { 
+  left: 0;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav.PIN_1655428680137_forward { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTYuNzIgMjRjLjU3IDAgMS4xNC0uMjIgMS41Ny0uNjZMMTkuNSAxMiA4LjI5LjY2Yy0uODYtLjg4LTIuMjctLjg4LTMuMTQgMC0uODcuODgtLjg3IDIuMyAwIDMuMThMMTMuMjEgMTJsLTguMDYgOC4xNmMtLjg3Ljg4LS44NyAyLjMgMCAzLjE4LjQzLjQ0IDEgLjY2IDEuNTcuNjYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2FhYSIgc3Ryb2tlLXdpZHRoPSIuNSI+PC9wYXRoPjwvZz48L3N2Zz4=);
+  background-position: 100% 50%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_nav.PIN_1655428680137_backward { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgd2lkdGg9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGc+PHBhdGggZD0iTTE3LjI4IDI0Yy0uNTcgMC0xLjE0LS4yMi0xLjU4LS42Nkw0LjUgMTIgMTUuNy42NmEyLjIxIDIuMjEgMCAwIDEgMy4xNSAwYy44Ny44OC44NyAyLjMgMCAzLjE4TDEwLjc5IDEybDguMDYgOC4xNmMuODcuODguODcgMi4zIDAgMy4xOC0uNDQuNDQtMSAuNjYtMS41Ny42NiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjYWFhIiBzdHJva2Utd2lkdGg9Ii41Ij48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-position: 0 50%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_progress { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 36px;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.2));
+  text-align: center;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_progress .PIN_1655428680137_indicator { 
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  margin: 16px 2px 0;
+  background: rgba(255,255,255,.5);
+  border-radius: 50%;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_progress .PIN_1655428680137_indicator.PIN_1655428680137_current { 
+  background: #fff;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_pages .PIN_1655428680137_overlay:hover { 
+  opacity: 1;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer { 
+  position: relative;
+  display: block;
+  height: 96px;
+  padding: 16px;
+  color: #333;
+  background: #fff;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container { 
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container .PIN_1655428680137_title { 
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container .PIN_1655428680137_avatar { 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: transparent url() 0 0 no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 1px rgba(0,0,0,.5);
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container .PIN_1655428680137_deets { 
+  position: absolute;
+  left: 40px;
+  right: 0px;
+  bottom: 0px;
+  height: 30px;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container .PIN_1655428680137_deets span { 
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  font-size: 12px;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container .PIN_1655428680137_deets .PIN_1655428680137_topline { 
+  top: 0;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer .PIN_1655428680137_container .PIN_1655428680137_deets .PIN_1655428680137_bottomline { 
+  bottom: 0;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer::after { 
+  content: "------------------------------------------------------------------------------------------------------------------------";
+  display: block;
+  height: 1px;
+  line-height: 1px;
+  color: transparent;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer.PIN_1655428680137_uno .PIN_1655428680137_container .PIN_1655428680137_deets .PIN_1655428680137_topline { 
+  top: 8px;
+}
+ span.PIN_1655428680137_embed_pin .PIN_1655428680137_footer.PIN_1655428680137_uno .PIN_1655428680137_container .PIN_1655428680137_deets .PIN_1655428680137_bottomline { 
+  display: none;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_fresh .PIN_1655428680137_pages .PIN_1655428680137_overlay { 
+  opacity: 1;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_medium { 
+  min-width: 237px;
+  max-width: 345px;
+  border-radius: 24px;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_medium .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container .PIN_1655428680137_paragraph { 
+  font-size: 21px;
+  line-height: 1.23em;
+  border-radius: 5px;
+  padding: 2px 3px;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_medium .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_progress .PIN_1655428680137_indicator { 
+  margin: 16px 4px 0;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_large { 
+  min-width: 346px;
+  max-width: 600px;
+  border-radius: 36px;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_large .PIN_1655428680137_pages .PIN_1655428680137_page .PIN_1655428680137_blocks .PIN_1655428680137_block .PIN_1655428680137_container .PIN_1655428680137_paragraph { 
+  font-size: 27px;
+  line-height: 1.11em;
+  border-radius: 5px;
+  padding: 3px 4.5px;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_large .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_progress .PIN_1655428680137_indicator { 
+  margin: 16px 4px 0;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_atStart .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_backward { 
+  display: none;
+}
+ span.PIN_1655428680137_embed_pin.PIN_1655428680137_atEnd .PIN_1655428680137_pages .PIN_1655428680137_overlay .PIN_1655428680137_forward { 
+  display: none;
+}
+ .PIN_1655428680137_button_follow { 
+  display: inline-block;
+  color: #363636;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #888;
+  border-radius: 3px;
+  font: bold 11px/20px "Helvetica Neue", Helvetica, arial, sans-serif !important;
+  cursor: pointer;
+  -moz-font-smoothing: antialiased;
+  height: 20px;
+  padding: 0 4px 0 20px;
+  background-color: #efefef;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+ .PIN_1655428680137_button_follow:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1655428680137_button_follow::after { 
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  top: 3px;
+  left: 3px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 14px 14px;
+}
+ .PIN_1655428680137_button_follow.PIN_1655428680137_tall { 
+  height: 26px;
+  line-height: 26px;
+  font-size: 13px;
+  padding: 0 6px 0 25px;
+  border-radius: 3px;
+}
+ .PIN_1655428680137_button_follow.PIN_1655428680137_tall::after { 
+  height: 18px;
+  width: 18px;
+  top: 4px;
+  left: 4px;
+  background-size: 18px 18px;
+}
+ .PIN_1655428680137_button_pin { 
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 1px #888;
+  border-radius: 3px;
+  height: 20px;
+  width: 40px;
+  -moz-font-smoothing: antialiased;
+  background: #efefef url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQycHgiIHZpZXdCb3g9IjAgMCA0MiAxOCI+PGc+PHBhdGggZD0iTTE2Ljg1Myw2LjM0NSBDMTcuNjMyLDYuMzQ1IDE4LjM4LDUuNzAyIDE4LjUxLDQuOTA5IEMxOC42NjQsNC4xMzggMTguMTM1LDMuNDk0IDE3LjM1NywzLjQ5NCBDMTYuNTc4LDMuNDk0IDE1LjgzLDQuMTM4IDE1LjY5OCw0LjkwOSBDMTUuNTQ2LDUuNzAyIDE2LjA1Myw2LjM0NSAxNi44NTMsNi4zNDUgWiBNNy40NTgsMCBDMi41LDAgMCwzLjUyMiAwLDYuNDU5IEMwLDguMjM3IDAuNjgsOS44MTkgMi4xMzcsMTAuNDA5IEMyLjM3NiwxMC41MDUgMi41OSwxMC40MTIgMi42NiwxMC4xNSBDMi43MDgsOS45NjkgMi44MjIsOS41MTEgMi44NzMsOS4zMiBDMi45NDMsOS4wNjEgMi45MTYsOC45NyAyLjcyMyw4Ljc0NCBDMi4zMDIsOC4yNTMgMi4wMzQsNy42MTcgMi4wMzQsNi43MTYgQzIuMDM0LDQuMTA0IDQuMDA3LDEuNzY1IDcuMTcyLDEuNzY1IEM5Ljk3NSwxLjc2NSAxMS41MTQsMy40NjEgMTEuNTE0LDUuNzI2IEMxMS41MTQsOC43MDggMTAuMTgzLDExLjE4IDguMjA2LDExLjE4IEM3LjExNCwxMS4xOCA2LjI5NywxMC4zMjkgNi41NTksOS4yMzMgQzYuODcyLDcuOTIyIDcuNDgsNi41MDkgNy40OCw1LjU2NCBDNy40OCw0LjcxNyA3LjAyMiw0LjAxMSA2LjA3Miw0LjAxMSBDNC45NTYsNC4wMTEgNC4wNiw1LjE1NSA0LjA2LDYuNjg3IEM0LjA2LDcuNjYzIDQuMzkzLDguMzIzIDQuMzkzLDguMzIzIEM0LjM5Myw4LjMyMyAzLjI1MSwxMy4xMTcgMy4wNTEsMTMuOTU3IEMyLjY1MiwxNS42MjkgMi45OTEsMTcuNjc5IDMuMDE5LDE3Ljg4NiBDMy4wMzYsMTguMDA5IDMuMTk1LDE4LjAzOCAzLjI2NywxNy45NDYgQzMuMzcsMTcuODEyIDQuNywxNi4xODcgNS4xNTEsMTQuNTYyIEM1LjI3OSwxNC4xMDIgNS44ODUsMTEuNzIgNS44ODUsMTEuNzIgQzYuMjQ4LDEyLjQwNiA3LjMwOCwxMy4wMDkgOC40MzUsMTMuMDA5IEMxMS43OSwxMy4wMDkgMTQuMDY2LDkuOTc5IDE0LjA2Niw1LjkyMyBDMTQuMDY2LDIuODU3IDExLjQ0NCwwIDcuNDU4LDAgWiBNMjYuODk2LDE0LjE4OSBDMjYuMzQ4LDE0LjE4OSAyNi4xMTcsMTMuOTE1IDI2LjExNywxMy4zMjggQzI2LjExNywxMi40MDQgMjcuMDM1LDEwLjA5MSAyNy4wMzUsOS4wNDEgQzI3LjAzNSw3LjYzOCAyNi4yNzYsNi44MjYgMjQuNzIsNi44MjYgQzIzLjczOSw2LjgyNiAyMi43MjIsNy40NTMgMjIuMjkxLDguMDAzIEMyMi4yOTEsOC4wMDMgMjIuNDIyLDcuNTUzIDIyLjQ2Nyw3LjM4IEMyMi41MTUsNy4xOTYgMjIuNDE1LDYuODg0IDIyLjE3Myw2Ljg4NCBMMjAuNjUxLDYuODg0IEMyMC4zMjgsNi44ODQgMjAuMjM4LDcuMDU1IDIwLjE5MSw3LjI0NCBDMjAuMTcyLDcuMzIgMTkuNjI0LDkuNTg0IDE5LjA5OCwxMS42MzIgQzE4LjczOCwxMy4wMzQgMTcuODYzLDE0LjIwNSAxNi45MjgsMTQuMjA1IEMxNi40NDcsMTQuMjA1IDE2LjIzMywxMy45MDYgMTYuMjMzLDEzLjM5OSBDMTYuMjMzLDEyLjk1OSAxNi41MTksMTEuODc3IDE2Ljg2LDEwLjUzNCBDMTcuMjc2LDguODk4IDE3LjY0Miw3LjU1MSAxNy42ODEsNy4zOTQgQzE3LjczMiw3LjE5MiAxNy42NDIsNy4wMTcgMTcuMzc5LDcuMDE3IEwxNS44NDksNy4wMTcgQzE1LjU3Miw3LjAxNyAxNS40NzMsNy4xNjEgMTUuNDE0LDcuMzYxIEMxNS40MTQsNy4zNjEgMTQuOTgzLDguOTc3IDE0LjUyNywxMC43NzUgQzE0LjE5NiwxMi4wNzkgMTMuODMsMTMuNDA5IDEzLjgzLDE0LjAzNCBDMTMuODMsMTUuMTQ4IDE0LjMzNiwxNS45NDQgMTUuNzI0LDE1Ljk0NCBDMTYuNzk2LDE1Ljk0NCAxNy42NDQsMTUuNDUgMTguMjkyLDE0Ljc2NCBDMTguMTk3LDE1LjEzNSAxOC4xMzYsMTUuNDE0IDE4LjEzLDE1LjQzOSBDMTguMDc0LDE1LjY1IDE4LjE0MiwxNS44MzggMTguMzk0LDE1LjgzOCBMMTkuOTYxLDE1LjgzOCBDMjAuMjMzLDE1LjgzOCAyMC4zMzcsMTUuNzMgMjAuMzk0LDE1LjQ5NCBDMjAuNDQ5LDE1LjI2OSAyMS42MTksMTAuNjY3IDIxLjYxOSwxMC42NjcgQzIxLjkyOCw5LjQ0MyAyMi42OTIsOC42MzIgMjMuNzY4LDguNjMyIEMyNC4yNzksOC42MzIgMjQuNzIsOC45NjcgMjQuNjY5LDkuNjE4IEMyNC42MTIsMTAuMzMzIDIzLjc0MSwxMi45MDMgMjMuNzQxLDE0LjAzMSBDMjMuNzQxLDE0Ljg4NCAyNC4wNiwxNS45NDUgMjUuNjgzLDE1Ljk0NSBDMjYuNzg5LDE1Ljk0NSAyNy42MDMsMTUuNDY0IDI4LjE5NSwxNC43ODYgTDI3LjQ4OSwxMy45NDEgQzI3LjMxMSwxNC4wOTQgMjcuMTE0LDE0LjE4OSAyNi44OTYsMTQuMTg5IFogTTQxLjcwMSw2Ljg3MyBMNDAuMTM0LDYuODczIEM0MC4xMzQsNi44NzMgNDAuODU2LDQuMTA5IDQwLjg3Myw0LjAzNSBDNDAuOTQyLDMuNzQ1IDQwLjY5OCwzLjU3OCA0MC40NDEsMy42MzEgQzQwLjQ0MSwzLjYzMSAzOS4yMywzLjg2NiAzOS4wMDUsMy45MTMgQzM4Ljc3OSwzLjk1OCAzOC42MDQsNC4wODEgMzguNTIyLDQuNDAzIEMzOC41MTIsNC40NDUgMzcuODgsNi44NzMgMzcuODgsNi44NzMgTDM2LjYyMiw2Ljg3MyBDMzYuMzg1LDYuODczIDM2LjI0NSw2Ljk2OCAzNi4xOTIsNy4xODggQzM2LjExNSw3LjUwNCAzNS45NzUsOC4xNDUgMzUuOTM2LDguMjk3IEMzNS44ODUsOC40OTQgMzYsOC42NDQgMzYuMjIyLDguNjQ0IEwzNy40NTcsOC42NDQgQzM3LjQ0OCw4LjY3NyAzNy4wNjQsMTAuMTI1IDM2LjcyNSwxMS41MjEgTDM2LjcyNCwxMS41MTYgQzM2LjcyLDExLjUzMiAzNi43MTYsMTEuNTQ2IDM2LjcxMiwxMS41NjIgTDM2LjcxMiwxMS41NTYgQzM2LjcxMiwxMS41NTYgMzYuNzA4LDExLjU3MSAzNi43MDIsMTEuNTk4IEMzNi4zMjQsMTIuOTY4IDM1LjExOCwxNC4yMDkgMzQuMjAxLDE0LjIwOSBDMzMuNzIxLDE0LjIwOSAzMy41MDYsMTMuOTA5IDMzLjUwNiwxMy40MDIgQzMzLjUwNiwxMi45NjMgMzMuNzkyLDExLjg4IDM0LjEzNCwxMC41MzcgQzM0LjU0OSw4LjkwMSAzNC45MTUsNy41NTUgMzQuOTU1LDcuMzk3IEMzNS4wMDYsNy4xOTYgMzQuOTE1LDcuMDIgMzQuNjUyLDcuMDIgTDMzLjEyMiw3LjAyIEMzMi44NDUsNy4wMiAzMi43NDYsNy4xNjQgMzIuNjg3LDcuMzY0IEMzMi42ODcsNy4zNjQgMzIuMjU3LDguOTggMzEuOCwxMC43NzggQzMxLjQ2OSwxMi4wODMgMzEuMTAzLDEzLjQxMiAzMS4xMDMsMTQuMDM3IEMzMS4xMDMsMTUuMTUxIDMxLjYwOSwxNS45NDggMzIuOTk3LDE1Ljk0OCBDMzQuMDcsMTUuOTQ4IDM1LjEzNiwxNS40NTMgMzUuNzgzLDE0Ljc2NyBDMzUuNzgzLDE0Ljc2NyAzNi4wMTEsMTQuNTIxIDM2LjIzLDE0LjIyOSBDMzYuMjQxLDE0LjU4MSAzNi4zMjQsMTQuODM3IDM2LjQxMSwxNS4wMTggQzM2LjQ1OCwxNS4xMTkgMzYuNTE1LDE1LjIxNSAzNi41ODEsMTUuMzAzIEMzNi41ODIsMTUuMzA0IDM2LjU4MywxNS4zMDYgMzYuNTg1LDE1LjMwOCBMMzYuNTg1LDE1LjMwOCBDMzYuODkxLDE1LjcxMyAzNy4zOTgsMTUuOTYyIDM4LjE1MSwxNS45NjIgQzM5Ljg5NCwxNS45NjIgNDAuOTQ0LDE0LjkzOCA0MS41NjIsMTMuOTA5IEw0MC43MDQsMTMuMjM5IEM0MC4zMzMsMTMuNzc0IDM5LjgzOSwxNC4xNzUgMzkuMzI0LDE0LjE3NSBDMzguODQ2LDE0LjE3NSAzOC41NzksMTMuODc4IDM4LjU3OSwxMy4zNzIgQzM4LjU3OSwxMi45MzUgMzguODg5LDExLjg2OCAzOS4yMjksMTAuNTMgQzM5LjM0NCwxMC4wODMgMzkuNTE2LDkuNDAxIDM5LjcwOCw4LjY0NCBMNDEuMzAyLDguNjQ0IEM0MS41MzksOC42NDQgNDEuNjc4LDguNTQ5IDQxLjczMiw4LjMyOSBDNDEuODA4LDguMDEyIDQxLjk0OCw3LjM3MiA0MS45ODgsNy4yMjEgQzQyLjAzOSw3LjAyMyA0MS45MjMsNi44NzMgNDEuNzAxLDYuODczIFogTTM0LjEyNiw2LjM0OCBDMzQuOTA1LDYuMzQ4IDM1LjY1Myw1LjcwNiAzNS43ODMsNC45MTIgQzM1LjkzNyw0LjE0MSAzNS40MDksMy40OTggMzQuNjMsMy40OTggQzMzLjg1MSwzLjQ5OCAzMy4xMDMsNC4xNDEgMzIuOTcxLDQuOTEyIEMzMi44MTksNS43MDYgMzMuMzI2LDYuMzQ4IDM0LjEyNiw2LjM0OCBaIiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 50% 50% no-repeat;
+  background-size: 75%;
+  position: relative;
+  font: 12px "Helvetica Neue", Helvetica, arial, sans-serif;
+  color: #555;
+  text-align: center;
+  vertical-align: baseline;
+}
+ .PIN_1655428680137_button_pin:hover { 
+  box-shadow: inset 0 0 1px #000;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_above .PIN_1655428680137_count { 
+  position: absolute;
+  top: -28px;
+  left: 0;
+  height: 28px;
+  width: inherit;
+  line-height: 24px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzZweCIgd2lkdGg9IjExNHB4IiB2aWV3Qm94PSIwIDAgMTE0IDc2Ij48Zz48cGF0aCBkPSJNOSAxQzQuNiAxIDEgNC42IDEgOXY0M2MwIDQuMyAzLjYgOCA4IDhoMjZsMTggMTVoNy41bDE2LTE1SDEwNWM0LjQgMCA4LTMuNyA4LThWOWMwLTQuNC0zLjYtOC04LThIOXoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 40px 28px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_above.PIN_1655428680137_padded { 
+  margin-top: 28px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_beside .PIN_1655428680137_count { 
+  position: absolute;
+  right: -45px;
+  text-align: center;
+  text-indent: 5px;
+  height: inherit;
+  width: 45px;
+  font-size: 11px;
+  line-height: 20px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTZweCIgd2lkdGg9IjEyNnB4IiB2aWV3Qm94PSIyIDAgMTMwIDYwIj48Zz48cGF0aCBkPSJNMTE5LjYgMmM0LjUgMCA4IDMuNiA4IDh2NDBjMCA0LjQtMy41IDgtOCA4SDIzLjNMMS42IDMyLjR2LTQuNkwyMy4zIDJoOTYuM3oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_beside.PIN_1655428680137_padded { 
+  margin-right: 45px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_ja { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNlNjAwMjMiPjwvcGF0aD48L2c+PC9zdmc+);
+  background-size: 72%;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_red { 
+  background-color: #e60023;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQycHgiIHZpZXdCb3g9IjAgMCA0MiAxOCI+PGc+PHBhdGggZD0iTTE2Ljg1Myw2LjM0NSBDMTcuNjMyLDYuMzQ1IDE4LjM4LDUuNzAyIDE4LjUxLDQuOTA5IEMxOC42NjQsNC4xMzggMTguMTM1LDMuNDk0IDE3LjM1NywzLjQ5NCBDMTYuNTc4LDMuNDk0IDE1LjgzLDQuMTM4IDE1LjY5OCw0LjkwOSBDMTUuNTQ2LDUuNzAyIDE2LjA1Myw2LjM0NSAxNi44NTMsNi4zNDUgWiBNNy40NTgsMCBDMi41LDAgMCwzLjUyMiAwLDYuNDU5IEMwLDguMjM3IDAuNjgsOS44MTkgMi4xMzcsMTAuNDA5IEMyLjM3NiwxMC41MDUgMi41OSwxMC40MTIgMi42NiwxMC4xNSBDMi43MDgsOS45NjkgMi44MjIsOS41MTEgMi44NzMsOS4zMiBDMi45NDMsOS4wNjEgMi45MTYsOC45NyAyLjcyMyw4Ljc0NCBDMi4zMDIsOC4yNTMgMi4wMzQsNy42MTcgMi4wMzQsNi43MTYgQzIuMDM0LDQuMTA0IDQuMDA3LDEuNzY1IDcuMTcyLDEuNzY1IEM5Ljk3NSwxLjc2NSAxMS41MTQsMy40NjEgMTEuNTE0LDUuNzI2IEMxMS41MTQsOC43MDggMTAuMTgzLDExLjE4IDguMjA2LDExLjE4IEM3LjExNCwxMS4xOCA2LjI5NywxMC4zMjkgNi41NTksOS4yMzMgQzYuODcyLDcuOTIyIDcuNDgsNi41MDkgNy40OCw1LjU2NCBDNy40OCw0LjcxNyA3LjAyMiw0LjAxMSA2LjA3Miw0LjAxMSBDNC45NTYsNC4wMTEgNC4wNiw1LjE1NSA0LjA2LDYuNjg3IEM0LjA2LDcuNjYzIDQuMzkzLDguMzIzIDQuMzkzLDguMzIzIEM0LjM5Myw4LjMyMyAzLjI1MSwxMy4xMTcgMy4wNTEsMTMuOTU3IEMyLjY1MiwxNS42MjkgMi45OTEsMTcuNjc5IDMuMDE5LDE3Ljg4NiBDMy4wMzYsMTguMDA5IDMuMTk1LDE4LjAzOCAzLjI2NywxNy45NDYgQzMuMzcsMTcuODEyIDQuNywxNi4xODcgNS4xNTEsMTQuNTYyIEM1LjI3OSwxNC4xMDIgNS44ODUsMTEuNzIgNS44ODUsMTEuNzIgQzYuMjQ4LDEyLjQwNiA3LjMwOCwxMy4wMDkgOC40MzUsMTMuMDA5IEMxMS43OSwxMy4wMDkgMTQuMDY2LDkuOTc5IDE0LjA2Niw1LjkyMyBDMTQuMDY2LDIuODU3IDExLjQ0NCwwIDcuNDU4LDAgWiBNMjYuODk2LDE0LjE4OSBDMjYuMzQ4LDE0LjE4OSAyNi4xMTcsMTMuOTE1IDI2LjExNywxMy4zMjggQzI2LjExNywxMi40MDQgMjcuMDM1LDEwLjA5MSAyNy4wMzUsOS4wNDEgQzI3LjAzNSw3LjYzOCAyNi4yNzYsNi44MjYgMjQuNzIsNi44MjYgQzIzLjczOSw2LjgyNiAyMi43MjIsNy40NTMgMjIuMjkxLDguMDAzIEMyMi4yOTEsOC4wMDMgMjIuNDIyLDcuNTUzIDIyLjQ2Nyw3LjM4IEMyMi41MTUsNy4xOTYgMjIuNDE1LDYuODg0IDIyLjE3Myw2Ljg4NCBMMjAuNjUxLDYuODg0IEMyMC4zMjgsNi44ODQgMjAuMjM4LDcuMDU1IDIwLjE5MSw3LjI0NCBDMjAuMTcyLDcuMzIgMTkuNjI0LDkuNTg0IDE5LjA5OCwxMS42MzIgQzE4LjczOCwxMy4wMzQgMTcuODYzLDE0LjIwNSAxNi45MjgsMTQuMjA1IEMxNi40NDcsMTQuMjA1IDE2LjIzMywxMy45MDYgMTYuMjMzLDEzLjM5OSBDMTYuMjMzLDEyLjk1OSAxNi41MTksMTEuODc3IDE2Ljg2LDEwLjUzNCBDMTcuMjc2LDguODk4IDE3LjY0Miw3LjU1MSAxNy42ODEsNy4zOTQgQzE3LjczMiw3LjE5MiAxNy42NDIsNy4wMTcgMTcuMzc5LDcuMDE3IEwxNS44NDksNy4wMTcgQzE1LjU3Miw3LjAxNyAxNS40NzMsNy4xNjEgMTUuNDE0LDcuMzYxIEMxNS40MTQsNy4zNjEgMTQuOTgzLDguOTc3IDE0LjUyNywxMC43NzUgQzE0LjE5NiwxMi4wNzkgMTMuODMsMTMuNDA5IDEzLjgzLDE0LjAzNCBDMTMuODMsMTUuMTQ4IDE0LjMzNiwxNS45NDQgMTUuNzI0LDE1Ljk0NCBDMTYuNzk2LDE1Ljk0NCAxNy42NDQsMTUuNDUgMTguMjkyLDE0Ljc2NCBDMTguMTk3LDE1LjEzNSAxOC4xMzYsMTUuNDE0IDE4LjEzLDE1LjQzOSBDMTguMDc0LDE1LjY1IDE4LjE0MiwxNS44MzggMTguMzk0LDE1LjgzOCBMMTkuOTYxLDE1LjgzOCBDMjAuMjMzLDE1LjgzOCAyMC4zMzcsMTUuNzMgMjAuMzk0LDE1LjQ5NCBDMjAuNDQ5LDE1LjI2OSAyMS42MTksMTAuNjY3IDIxLjYxOSwxMC42NjcgQzIxLjkyOCw5LjQ0MyAyMi42OTIsOC42MzIgMjMuNzY4LDguNjMyIEMyNC4yNzksOC42MzIgMjQuNzIsOC45NjcgMjQuNjY5LDkuNjE4IEMyNC42MTIsMTAuMzMzIDIzLjc0MSwxMi45MDMgMjMuNzQxLDE0LjAzMSBDMjMuNzQxLDE0Ljg4NCAyNC4wNiwxNS45NDUgMjUuNjgzLDE1Ljk0NSBDMjYuNzg5LDE1Ljk0NSAyNy42MDMsMTUuNDY0IDI4LjE5NSwxNC43ODYgTDI3LjQ4OSwxMy45NDEgQzI3LjMxMSwxNC4wOTQgMjcuMTE0LDE0LjE4OSAyNi44OTYsMTQuMTg5IFogTTQxLjcwMSw2Ljg3MyBMNDAuMTM0LDYuODczIEM0MC4xMzQsNi44NzMgNDAuODU2LDQuMTA5IDQwLjg3Myw0LjAzNSBDNDAuOTQyLDMuNzQ1IDQwLjY5OCwzLjU3OCA0MC40NDEsMy42MzEgQzQwLjQ0MSwzLjYzMSAzOS4yMywzLjg2NiAzOS4wMDUsMy45MTMgQzM4Ljc3OSwzLjk1OCAzOC42MDQsNC4wODEgMzguNTIyLDQuNDAzIEMzOC41MTIsNC40NDUgMzcuODgsNi44NzMgMzcuODgsNi44NzMgTDM2LjYyMiw2Ljg3MyBDMzYuMzg1LDYuODczIDM2LjI0NSw2Ljk2OCAzNi4xOTIsNy4xODggQzM2LjExNSw3LjUwNCAzNS45NzUsOC4xNDUgMzUuOTM2LDguMjk3IEMzNS44ODUsOC40OTQgMzYsOC42NDQgMzYuMjIyLDguNjQ0IEwzNy40NTcsOC42NDQgQzM3LjQ0OCw4LjY3NyAzNy4wNjQsMTAuMTI1IDM2LjcyNSwxMS41MjEgTDM2LjcyNCwxMS41MTYgQzM2LjcyLDExLjUzMiAzNi43MTYsMTEuNTQ2IDM2LjcxMiwxMS41NjIgTDM2LjcxMiwxMS41NTYgQzM2LjcxMiwxMS41NTYgMzYuNzA4LDExLjU3MSAzNi43MDIsMTEuNTk4IEMzNi4zMjQsMTIuOTY4IDM1LjExOCwxNC4yMDkgMzQuMjAxLDE0LjIwOSBDMzMuNzIxLDE0LjIwOSAzMy41MDYsMTMuOTA5IDMzLjUwNiwxMy40MDIgQzMzLjUwNiwxMi45NjMgMzMuNzkyLDExLjg4IDM0LjEzNCwxMC41MzcgQzM0LjU0OSw4LjkwMSAzNC45MTUsNy41NTUgMzQuOTU1LDcuMzk3IEMzNS4wMDYsNy4xOTYgMzQuOTE1LDcuMDIgMzQuNjUyLDcuMDIgTDMzLjEyMiw3LjAyIEMzMi44NDUsNy4wMiAzMi43NDYsNy4xNjQgMzIuNjg3LDcuMzY0IEMzMi42ODcsNy4zNjQgMzIuMjU3LDguOTggMzEuOCwxMC43NzggQzMxLjQ2OSwxMi4wODMgMzEuMTAzLDEzLjQxMiAzMS4xMDMsMTQuMDM3IEMzMS4xMDMsMTUuMTUxIDMxLjYwOSwxNS45NDggMzIuOTk3LDE1Ljk0OCBDMzQuMDcsMTUuOTQ4IDM1LjEzNiwxNS40NTMgMzUuNzgzLDE0Ljc2NyBDMzUuNzgzLDE0Ljc2NyAzNi4wMTEsMTQuNTIxIDM2LjIzLDE0LjIyOSBDMzYuMjQxLDE0LjU4MSAzNi4zMjQsMTQuODM3IDM2LjQxMSwxNS4wMTggQzM2LjQ1OCwxNS4xMTkgMzYuNTE1LDE1LjIxNSAzNi41ODEsMTUuMzAzIEMzNi41ODIsMTUuMzA0IDM2LjU4MywxNS4zMDYgMzYuNTg1LDE1LjMwOCBMMzYuNTg1LDE1LjMwOCBDMzYuODkxLDE1LjcxMyAzNy4zOTgsMTUuOTYyIDM4LjE1MSwxNS45NjIgQzM5Ljg5NCwxNS45NjIgNDAuOTQ0LDE0LjkzOCA0MS41NjIsMTMuOTA5IEw0MC43MDQsMTMuMjM5IEM0MC4zMzMsMTMuNzc0IDM5LjgzOSwxNC4xNzUgMzkuMzI0LDE0LjE3NSBDMzguODQ2LDE0LjE3NSAzOC41NzksMTMuODc4IDM4LjU3OSwxMy4zNzIgQzM4LjU3OSwxMi45MzUgMzguODg5LDExLjg2OCAzOS4yMjksMTAuNTMgQzM5LjM0NCwxMC4wODMgMzkuNTE2LDkuNDAxIDM5LjcwOCw4LjY0NCBMNDEuMzAyLDguNjQ0IEM0MS41MzksOC42NDQgNDEuNjc4LDguNTQ5IDQxLjczMiw4LjMyOSBDNDEuODA4LDguMDEyIDQxLjk0OCw3LjM3MiA0MS45ODgsNy4yMjEgQzQyLjAzOSw3LjAyMyA0MS45MjMsNi44NzMgNDEuNzAxLDYuODczIFogTTM0LjEyNiw2LjM0OCBDMzQuOTA1LDYuMzQ4IDM1LjY1Myw1LjcwNiAzNS43ODMsNC45MTIgQzM1LjkzNyw0LjE0MSAzNS40MDksMy40OTggMzQuNjMsMy40OTggQzMzLjg1MSwzLjQ5OCAzMy4xMDMsNC4xNDEgMzIuOTcxLDQuOTEyIEMzMi44MTksNS43MDYgMzMuMzI2LDYuMzQ4IDM0LjEyNiw2LjM0OCBaIiBmaWxsPSIjZmZmIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_red.PIN_1655428680137_ja { 
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMThweCIgd2lkdGg9IjQxcHgiIHZpZXdCb3g9IjAgMCA0MSAxOCI+PGc+PHBhdGggZD0iTTE5LjgyMiw3LjE3MyBDMTkuODIyLDYuNTEgMTkuODM1LDYuMjc2IDE5Ljg4Nyw1Ljk2NCBMMTguMTQ1LDUuOTY0IEMxOC4xOTcsNi4yODkgMTguMTk3LDYuNDk3IDE4LjE5Nyw3LjE2IEwxOC4yMSwxMy4xOTIgQzE4LjIxLDEzLjk0NiAxOC4yMjMsMTQuMTY3IDE4LjI0OSwxNC4zODggQzE4LjMyNywxNS4wMjUgMTguNTIyLDE1LjQ0MSAxOC44ODYsMTUuNzE0IEMxOS4zOTMsMTYuMTA0IDIwLjI5LDE2LjI3MyAyMS45MjgsMTYuMjczIEMyMi43MjEsMTYuMjczIDI0LjM1OSwxNi4xOTUgMjUuMTI2LDE2LjExNyBDMjYuNTA0LDE1Ljk4NyAyNi41NjksMTUuOTc0IDI2Ljg0MiwxNS45NzQgTDI2Ljc2NCwxNC4yNDUgQzI2LjE5MiwxNC40MTQgMjUuOTA2LDE0LjQ3OSAyNS4yODIsMTQuNTU3IEMyNC4zMzMsMTQuNjg3IDIzLjEzNywxNC43NjUgMjIuMjY2LDE0Ljc2NSBDMjEuMDA1LDE0Ljc2NSAyMC4yNjQsMTQuNjQ4IDIwLjA0MywxNC40MjcgQzE5Ljg2MSwxNC4yNDUgMTkuODA5LDEzLjk1OSAxOS44MDksMTMuMjMxIEMxOS44MDksMTMuMTc5IDE5LjgwOSwxMy4xMDEgMTkuODIyLDEzLjAyMyBMMTkuODIyLDExLjMwNyBDMjEuOTkzLDEwLjkwNCAyNC4wMDgsMTAuMjI4IDI1LjkzMiw5LjI0IEwyNi4yNyw5LjA3MSBDMjYuMzc0LDkuMDE5IDI2LjQsOS4wMDYgMjYuNTQzLDguOTU0IEwyNS41MDMsNy40ODUgQzI0LjY1OCw4LjI3OCAyMS43ODUsOS40MzUgMTkuODIyLDkuNzk5IEwxOS44MjIsNy4xNzMgWiBNMjcuMzEsNC44NzIgQzI2LjQ5MSw0Ljg3MiAyNS44MTUsNS41NDggMjUuODE1LDYuMzY3IEMyNS44MTUsNy4xOTkgMjYuNDkxLDcuODc1IDI3LjMxLDcuODc1IEMyOC4xNDIsNy44NzUgMjguODE4LDcuMTk5IDI4LjgxOCw2LjM2NyBDMjguODE4LDUuNTQ4IDI4LjE0Miw0Ljg3MiAyNy4zMSw0Ljg3MiBMMjcuMzEsNC44NzIgWiBNMjcuMzEsNS41MjIgQzI3Ljc5MSw1LjUyMiAyOC4xNjgsNS44OTkgMjguMTY4LDYuMzY3IEMyOC4xNjgsNi44MzUgMjcuNzkxLDcuMjI1IDI3LjMxLDcuMjI1IEMyNi44NDIsNy4yMjUgMjYuNDY1LDYuODM1IDI2LjQ2NSw2LjM2NyBDMjYuNDY1LDUuODk5IDI2Ljg0Miw1LjUyMiAyNy4zMSw1LjUyMiBMMjcuMzEsNS41MjIgWiBNMzAuNTg2LDcuNjU0IEMzMS43OTUsOC4zMyAzMi44NjEsOS4xODggMzMuOTAxLDEwLjI5MyBMMzUuMDE5LDguODc2IEMzNC4wMTgsNy45MjcgMzMuMjEyLDcuMzI5IDMxLjY2NSw2LjM2NyBMMzAuNTg2LDcuNjU0IFogTTMxLjA0MSwxNi4yMzQgQzMxLjM0LDE2LjEzIDMxLjM3OSwxNi4xMTcgMzEuODk5LDE2LjAxMyBDMzMuOTE0LDE1LjU4NCAzNS41MjYsMTQuOTQ3IDM2Ljg1MiwxNC4wNjMgQzM4LjYzMywxMi44OCAzOS44NjgsMTEuMzQ2IDQwLjk3Myw4Ljk2NyBDNDAuMzEsOC40OTkgNDAuMTAyLDguMzA0IDM5LjU5NSw3LjY5MyBDMzkuMjA1LDguNzQ2IDM4Ljg0MSw5LjQ2MSAzOC4yNjksMTAuMjkzIEMzNy4yNDIsMTEuNzc1IDM2LjAzMywxMi43NzYgMzQuNDA4LDEzLjQ3OCBDMzMuMjI1LDEzLjk5OCAzMS42NzgsMTQuMzc1IDMwLjU2LDE0LjQ0IEwzMS4wNDEsMTYuMjM0IFogTTcuNDU4LDAgQzIuNSwwIDAsMy41MjIgMCw2LjQ1OSBDMCw4LjIzNyAwLjY4LDkuODE5IDIuMTM3LDEwLjQwOSBDMi4zNzYsMTAuNTA1IDIuNTksMTAuNDEyIDIuNjYsMTAuMTUgQzIuNzA4LDkuOTY5IDIuODIyLDkuNTExIDIuODczLDkuMzIgQzIuOTQzLDkuMDYxIDIuOTE2LDguOTcgMi43MjMsOC43NDQgQzIuMzAyLDguMjUzIDIuMDM0LDcuNjE3IDIuMDM0LDYuNzE2IEMyLjAzNCw0LjEwNCA0LjAwNywxLjc2NSA3LjE3MiwxLjc2NSBDOS45NzUsMS43NjUgMTEuNTE0LDMuNDYxIDExLjUxNCw1LjcyNiBDMTEuNTE0LDguNzA4IDEwLjE4MywxMS4xOCA4LjIwNiwxMS4xOCBDNy4xMTQsMTEuMTggNi4yOTcsMTAuMzI5IDYuNTU5LDkuMjMzIEM2Ljg3Miw3LjkyMiA3LjQ4LDYuNTA5IDcuNDgsNS41NjQgQzcuNDgsNC43MTcgNy4wMjIsNC4wMTEgNi4wNzIsNC4wMTEgQzQuOTU2LDQuMDExIDQuMDYsNS4xNTUgNC4wNiw2LjY4NyBDNC4wNiw3LjY2MyA0LjM5Myw4LjMyMyA0LjM5Myw4LjMyMyBDNC4zOTMsOC4zMjMgMy4yNTEsMTMuMTE3IDMuMDUxLDEzLjk1NyBDMi42NTIsMTUuNjI5IDIuOTkxLDE3LjY3OSAzLjAxOSwxNy44ODYgQzMuMDM2LDE4LjAwOSAzLjE5NSwxOC4wMzggMy4yNjcsMTcuOTQ2IEMzLjM3LDE3LjgxMiA0LjcsMTYuMTg3IDUuMTUxLDE0LjU2MiBDNS4yNzksMTQuMTAyIDUuODg1LDExLjcyIDUuODg1LDExLjcyIEM2LjI0OCwxMi40MDYgNy4zMDgsMTMuMDA5IDguNDM1LDEzLjAwOSBDMTEuNzksMTMuMDA5IDE0LjA2Niw5Ljk3OSAxNC4wNjYsNS45MjMgQzE0LjA2NiwyLjg1NyAxMS40NDQsMCA3LjQ1OCwwIFoiIGZpbGw9IiNmZmYiPjwvcGF0aD48L2c+PC9zdmc+);
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_white { 
+  background-color: #fff;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save { 
+  border-radius: 2px;
+  text-indent: 20px;
+  width: auto;
+  padding: 0 4px 0 0;
+  text-align: center;
+  text-decoration: none;
+  font: 11px/20px "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  color: #fff!important;
+  background: #e60023 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 3px 50% no-repeat;
+  background-size: 14px 14px;
+  -webkit-font-smoothing: antialiased;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save:hover { 
+  background-color: #e60023;
+  box-shadow: none;
+  color: #fff!important;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save .PIN_1655428680137_count { 
+  text-indent: 0;
+  position: absolute;
+  color: #555;
+  background: #efefef;
+  border-radius: 2px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save .PIN_1655428680137_count::before { 
+  content: "";
+  position: absolute;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save.PIN_1655428680137_beside .PIN_1655428680137_count { 
+  right: -46px;
+  height: 20px;
+  width: 40px;
+  font-size: 10px;
+  line-height: 20px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save.PIN_1655428680137_beside .PIN_1655428680137_count::before { 
+  top: 3px;
+  left: -4px;
+  border-right: 7px solid #efefef;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save.PIN_1655428680137_above .PIN_1655428680137_count { 
+  top: -36px;
+  width: 100%;
+  height: 30px;
+  font-size: 10px;
+  line-height: 30px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save.PIN_1655428680137_above .PIN_1655428680137_count::before { 
+  bottom: -4px;
+  left: 4px;
+  border-top: 7px solid #efefef;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_save.PIN_1655428680137_above.PIN_1655428680137_padded { 
+  margin-top: 28px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall { 
+  height: 28px;
+  width: 56px;
+  border-radius: 3px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_above .PIN_1655428680137_count { 
+  position: absolute;
+  height: 37px;
+  width: inherit;
+  top: -37px;
+  left: 0;
+  line-height: 30px;
+  font-size: 14px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNzZweCIgd2lkdGg9IjExNHB4IiB2aWV3Qm94PSIwIDAgMTE0IDc2Ij48Zz48cGF0aCBkPSJNOSAxQzQuNiAxIDEgNC42IDEgOXY0M2MwIDQuMyAzLjYgOCA4IDhoMjZsMTggMTVoNy41bDE2LTE1SDEwNWM0LjQgMCA4LTMuNyA4LThWOWMwLTQuNC0zLjYtOC04LThIOXoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_above.PIN_1655428680137_padded { 
+  margin-top: 37px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_beside .PIN_1655428680137_count { 
+  text-indent: 5px;
+  position: absolute;
+  right: -63px;
+  height: inherit;
+  width: 63px;
+  font-size: 14px;
+  line-height: 28px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTZweCIgd2lkdGg9IjEyNnB4IiB2aWV3Qm94PSIyIDAgMTMwIDYwIj48Zz48cGF0aCBkPSJNMTE5LjYgMmM0LjUgMCA4IDMuNiA4IDh2NDBjMCA0LjQtMy41IDgtOCA4SDIzLjNMMS42IDMyLjR2LTQuNkwyMy4zIDJoOTYuM3oiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2I1YjViNSIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+PC9nPjwvc3ZnPg==);
+  background-size: cover;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_beside.PIN_1655428680137_padded { 
+  margin-right: 63px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save { 
+  border-radius: 4px;
+  width: auto;
+  background-position-x: 6px;
+  background-size: 18px 18px;
+  text-indent: 29px;
+  font: 14px/28px "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  font-weight: bold;
+  padding: 0 6px 0 0;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save .PIN_1655428680137_count { 
+  position: absolute;
+  color: #555;
+  font-size: 12px;
+  text-indent: 0;
+  background: #efefef;
+  border-radius: 4px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save .PIN_1655428680137_count::before { 
+  content: "";
+  position: absolute;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save.PIN_1655428680137_above .PIN_1655428680137_count { 
+  font-size: 14px;
+  top: -50px;
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save.PIN_1655428680137_above .PIN_1655428680137_count::before { 
+  bottom: -4px;
+  left: 7px;
+  border-top: 7px solid #efefef;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save.PIN_1655428680137_beside .PIN_1655428680137_count { 
+  font-size: 14px;
+  right: -63px;
+  width: 56px;
+  height: 28px;
+  line-height: 28px;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_tall.PIN_1655428680137_save.PIN_1655428680137_beside .PIN_1655428680137_count::before { 
+  top: 7px;
+  left: -4px;
+  border-right: 7px solid #efefef;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_round { 
+  height: 16px;
+  width: 16px;
+  background: transparent url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzBweCIgd2lkdGg9IjMwcHgiIHZpZXdCb3g9Ii0xIC0xIDMxIDMxIj48Zz48cGF0aCBkPSJNMjkuNDQ5LDE0LjY2MiBDMjkuNDQ5LDIyLjcyMiAyMi44NjgsMjkuMjU2IDE0Ljc1LDI5LjI1NiBDNi42MzIsMjkuMjU2IDAuMDUxLDIyLjcyMiAwLjA1MSwxNC42NjIgQzAuMDUxLDYuNjAxIDYuNjMyLDAuMDY3IDE0Ljc1LDAuMDY3IEMyMi44NjgsMC4wNjcgMjkuNDQ5LDYuNjAxIDI5LjQ0OSwxNC42NjIiIGZpbGw9IiNmZmYiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PHBhdGggZD0iTTE0LjczMywxLjY4NiBDNy41MTYsMS42ODYgMS42NjUsNy40OTUgMS42NjUsMTQuNjYyIEMxLjY2NSwyMC4xNTkgNS4xMDksMjQuODU0IDkuOTcsMjYuNzQ0IEM5Ljg1NiwyNS43MTggOS43NTMsMjQuMTQzIDEwLjAxNiwyMy4wMjIgQzEwLjI1MywyMi4wMSAxMS41NDgsMTYuNTcyIDExLjU0OCwxNi41NzIgQzExLjU0OCwxNi41NzIgMTEuMTU3LDE1Ljc5NSAxMS4xNTcsMTQuNjQ2IEMxMS4xNTcsMTIuODQyIDEyLjIxMSwxMS40OTUgMTMuNTIyLDExLjQ5NSBDMTQuNjM3LDExLjQ5NSAxNS4xNzUsMTIuMzI2IDE1LjE3NSwxMy4zMjMgQzE1LjE3NSwxNC40MzYgMTQuNDYyLDE2LjEgMTQuMDkzLDE3LjY0MyBDMTMuNzg1LDE4LjkzNSAxNC43NDUsMTkuOTg4IDE2LjAyOCwxOS45ODggQzE4LjM1MSwxOS45ODggMjAuMTM2LDE3LjU1NiAyMC4xMzYsMTQuMDQ2IEMyMC4xMzYsMTAuOTM5IDE3Ljg4OCw4Ljc2NyAxNC42NzgsOC43NjcgQzEwLjk1OSw4Ljc2NyA4Ljc3NywxMS41MzYgOC43NzcsMTQuMzk4IEM4Ljc3NywxNS41MTMgOS4yMSwxNi43MDkgOS43NDksMTcuMzU5IEM5Ljg1NiwxNy40ODggOS44NzIsMTcuNiA5Ljg0LDE3LjczMSBDOS43NDEsMTguMTQxIDkuNTIsMTkuMDIzIDkuNDc3LDE5LjIwMyBDOS40MiwxOS40NCA5LjI4OCwxOS40OTEgOS4wNCwxOS4zNzYgQzcuNDA4LDE4LjYyMiA2LjM4NywxNi4yNTIgNi4zODcsMTQuMzQ5IEM2LjM4NywxMC4yNTYgOS4zODMsNi40OTcgMTUuMDIyLDYuNDk3IEMxOS41NTUsNi40OTcgMjMuMDc4LDkuNzA1IDIzLjA3OCwxMy45OTEgQzIzLjA3OCwxOC40NjMgMjAuMjM5LDIyLjA2MiAxNi4yOTcsMjIuMDYyIEMxNC45NzMsMjIuMDYyIDEzLjcyOCwyMS4zNzkgMTMuMzAyLDIwLjU3MiBDMTMuMzAyLDIwLjU3MiAxMi42NDcsMjMuMDUgMTIuNDg4LDIzLjY1NyBDMTIuMTkzLDI0Ljc4NCAxMS4zOTYsMjYuMTk2IDEwLjg2MywyNy4wNTggQzEyLjA4NiwyNy40MzQgMTMuMzg2LDI3LjYzNyAxNC43MzMsMjcuNjM3IEMyMS45NSwyNy42MzcgMjcuODAxLDIxLjgyOCAyNy44MDEsMTQuNjYyIEMyNy44MDEsNy40OTUgMjEuOTUsMS42ODYgMTQuNzMzLDEuNjg2IiBmaWxsPSIjZTYwMDIzIj48L3BhdGg+PC9nPjwvc3ZnPg==) 0 0 no-repeat;
+  background-size: 16px 16px;
+  box-shadow: none;
+}
+ .PIN_1655428680137_button_pin.PIN_1655428680137_round.PIN_1655428680137_tall { 
+  height: 32px;
+  width: 32px;
+  background-size: 32px 32px;
+}
+</style></head><body><div id="fb-root"></div>
+<script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1&appId=1197583016998790&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9NZ76M"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="loading" style="display: none;">
+<div class="load-circle"><span class="one"></span></div>
+</div>
+
+<header class="header header-light header-height header-style-01 fixed-header" style="height: 76px;">
+<div class="fixed-header-bar">
+<div class="container">
+
+<nav class="navbar navbar-expand-lg menu-hover-text">
+
+<a class="navbar-brand" href="https://gcodetutor.com/index.html"><img src="CNC%20G%20Codes_files/gcodetutor-logo.png" title="GCodeTutor" alt="GCodeTutor"></a>
+
+<div id="header-01" class="collapse navbar-collapse top-menu">
+
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://gcodetutor.com/index.html">Home</a>
+</li>
+<li class="nav-item m-dropdown m-dropdown-multilevel">
+<a class="nav-link">Courses <i class="fa fa-angle-down"></i></a>
+<i class="fa fa-angle-down m-dropdown-toggle"></i>
+
+<ul class="m-dropdown-menu">
+<li class="hover-trigger"><a href="javascript:void(0);">Professional G-Code <i class="arrow fa fa-angle-right"></i></a>
+<ul>
+<li><a href="https://gcodetutor.com/gcode-tutorial.html">Foundation GCode Course</a></li>
+<li><a href="https://gcodetutor.com/cnc-machine-training.html">CNC Lathe Programming</a></li>
+<li><a href="https://gcodetutor.com/fanuc-training-course.html">CNC Mill Programming</a></li>
+<li><a href="https://gcodetutor.com/cnc-macro-programming.html">CNC Macro Programming</a></li>
+<li><a href="https://gcodetutor.com/gcode-bundle.html">4-Course GCode Bundle</a></li>
+</ul>
+</li>
+<li class="hover-trigger"><a href="javascript:void(0);">Hobbyist <i class="arrow fa fa-angle-right"></i></a>
+<ul>
+<li><a href="https://gcodetutor.com/cnc-router-programming.html">CNC router programming</a></li>
+<li><a href="https://gcodetutor.com/3d-printer-gcode.html">3D printer programming</a></li>
+</ul>
+</li>
+<li class="hover-trigger"><a href="javascript:void(0);">CAD/CAM <i class="arrow fa fa-angle-right"></i></a>
+<ul>
+<li><a href="https://gcodetutor.com/fusion-360-cnc-machinist.html">Fusion 360 for CNC Mills</a></li>
+<li><a href="https://gcodetutor.com/fusion-cnc-lathe.html">Fusion 360 for CNC Lathes</a></li>
+</ul>
+</li><li class="hover-trigger"><a href="javascript:void(0);">Machine Shop Maths <i class="arrow fa fa-angle-right"></i></a>
+<ul>
+<li><a href="https://gcodetutor.com/machine-shop-maths.html">Machine Shop Maths Course</a></li>
+<li><a href="https://gcodetutor.com/speeds-feeds.html">Speeds and Feeds - mini-course</a></li>
+</ul>
+</li><li class="hover-trigger"><a href="javascript:void(0);">Metrology - GD&amp;T <i class="arrow fa fa-angle-right"></i></a>
+<ul>
+<li><a href="https://gcodetutor.com/measuring-equipment.html">measuring equipment</a></li>
+</ul>
+</li>
+
+</ul>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://gcodetutor.com/machinists-handbook.html">Machinists Handbook</a></li>
+<li class="nav-item">
+<a class="nav-link" href="https://gcodetutor.com/articles.html">Articles</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://gcodetutor.com/cnc-program-simulator.html">G-Code Sim</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://gcodetutor.com/about.html">About Me</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://gcodetutor.com/contact.html">Contact</a>
+</li>
+</ul>
+
+</div>
+
+<ul class="navbar-nav ml-auto extra-menu">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-01" aria-controls="header-01" aria-expanded="false" aria-label="Toggle navigation">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</ul>
+
+</nav>
+</div>
+</div>
+</header>
+
+
+<main>
+
+<section class="section bg-cover bg-no-repeat bg-center-center" style="background-image: url(../static/img/gcodetutor-cnc-programming-header.jpg);">
+<div class="container text-center">
+<span class="display-inline-block color-white font-15 font-w-300 w-100 m-10px-b">A look at the most common G Codes</span>
+<h1 class="font-alt color-white font-55 md-font-45 sm-font-30 font-w-700 m-0px">CNC G Codes</h1>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container">
+<div class="row">
+
+<div class="col-12 col-md-12 col-lg-9 p-50px-r md-p-15px-r">
+<div class="m-30px-b">
+<img src="CNC%20G%20Codes_files/cnc-g-codes.jpg" title="CNC G Codes" alt="CNC G Codes">
+</div>
+<p><span class="first-letter first-letter-block color-white theme-bg">T</span>o
+ control CNC machines we use commands called CNC G Codes. Although 
+Different manufactures of the machine tool may adopt their own use for 
+certain G Codes there is a core group that is common on every machine 
+tool. These standards are used on CNC Lathes, Milling machines, routers 
+and more recently by 3D printers (in a very basic form). Today we are 
+going to examine this group and how they are used to control the 
+machines.</p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G00 - Rapid travel</h3>
+<div class="w-55 sm-w-100 float-left m-20px-r m-20px-b sm-m-0px-r">
+<img src="CNC%20G%20Codes_files/g00-gcode.jpg" alt="G00 rapid travel G Code" title="G00 G Code" style="width:100%" loading="lazy">
+</div>
+<p>It can be shortened to G0 as the older machines didn’t have much RAM and every bit counts.</p>
+<p>This command is used when the tool is not touching the part to rapid 
+move, normally used when going home for a tool change and returning with
+ a new tool. Some machinists like to rapid as close to the part as 
+possible but I advise giving yourself at least 1mm clearance. Keep your 
+hand on the feed knob and come in slow for the first time run. It is in 
+this mode you will do the most damage if you didn’t get your tool set up
+ right.</p>
+<p>G00 X-100;</p>
+<p>In the example above I am moving the cutter 100mm to the left.</p>
+<p><strong>G00 is the rapid travel command in G Code.</strong> It is 
+used when the cutter or tool is not removing material so that the time 
+it takes to machine the part is as quick as can be. The top speed is set
+ by the machine parameters and therefore is only controllable by the 
+operator using a rapid override control.</p>
+<p>When using a rapid move, be aware of any clamps, vices, and parts 
+that may be in your path. If you are unsure it may be wise to move the X
+ and Y axis first, then on a separate line, move down in Z. It will 
+increase your machining time by a second or two but it will help avoid a
+ 3 Axis crash.</p>
+<br>
+<blockquote class="blockquote-left border-theme">
+<p class="font-18 font-w-300"> </p><p>The G00 command can be shortened to G0 as the older machines didn’t have much RAM and every bit counts.</p><p></p>
+<p class="m-0px font-alt font-18 font-italic font-w-700">- Marc</p>
+</blockquote>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G01 - Linear Interpolation</h3>
+<div class="w-55 sm-w-100 float-left m-20px-r m-20px-b sm-m-0px-r">
+<img src="CNC%20G%20Codes_files/g01-gcode.jpg" alt="g01 Gcode" title="g01 Gcode" style="width:100%" loading="lazy">
+</div>
+<p>A G01 command is used when you are cutting in a straight line.
+This command has to have a feed rate (F) active before it will run.
+A typical block would look like G01 X-100 F50.0;
+You don’t need to add this command on every line, as long as there is no
+ other movement G-Code active, for example, you only need to add it 
+after a G02, G03 or a G00 command.
+In much the same way, a feed rate (F50) is only needed once until you 
+want to change the speed in which you are cutting.</p>
+<p>G00 X101 Z1.0;<br>
+G01 X100 Z-20 F100;<br>
+X110 Y-40;<br>
+G00 Z300;</p>
+<p>This command can be used with all axis cutting at the same time, or 
+just one. It is not common to cut with the Z axis as well as X and Y but
+ it is possible if needed.</p>
+<p>When programming a profile it is easier to use cutter compensation 
+G41 and G42 then you do not need to allow for the radius of the cutter 
+when plotting your tool paths, you can simply use the dimensions on the 
+drawing and the machine will offset the cutter to achieve the correct 
+dimensions. </p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G02 and G03 - Circular Interpolation</h3>
+<div class="w-55 sm-w-100 float-left m-20px-r m-20px-b sm-m-0px-r">
+<img src="CNC%20G%20Codes_files/g02-g03-gcode.jpg" alt="G02 G03 Gcode" title="G03 Gcode" style="width:100%" loading="lazy">
+</div>
+<p>
+G02 is used to machine an arc or radius in a clockwise direction and G03 is for anti clockwise.
+</p>
+<p>Using an ‘R’ value to define the radius, the G02/G03 command moves 
+the cutter in a straight line with the defined radius at the end of this
+ move.
+</p><p>If a feed rate is already active there is no need to add it to 
+this line unless you wish to change the feed rate for the machining of 
+the arc.</p>
+<p>G03 Y50.0 R10.0 F100.0;<br>G01 X50.0;</p>
+<p>
+The centre point of the arc can also be defined using I, J, and K values.
+I (X) J(Y) and K(Z) defines the auxiliary axis.</p>
+<p>using the drawing above, programming an arc using I and J values would look like this:</p>
+<p>G03 Y50.0 I10.0 J40.0 F100.0;<br>
+G01 X50.0;</p>
+<p>The K is seldom used but is available if an arc using the Z axis is needed.</p>
+<p>When using G02 with G01 and G03 (Counter clockwise arc) any shape can
+ be machined. These three G Codes are the foundation of G Code 
+programming and are the three you will use when cutting material.</p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G04 - Dwell</h3>
+<p>Sometimes we need to pause the cutter for a brief moment, for that we
+ add a dwell to the code to stop the machine from continuing reading the
+ program for a specified amount of time.</p>
+<p>Uses:<br>
+While drilling with a flat bottom drill and the surface of the bore has a
+ chattered finish, we can stop moving the drill in Z-Axis with it still 
+rotating for half a second to clean up the surface.</p>
+<p>G01 Z-20.0 F50; G04 X500; G01 Z5.0;</p>
+<p>The few blocks listed above looks like the tool will move 500mm while
+ deep in the part. It won’t.
+The X value in ‘G04 X500’ forces the tool to dwell for 500 milliseconds 
+before moving onto the next block.
+The feed rate does not need to be specified again after a dwell command 
+as the machine still knows that one was defined before the dwell on the 
+G01 block.
+</p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G20 and G21 - Measurement Systems</h3>
+<div class="w-55 sm-w-100 float-left m-20px-r m-20px-b sm-m-0px-r">
+<img src="CNC%20G%20Codes_files/g20-g21-gcode.jpg" alt="G20 G21 Gcode" title="G20 and G21 Gcode" style="width:100%" loading="lazy">
+</div>
+<p>
+G20 and G21 Imperial and Metric systems
+G20 Define Inch units;
+G21 Define Metric units;
+CNC Machines can read measurements in both Imperial and Metric systems (inches and mm) this is defined by G20 and G21.</p>
+<p>Although it is only needed once in the program it is good practice to
+ add this information after every tool change. This makes it safer to 
+run from any position in the program.</p>
+<p> For example, you might want to repeat the finishing cutter pass to 
+remove more material after measurement. To define the unit of 
+measurement again will stop the machine from accidentally being in the 
+wrong system and moving unexpectedly.</p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G90 and G91 - Absolute or Incremental</h3>
+<p>
+G90 = Absolute positioning<br>
+G91 = Incremental positioning
+</p>
+<p>A positioning system must be defined before any movements are made, below is an explaination of both positioning systems</p>
+<p>G90 selects the absolute positioning system. In this mode, all 
+movements of the spindle are taken from the datum position. For example,
+ if X100.0 is read by the control then the tool will move to 100mm in 
+the plus direction from the datum. If X150.0 was the next positional 
+movement it would move the tool another 50mm in that direction.</p>
+<p>
+G91 selects the incremental positioning system. When G91 is active all 
+movements of the spindle are taken from its last known position. For 
+example, If X100.0 is read then the tool will move 100mm in the plus 
+direction of the position that the tool is already in. If X150.0 was 
+read after this move, The tool will move another 150mm in the plus 
+direction.
+</p>
+<p>
+You can read more about <a href="https://gcodetutor.com/gcode-tutorial/g90-g91-gcode.html">Absolute and Incremental positioning here</a>
+</p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">G40, G41 and G42 - Cutter Compensation</h3>
+<div class="w-55 sm-w-100 float-left m-20px-r m-20px-b sm-m-0px-r">
+<img src="CNC%20G%20Codes_files/g41-g42-Cutter-compensation.jpg" alt="G40, G41 and G42 Cutter Compensation" title="G40, G41 and G42" style="width:100%" loading="lazy">
+</div>
+<p>
+G40 = Cancels cutter compensation<br>
+G41 = Left cutter compensation<br>
+G42 = Right cutter compensation
+</p>
+<p>Without using cutter compensation when programming we would have to 
+allow for the diameter of the tool when writing the cutting paths. We 
+can program to the dimensions of the component by using cutter 
+compensation.</p>
+<p>
+This offsets the cutter by its radius depending on the direction of cut.
+</p>
+<p>
+For more information, check out this article on
+<a href="https://gcodetutor.com/gcode-tutorial/g41-g42-cutter-compensation.html">cutter compensation</a>
+</p>
+<br>
+<p>While this article covers only the most basic of G-Codes, below is a more complete list.</p>
+<br>
+<h3 class="font-w-700 color-extra-dark-gray">CNC G Codes list</h3>
+<div class="w-55 sm-w-100 m-20px-r m-20px-b sm-m-0px-r">
+<img src="CNC%20G%20Codes_files/g-code-reference-list.jpg" alt="G-Code Reference List" title="G-Code Reference List" style="width:100%" loading="lazy">
+</div>
+<p>Below is a full list of common G Codes most of which we will discuss in future articles</p>
+<ui>
+<li>G00 Positioning at rapid travel;</li>
+<li>G01 Linear interpolation using a feed rate;</li>
+<li>G02 Circular interpolation clockwise;</li>
+<li>G03 Circular interpolation, counterclockwise;</li>
+<li>G04 Dwell</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/fanuc-training-course/cnc-datums-g10-g53-g54.html">G10 Set working datum postion;</a></li>
+<li>G17 Select X-Y plane;</li>
+<li>G18 Select Z-X plane;</li>
+<li>G19 Select Z-Y plane;</li>
+<li>G20 Imperial units;</li>
+<li>G21 Metric units;</li>
+<li>G27 Reference return check;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/fanuc-training-course/g28-gcode.html">G28 Automatic return through reference point;</a></li>
+<li>G29 Move to a location through reference point;</li>
+<li>G31 Skip function;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g32-taper-thread.html">G32 Thread cutting operation on a Lathe;</a></li>
+<li>G33 Thread cutting operation on a Mill;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g41-g42-cutter-compensation.html">G40 Cancel cutter compensation;</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g41-g42-cutter-compensation.html">G41 Cutter compensation left;</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g41-g42-cutter-compensation.html">G42 Cutter compensation right;</a></li>
+<li>G43 Tool length compensation;</li>
+<li>G44 Tool length compensation;</li>
+<li>G50 Set coordinate system (Mill) and maximum RPM (Lathe);</li>
+<li>G52 Local coordinate system setting;</li>
+<li>G53 Machine coordinate system setting;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/fanuc-training-course/cnc-datums-g10-g53-g54.html">G54~G59 Set Datum;</a></li>
+<li>G70 Finish cycle (Lathe);</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g71-roughing-cycle.html">G71 Rough turning cycle (Lathe);</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g72-facing-cycle.html">G72 Rough facing cycle (Lathe);</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g73-pattern-repeating-cycle.html">G73 Pattern Repeating Cycle;</a></li>
+<li>G74 Left hand tapping Mill;</li>
+<li>G74 Face grooving cycle;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g75-groove-cycle.html">G75 OD groove pecking cycle (Lathe);</a></li>
+<li>G76 Boring cycle;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g76-thread-cycle.html">G76 Screw cutting cycle (Lathe);</a></li>
+<li>G80 Cancel cycles;</li>
+<li>G81 Drill cycle;</li>
+<li>G82 Drill cycle with dwell;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/fanuc-training-course/g73-g83-drilling-cycle.html">G83 Peck drilling cycle;</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/fanuc-training-course/g84-tapping-cycle.html">G84 Tapping cycle;</a></li>
+<li>G85 Bore in, bore out;</li>
+<li>G86 Bore in, rapid out;</li>
+<li>G87 Back boring cycle;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g90-g91-gcode.html">G90 Absolute programming;</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g90-g91-gcode.html">G91 Incremental programming;</a></li>
+<li>G92 Reposition origin point;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g76-thread-cycle.html">G92 Screw thread cutting cycle (Lathe);</a></li>
+<li>G94 Per minute feed;</li>
+<li>G95 Per revolution feed;</li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g96-g97-spindle-speed.html">G96 Constant surface speed (Lathe);</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/cnc-machine-training/g96-g97-spindle-speed.html">G97 Constant surface speed cancel;</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g98-g99-gcode.html">G98 Feed per minute (Lathe);</a></li>
+<li><a class="color-extra-dark-blue" href="https://gcodetutor.com/gcode-tutorial/g98-g99-gcode.html">G99 Feed per revolution (Lathe)</a></li>
+</ui>
+<div class="separators m-35px-tb"></div>
+
+<div class="row">
+<div class="col-12 col-md-6 align-self-center text-center text-sm-left sm-m-10px-tb">
+</div> 
+<div class="col-12 col-md-6 text-center text-sm-right align-self-centre sm-m-10px-tb">
+<p class="font-w-400 color-extra-dark-gray">Share this article</p>
+<ul class="social-icons-01 social-icons-small">
+<li><a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgcodetutor.com%2Fcnc-machine-training%2Fcnc-g-codes.html&amp;src=sdkpreparse"><i class="fab fa-facebook-f"></i></a></li>
+<li><a class="twitter" href="https://twitter.com/share?ref_src=https://gcodetutor.com/cnc-machine-training/cnc-g-codes.html"><i class="fab fa-twitter"></i></a> <script async="" src="CNC%20G%20Codes_files/widgets.js" charset="utf-8" type="text/javascript"></script></li>
+<li><span class="PIN_1655428680137_button_pin PIN_1655428680137_round PIN_1655428680137_tall" data-pin-log="button_pinit_bookmarklet" data-pin-href="https://www.pinterest.com/pin/create/button/"></span></li>
+</ul>
+</div>
+</div> 
+<div class="separators m-35px-tb"></div>
+</div>
+
+
+<div class="col-12 col-md-12 col-lg-3">
+<div class="sidebar-widget m-30px-b">
+<div class="m-15px-b">
+<a href="https://gcodetutor.com/gcode-bundle.html"><img src="CNC%20G%20Codes_files/full-package-skyscraper.png" title="4 course bundle" alt="complete g-code training course" style="width:100%"></a>
+</div>
+</div> 
+<div class="sidebar-widget m-30px-b">
+<h5 class="font-alt font-16 font-w-800 color-extra-dark-gray m-0px m-15px-b text-uppercase">CNC Lathe programming</h5>
+<ul class="list-style-6 m-0px">
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/cnc-g-codes.html">G-Codes</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/cnc-lathe-programming.html">CNC Lathe Cycles</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g71-roughing-cycle.html">G71 Roughing Cycle</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g72-facing-cycle.html">G72 Facing Cycle</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g73-pattern-repeating-cycle.html">G73 Pattern Cycle</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g75-groove-cycle.html">G75 Groove Cycle</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g76-thread-cycle.html">G76 Thread Cycle</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g96-g97-spindle-speed.html">G96 / G97 Spindle speed</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-machine-training/g32-taper-thread.html">G32 Taper Thread cutting</a></li>
+</ul>
+</div>
+<div class="sidebar-widget m-30px-b">
+<div class="m-15px-b">
+<a href="https://course.gcodetutor.com/purchase?product_id=872403"><img src="CNC%20G%20Codes_files/free-gcode-ad.jpg" title="learn GCode for free" alt="learn GCode for free" style="width:100%" loading="lazy"></a>
+</div>
+</div> 
+<div class="sidebar-widget m-30px-b">
+<h5 class="font-alt font-16 font-w-800 color-extra-dark-gray m-0px m-15px-b text-uppercase">CNC Mill programming</h5>
+<ul class="list-style-6 m-0px">
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/fanuc-training-course/cnc-mill-programming.html">Mill Programming</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/fanuc-training-course/g84-tapping-cycle.html">G84 Tapping Cycle</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/fanuc-training-course/g73-g83-drilling-cycle.html">G73 &amp; G83 Peck Drilling</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/gcode-tutorial/cnc-m-codes.html">CNC M Codes</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/gcode-tutorial/g41-g42-cutter-compensation.html">Cutter Compensation</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/gcode-tutorial/g90-g91-gcode.html">G90 and G91</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/gcode-tutorial/g98-g99-gcode.html">G98 and G99</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/gcode-tutorial/canned-cycles.html">Canned Cycles</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/fanuc-training-course/g28-gcode.html">G28 Gcode</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-macro-programming/subprograms-m98-m99.html">M98 and M99 subprogram</a></li>
+</ul>
+</div>
+<div class="sidebar-widget m-30px-b">
+<div class="m-15px-b">
+<a href="https://gcodetutor.com/fusion-360-cnc-machinist.html"><img src="CNC%20G%20Codes_files/fusion-ad.jpg" title="learn fusion 360 for machinists" alt="learn fusion 360 for machinists" style="width:100%" loading="lazy"></a>
+</div>
+</div> 
+<div class="sidebar-widget m-30px-b">
+<h5 class="font-alt font-16 font-w-800 color-extra-dark-gray m-0px m-15px-b text-uppercase">Other</h5>
+<ul class="list-style-6 m-0px">
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com//fanuc-training-course/cnc-datums-g10-g53-g54.html">CNC Datums</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-macro-programming/cnc-variables.html">Introduction to Variables</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/gcode-tutorial/history-of-gcode.html">History of G-Code</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/cnc-macro-programming/calculating-spindle-speeds.html">Calculating spindle speeds</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/fusion-360-tutorial/cnc-programming-style.html">CNC Programming Styles</a></li>
+<li><a class="color-extra-dark-gray" href="https://gcodetutor.com/fusion-360-tutorial/fusion-360-tutorial-constraints.html">Fusion 360 Constraints</a></li>
+</ul>
+</div> 
+<div class="sidebar-widget m-30px-b">
+<div class="m-15px-b">
+<a href="https://gcodetutor.com/cnc-machine-training.html"><img src="CNC%20G%20Codes_files/halfpage-lathe-course.png" title="CNC Lathe programming course" alt="CNC Lathe programming course"></a>
+<br>
+<br>
+<p text-align:="" center;="">Machine Shop Maths Course</p>
+<a href="https://gcodetutor.com/machine-shop-maths.html"><img src="CNC%20G%20Codes_files/machine-shop-math.jpg" title="Machine Shop Math" alt="Machine Shop Maths Training Course"></a>
+<br>
+<a href="https://jooble.org/jobs-cnc-programmer" target="_blank" rel="noopener noreferrer"><img src="CNC%20G%20Codes_files/jooble.png" title="CNC Machinist jobs" alt="CNC Machinist jobs" loading="lazy"></a>
+</div>
+</div> 
+</div>
+
+
+<section class="p-50px-tb">
+<div class="container">
+<div class="extra-dark-gray-bg p-30px">
+<div class="row">
+<div class="col-12 col-md-8 col-lg-9 align-self-center text-center text-sm-left">
+<h5 class="m-0px font-w-800 color-white">For a complete tutorial on CNC Lathe Programming check out my
+course.</h5>
+<p class="m-0px">The quickest way to learn CNC Programming</p>
+</div>
+<div class="col-12 col-md-4 col-lg-3 align-self-center text-center text-sm-right md-p-15px-t">
+<a class="m-btn m-btn-t-white m-btn-round m-btn-l" href="https://gcodetutor.com/cnc-machine-training.html">CNC Lathe Programming
+Course <i class="ti-arrow-right icon-xs m-5px-l"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div> 
+</div> 
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="dark-bg">
+<div class="container">
+<div class="text-center p-20px-tb border-b border-extra-dark-gray">
+<img src="CNC%20G%20Codes_files/gcodetutor-logo-dark.png" title="GCodeTutor" alt="GCodeTutor">
+</div>
+<div class="row p-20px-tb">
+<div class="col-12 col-sm-6 align-self-center text-center text-sm-left">
+<p class="m-0px color-medium-gray font-14">© Copyright GCodeTutor 2022. All Rights Reserved.</p>
+</div>
+<div class="col-12 col-sm-6 text-center text-sm-right align-self-center">
+<ul class="social-icons-01 social-icons-small sm-m-10px-tb">
+<li><a class="facebook" href="https://www.facebook.com/GCODETutor/"><i class="fab fa-facebook-f"></i></a></li>
+<li><a class="twitter" href="https://twitter.com/gcodetutor"><i class="fab fa-twitter"></i></a></li>
+<li><a class="youtube" href="https://www.youtube.com/channel/UCq3f9FhE1huhsWtWjwv-szg"><i class="fab fa-youtube"></i></a></li>
+<li><a class="pinterest" href="https://www.pinterest.co.uk/gcodetutor/"><i class="fab fa-pinterest"></i></a></li>
+</ul>
+</div>
+</div> 
+</div> 
+</div>
+
+</footer>
+
+
+<script src="CNC%20G%20Codes_files/jquery-3.js" type="text/javascript"></script>
+<script src="CNC%20G%20Codes_files/jquery-migrate-3.js" type="text/javascript"></script>
+
+
+<script src="CNC%20G%20Codes_files/jquery.js" type="text/javascript"></script>
+<script src="CNC%20G%20Codes_files/popper.js" type="text/javascript"></script>
+<script src="CNC%20G%20Codes_files/bootstrap.js" type="text/javascript"></script>
+
+
+<script src="CNC%20G%20Codes_files/custom.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+  ! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2012516102312769');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2012516102312769&ev=PageView&noscript=1" /></noscript>
+
+
+
+
+<iframe scrolling="no" allowtransparency="true" src="CNC%20G%20Codes_files/widget_iframe.html" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>
