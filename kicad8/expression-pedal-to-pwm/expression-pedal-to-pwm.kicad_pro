@@ -58,7 +58,11 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|130190001|88310001|6bfd3643-589c-4141-bad9-b83f1fcecc9d|af246071-bd31-42ba-9ab2-0df7af97f175",
+        "isolated_copper|109683514|129764274|363eae44-d0f6-4dc0-8eb3-bfc7d69d7bea|00000000-0000-0000-0000-000000000000",
+        "net_conflict|129300000|93900000|4b602e2f-b072-4f09-9a78-cfba0574d6b8|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -95,7 +99,7 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
+        "silk_edge_clearance": "ignore",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
@@ -122,7 +126,7 @@
         "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
