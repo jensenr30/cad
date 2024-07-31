@@ -18,6 +18,7 @@ kicad8/expression-pedal-to-pwm/expression-pedal-to-pwm-backups/
 
 # Kicad 8
 fp-info-cache
+*.lck
 
 
 #===============================================================================
