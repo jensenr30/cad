@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Expression-Pedal-to-PWM")
-		(date "2024-07-28")
-		(rev "1")
+		(date "2024-08-19")
+		(rev "2")
 	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x06"

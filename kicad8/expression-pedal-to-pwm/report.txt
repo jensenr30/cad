@@ -1,0 +1,1 @@
+Update symbol J5 from 'Connector:Screw_Terminal_01x06' to 'Connector:Screw_Terminal_01x06': OK

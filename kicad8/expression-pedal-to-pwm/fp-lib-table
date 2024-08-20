@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "TerminalBlock_MetzConnect")(type "KiCad")(uri "/home/ryan/repos/cad/kicad8/library/footprints/TerminalBlock_MetzConnect_fixed.pretty")(options "")(descr ""))
+)
